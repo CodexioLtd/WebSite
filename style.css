@@ -10,7 +10,7 @@ body {
 }
 
 header {
-  background: url("img/background-header.jpg") no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("img/background-header.jpg") no-repeat;
   background-size: cover;
   height: 100vh;
 }
@@ -26,6 +26,7 @@ header .header-nav-bar .logo-wrapper img {
 }
 
 header .header-nav-bar li {
+  padding-top: 20px;
   display: inline-block;
   padding-left: 25px;
 }
@@ -33,26 +34,28 @@ header .header-nav-bar li {
 header .header-nav-bar li a {
   text-decoration: none;
   text-transform: uppercase;
+  letter-spacing: 1px;
   color: #fff;
-  font-weight: lighter;
   font-size: 19px;
   /*  #4C4D4D; */
 }
 
 header .div-header-center {
-  padding-top: 350px;
+  padding-top: 300px;
   text-align: center;
   color: #fff;
 }
 
 header .div-header-center h1 {
-  font-size: 9em;
-  padding-bottom: 35px;
+  font-size: 8em;
+  padding-bottom: 15px;
+  font-weight: 300;
 }
 
 header .div-header-center h2 {
   font-weight: lighter;
   padding-bottom: 40px;
+  text-transform: uppercase;
 }
 
 header .div-header-center button {
@@ -369,6 +372,6 @@ footer p {
   text-align: center;
   font-size: 17px;
   height: 100px;
-  font-weight: 300;
+  font-weight: 400;
 }
 /*# sourceMappingURL=style.css.map */
