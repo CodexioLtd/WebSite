@@ -1,0 +1,374 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  background: url("img/background-header.jpg") no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+header .header-nav-bar {
+  padding-top: 60px;
+  display: flex;
+  justify-content: space-around;
+}
+
+header .header-nav-bar .logo-wrapper img {
+  width: 100%;
+}
+
+header .header-nav-bar li {
+  display: inline-block;
+  padding-left: 25px;
+}
+
+header .header-nav-bar li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: lighter;
+  font-size: 19px;
+  /*  #4C4D4D; */
+}
+
+header .div-header-center {
+  padding-top: 350px;
+  text-align: center;
+  color: #fff;
+}
+
+header .div-header-center h1 {
+  font-size: 9em;
+  padding-bottom: 35px;
+}
+
+header .div-header-center h2 {
+  font-weight: lighter;
+  padding-bottom: 40px;
+}
+
+header .div-header-center button {
+  outline: none;
+  border: none;
+  background: #61c4be;
+  color: #fff;
+  padding: 10px 50px;
+  font-size: 1.2em;
+  margin-bottom: 100px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+#info-codexio {
+  padding: 200px 0;
+  display: flex;
+  justify-content: center;
+}
+
+#info-codexio div img {
+  width: 90%;
+}
+
+#info-codexio .container-info-text {
+  width: 60%;
+  padding-bottom: 50px;
+}
+
+#info-codexio .container-info-text h3 {
+  color: #2E5CA9;
+  font-size: 4em;
+  font-weight: lighter;
+  padding-bottom: 10px;
+}
+
+#info-codexio .container-info-text h4 {
+  font-size: 25px;
+  font-weight: lighter;
+  color: #595a5a;
+  padding-bottom: 25px;
+}
+
+#info-codexio .container-info-text p {
+  font-size: 1.5em;
+}
+
+#services {
+  background: #f2f2f3;
+}
+
+#services .services-text {
+  padding-top: 80px;
+}
+
+#services .services-text h3 {
+  text-align: center;
+  font-size: 45px;
+  font-weight: lighter;
+  padding-bottom: 40px;
+}
+
+#services .services-text p {
+  width: 80%;
+  margin: auto;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+#services .services-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 100px 100px 100px 20px;
+}
+
+#services .services-container article {
+  padding-left: 100px;
+}
+
+#services .services-container article img {
+  padding-left: 100px;
+}
+
+#services .services-container article h4 {
+  text-align: center;
+  padding-top: 35px;
+  font-size: 25px;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+
+.project-text {
+  padding-top: 80px;
+}
+
+.project-text h3 {
+  text-align: center;
+  font-size: 45px;
+  font-weight: lighter;
+  padding-bottom: 40px;
+}
+
+.project-text p {
+  width: 80%;
+  margin: auto;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+#project-container .images {
+  padding-top: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#project-container #lock-trip-logo {
+  padding: 90px 0 0 50px;
+  width: 75%;
+}
+
+#project-container .project-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+#project-container .project-info h4 {
+  text-align: center;
+  font-size: 20px;
+  padding: 20px 0;
+}
+
+#project-container .project-info p {
+  padding: 10px 0 100px 70px;
+  width: 60%;
+  line-height: 1.5;
+  margin: auto;
+}
+
+#project-container .project-info p a {
+  text-decoration: none;
+  visibility: visible;
+  color: #2E5CA9;
+}
+
+#project-container .project-info p a:active {
+  color: blue;
+}
+
+#clients {
+  padding: 0 0 80px 0;
+  background: lightblue;
+}
+
+#clients h3 {
+  padding-top: 60px;
+  text-align: center;
+  font-size: 45px;
+  font-weight: lighter;
+  padding-bottom: 30px;
+}
+
+#clients .clients-logos {
+  width: 80%;
+  padding: 50px 0;
+  display: flex;
+  text-align: center;
+  margin: auto;
+}
+
+#clients .clients-logos #softuni-logo {
+  width: 25%;
+}
+
+#clients .clients-logos .clients-logos, #clients .clients-logos a, #clients .clients-logos img {
+  width: 50%;
+  margin: auto;
+}
+
+#clients .clients-logos .clients-logos, #clients .clients-logos a, #clients .clients-logos img:last-child {
+  width: 60%;
+  border-radius: 3px;
+}
+
+#contact-us {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 100px;
+}
+
+#contact-us .left-part form {
+  padding: 0 0 0 250px;
+}
+
+#contact-us .left-part form h3 {
+  padding-bottom: 90px;
+  font-size: 45px;
+  font-weight: lighter;
+}
+
+#contact-us .left-part form h4 {
+  padding-bottom: 8px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#contact-us .left-part form h4 span {
+  color: #61c4be;
+  /*    color:#2f5daa   */
+}
+
+#contact-us .left-part form label input[type=text] {
+  padding: 12px 40px 12px 5px;
+  margin-right: 20px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  outline: none;
+}
+
+#contact-us .left-part .email-label h4 {
+  padding-top: 25px;
+  padding-bottom: 8px;
+}
+
+#contact-us .left-part label input[type=email] {
+  padding: 12px 280px 12px 5px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  outline: none;
+}
+
+#contact-us .left-part .comment-text h4 {
+  padding-top: 25px;
+  padding-bottom: 8px;
+}
+
+#contact-us .left-part label textarea {
+  padding: 10px 600px 100px 5px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  outline: none;
+}
+
+#contact-us .left-part button {
+  margin-top: 20px;
+  border: none;
+  background: #61c4be;
+  color: #fff;
+  padding: 10px 50px;
+  font-size: 1.3em;
+  margin-bottom: 100px;
+  cursor: pointer;
+  border-radius: 16px;
+  outline: none;
+}
+
+.right-part {
+  padding: 60px 0 0 80px;
+}
+
+.right-part div img {
+  width: 50%;
+}
+
+.right-part .right-text-container p {
+  padding: 0 0 0 20px;
+  font-size: 20px;
+  margin: 5px 0;
+}
+
+.social-media {
+  display: flex;
+}
+
+.social-media p {
+  padding: 10px 0 0 20px;
+  font-size: 20px;
+  padding-left: 20px;
+}
+
+.social-media i {
+  font-size: 40px;
+  padding-left: 10px;
+  color: #4267B2;
+}
+
+.social-media .fa-linkedin-square {
+  color: #0077B5;
+}
+
+footer {
+  text-align: center;
+  padding: 50px;
+  background-color: #29394B;
+}
+
+footer img {
+  padding-top: 50px;
+  width: 19%;
+}
+
+footer p {
+  padding: 50px 0 50px 0;
+  font-size: 18px;
+  color: #999E9A;
+  font-weight: 600;
+}
+
+#map {
+  height: 500px;
+}
+
+#content {
+  padding: 60px 60px 20px 60px;
+  text-align: center;
+  font-size: 17px;
+  height: 100px;
+  font-weight: 300;
+}
+/*# sourceMappingURL=style.css.map */
