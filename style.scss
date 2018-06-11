@@ -94,14 +94,13 @@ header {
         .we-are-hiring:hover {
             background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2));
             border: 2px solid #61c4be;
-            color: #61c4be;
             
         }
         button {
             outline: none;
             background: none;
             border: 2px solid #61c4be;          
-            color: #61c4be;
+            color: #fff;
             padding: 10px 40px;
             font-size: 1.3em;
             margin-bottom: 100px;
@@ -117,23 +116,17 @@ header {
 }
 
 #info-codexio {
-    display: flex;
-    justify-content: center;
     padding: $padding;
-    div img {
-        width: 85%;
-        padding-left: 40px;
-        padding-top: 130px;
+        display: flex;
+        justify-content: center;
+        img {
+            width: 20%;
+        }
     }
-    .container-info-text {
-        width: 50%;
-        
-        padding-left: 20px;
-        .codexio-title {
+           .codexio-title {
             padding-bottom: 60px;
         }
         h3 {
-            color: #2E5CA9;
             font-size: 3.5em;
             font-weight: 400;
             padding-bottom: 10px;
@@ -143,16 +136,19 @@ header {
             font-weight: 300;
             color: #595a5a;
         }
-        p {
-            font-size: 26px;
-            line-height: 1.6;
-            font-weight: 400;
+        .info-paragraph {
+            p {
+                width: 90%;
+                font-size: 22px;
+                line-height: 1.6;
+                font-weight: 400;
+            }
+            p:last-child {
+                padding-top: 14px;
+            }
         }
-        p:last-child{
-            padding-top: 14px;
-        }
-    }
-}
+    
+
 
 #services {
     background: #f2f2f3;
@@ -227,23 +223,17 @@ header {
 #project-container {
         display: flex;
         justify-content: center;
-   
-        h4 {
-            font-size: $large;
-            margin: 50px;
-            text-align: center;
-            
-        }
+        padding-top: 70px; 
         p {
-            
-            width: 60%;
+            padding-left: 30px;
+            width: 50%;
             line-height: 1.4;
-            margin: auto;
+            margin:0;
             font-size: $small;
             a {
                 text-decoration: none;
                 visibility: visible;
-                color: #2E5CA9
+                color: #2E5CA9;
             }
         }
     }
@@ -262,6 +252,7 @@ header {
         width: 80%;
         padding: 50px 0;
         display: flex;
+        justify-content: space-between;
         text-align: center;
         margin: auto;
         #softuni-logo {
@@ -381,12 +372,11 @@ footer {
     padding: $padding;
     background-color: #29394B;
     img {
-        padding-top: 50px;
-        width: 19%;
+        width: 15%;
     }
     p {
-        padding: 50px 0 50px 0;
-        font-size: 18px;
+        padding-top: 10px;
+        font-size: 14px;
         color: #999E9A;
         font-weight: 600;
     }
@@ -402,4 +392,16 @@ footer {
     font-size: 17px;
     height: 100px;
     font-weight: 400;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background:lightgray;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background:#4083B0;
+    border-radius: 5px;
 }

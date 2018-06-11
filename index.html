@@ -25,7 +25,7 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="#info-codexio">about codexio</a>
+                        <a href="#info-codexio">about</a>
                     </li>
                     <li>
                         <a href="#services">services</a>
@@ -55,20 +55,20 @@
     </header>
     <main>
         <section id="info-codexio">
-            <div>
+                
                 <img src="img/Logo.png" alt="logo-codexio">
-            </div>
-            <div class="container-info-text">
                 <div class="codexio-title">
-                <h3>Codexio Ltd.</h3>
-                <h4>ERP / Software Development / Applications / Blockchain</h4>
-            </div>
+                        <h3>Codexio Ltd.</h3>
+                        <h4>Web / Mobile / Blockchain / Consultancy</h4>
+                    
+                <div class="info-paragraph">
                 <p>Codexio is a fast-growing software development and consultancy company with a very passionated and skilled
                     team. Simultaneously focused on quality and delivering results, we are producing projects and products
                     at a very large scale. Web, mobile and blockchain development are just a few of the areas we are operating
                     in. </p>
-                    <p>Contact us to start an exciting collaboration which will lead you to a brand new world.</p>
-            </div>
+                <p>Contact us to start an exciting collaboration which will lead you to a brand new world.</p>
+            </div></div>
+       
         </section>
         <section id="services">
             <div class="services-text">
@@ -122,19 +122,14 @@
                 </p>
             </div>
             <section id="project-container">
-                    <div class="lock-trip">
-                        <h4>Lock Trip</h4>
-                        <p>Our main product is developing a blockchain-based platform which entirely changes the travelling
-                            industry. By removing the need for a middleman we are cutting the commission to zero, providing
-                            both transparency and the best prices for booking hotels, homes and travelling tickets. Visit
-                            (and read more) on:
-                            <a href="https://locktrip.com/">https://locktrip.com/</a>
-                        </p>
-                    </div>
-                    <div class="lock-trip-logo-container">
-                            <a href="https://locktrip.com/"><img id="lock-trip-logo" src="img/LockTrip_logo.png" alt="LockTrip-logo">
-                            </a>
-                        </div>
+                    <a href="https://locktrip.com/">
+                        <img id="lock-trip-logo" src="img/LockTrip_logo.png" alt="LockTrip-logo">
+                    </a>
+                    <p>Our main product is developing a blockchain-based platform which entirely changes the travelling industry.
+                        By removing the need for a middleman we are cutting the commission to zero, providing both transparency
+                        and the best prices for booking hotels, homes and travelling tickets. Visit (and read more) on:
+                        <a href="https://locktrip.com/">https://locktrip.com/</a>
+                    </p>
             </section>
         </section>
         <section id="clients">
@@ -215,11 +210,11 @@
                 });
 
                 const markerIcon = {
-                 url: 'http://image.flaticon.com/icons/svg/252/252025.svg',
-                 scaledSize: new google.maps.Size(25, 40),
-                 origin: new google.maps.Point(0, -20),
-                 anchor: new google.maps.Point(40, 50),
-                 labelOrigin: new google.maps.Point(10, 70)
+                    url: 'http://image.flaticon.com/icons/svg/252/252025.svg',
+                    scaledSize: new google.maps.Size(25, 40),
+                    origin: new google.maps.Point(0, -20),
+                    anchor: new google.maps.Point(40, 50),
+                    labelOrigin: new google.maps.Point(10, 70)
                 };
 
                 const marker = new google.maps.Marker({
@@ -227,13 +222,13 @@
                     map: map,
                     icon: markerIcon,
                     label: {
-                    text: 'Codexio Ltd.',
-                    color: "#eb3a44",
-                    fontSize: "19px",
-                    fontWeight: "500"
+                        text: 'Codexio Ltd.',
+                        color: "#eb3a44",
+                        fontSize: "19px",
+                        fontWeight: "500"
                     }
                 });
-                
+
                 const content = '<div id="content">Sofia, </br> Izgrev, str. "Tintyava" 15-17, floor 3</div>';
                 const infoWindow = new google.maps.InfoWindow({
                     content: content,
@@ -249,7 +244,7 @@
 
         <script src="dom.js"></script>
         <script src="event.js"></script>
-        
+
 
 
     </main>
@@ -259,13 +254,13 @@
     </footer>
 
 
-<script>
-    append();
-    ClickWeb();
-    ClickMobile();
-    ClickBlockchain();
-    ClickConsultancy();
-</script>
+    <script>
+        append();
+        ClickWeb();
+        ClickMobile();
+        ClickBlockchain();
+        ClickConsultancy();
+    </script>
 
 
 

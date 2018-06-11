@@ -80,14 +80,13 @@ header .div-header-center .we-are-hiring {
 header .div-header-center .we-are-hiring:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
   border: 2px solid #61c4be;
-  color: #61c4be;
 }
 
 header .div-header-center button {
   outline: none;
   background: none;
   border: 2px solid #61c4be;
-  color: #61c4be;
+  color: #fff;
   padding: 10px 40px;
   font-size: 1.3em;
   margin-bottom: 100px;
@@ -102,46 +101,39 @@ header .div-header-center button:hover {
 }
 
 #info-codexio {
+  padding: 150px 0;
   display: flex;
   justify-content: center;
-  padding: 150px 0;
 }
 
-#info-codexio div img {
-  width: 85%;
-  padding-left: 40px;
-  padding-top: 130px;
+#info-codexio img {
+  width: 20%;
 }
 
-#info-codexio .container-info-text {
-  width: 50%;
-  padding-left: 20px;
-}
-
-#info-codexio .container-info-text .codexio-title {
+.codexio-title {
   padding-bottom: 60px;
 }
 
-#info-codexio .container-info-text h3 {
-  color: #2E5CA9;
+h3 {
   font-size: 3.5em;
   font-weight: 400;
   padding-bottom: 10px;
 }
 
-#info-codexio .container-info-text h4 {
+h4 {
   font-size: 30px;
   font-weight: 300;
   color: #595a5a;
 }
 
-#info-codexio .container-info-text p {
-  font-size: 26px;
+.info-paragraph p {
+  width: 90%;
+  font-size: 22px;
   line-height: 1.6;
   font-weight: 400;
 }
 
-#info-codexio .container-info-text p:last-child {
+.info-paragraph p:last-child {
   padding-top: 14px;
 }
 
@@ -237,18 +229,14 @@ header .div-header-center button:hover {
 #project #project-container {
   display: flex;
   justify-content: center;
-}
-
-#project #project-container h4 {
-  font-size: 30px;
-  margin: 50px;
-  text-align: center;
+  padding-top: 70px;
 }
 
 #project #project-container p {
-  width: 60%;
+  padding-left: 30px;
+  width: 50%;
   line-height: 1.4;
-  margin: auto;
+  margin: 0;
   font-size: 22px;
 }
 
@@ -275,6 +263,7 @@ header .div-header-center button:hover {
   width: 80%;
   padding: 50px 0;
   display: flex;
+  justify-content: space-between;
   text-align: center;
   margin: auto;
 }
@@ -411,13 +400,12 @@ footer {
 }
 
 footer img {
-  padding-top: 50px;
-  width: 19%;
+  width: 15%;
 }
 
 footer p {
-  padding: 50px 0 50px 0;
-  font-size: 18px;
+  padding-top: 10px;
+  font-size: 14px;
   color: #999E9A;
   font-weight: 600;
 }
@@ -432,5 +420,19 @@ footer p {
   font-size: 17px;
   height: 100px;
   font-weight: 400;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: lightgray;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4083B0;
+  border-radius: 5px;
 }
 /*# sourceMappingURL=style.css.map */
