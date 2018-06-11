@@ -40,6 +40,6 @@ let peighth = $("<p>");
 peighth
     .addClass("p-text-eighth")
     .appendTo(".article-consultancy")
-    
+
 
 };

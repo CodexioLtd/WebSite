@@ -14,6 +14,14 @@
                     outline: none;
 }
 
+@mixin button-readmore() {
+    background: none;
+    border: none;
+    color: #2f5daa;
+    cursor: pointer;
+    outline: none;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -127,14 +135,14 @@ header {
     .read-one, .read-two, .read-three, .read-four {
         @include button-read();
     }
-
+    .button-one, .button-two, .button-three, .button-four {
+        @include button-readmore();
+    }
    .services-container {
        display: flex;
-       justify-content: space-around;
-       padding:100px;
+       justify-content: center;
 
       article {
-          box-sizing: border-box;
            h4 {
                text-align: center;
                padding-top: 35px;
@@ -270,7 +278,7 @@ header {
                 border-radius: 10px;
                 outline: none;
             }
-            button {
+            button, .button-two {
                     margin-top: 20px;
                     border: none;
                     background: #61c4be;

@@ -142,14 +142,17 @@ header .div-header-center button {
   outline: none;
 }
 
-#services .services-container {
-  display: flex;
-  justify-content: space-around;
-  padding: 100px;
+#services .button-one, #services .button-two, #services .button-three, #services .button-four {
+  background: none;
+  border: none;
+  color: #2f5daa;
+  cursor: pointer;
+  outline: none;
 }
 
-#services .services-container article {
-  box-sizing: border-box;
+#services .services-container {
+  display: flex;
+  justify-content: center;
 }
 
 #services .services-container article h4 {
@@ -304,7 +307,7 @@ header .div-header-center button {
   outline: none;
 }
 
-#contact-us .left-part button {
+#contact-us .left-part button, #contact-us .left-part .button-two {
   margin-top: 20px;
   border: none;
   background: #61c4be;
