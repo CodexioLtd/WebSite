@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700");
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 * {
   margin: 0;
@@ -58,91 +58,149 @@ header .div-header-center h1 {
 }
 
 header .div-header-center h2 {
-  font-weight: lighter;
+  font-weight: 300;
   padding-bottom: 40px;
   text-transform: uppercase;
 }
 
-header .div-header-center button {
+header .div-header-center .we-are-hiring {
   outline: none;
   border: none;
   background: #61c4be;
   color: #fff;
-  padding: 10px 50px;
-  font-size: 1.2em;
+  padding: 10px 30px;
+  font-size: 1.3em;
+  margin-bottom: 100px;
+  cursor: pointer;
+  margin-right: 10px;
+  border-radius: 16px;
+  font-weight: 300;
+}
+
+header .div-header-center .we-are-hiring:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+  border: 2px solid #61c4be;
+  color: #61c4be;
+}
+
+header .div-header-center button {
+  outline: none;
+  background: none;
+  border: 2px solid #61c4be;
+  color: #61c4be;
+  padding: 10px 40px;
+  font-size: 1.3em;
   margin-bottom: 100px;
   cursor: pointer;
   border-radius: 16px;
 }
 
+header .div-header-center button:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+  background: #61c4be;
+  color: #fff;
+}
+
 #info-codexio {
-  padding: 200px 0;
   display: flex;
   justify-content: center;
+  padding: 150px 0;
 }
 
 #info-codexio div img {
-  width: 90%;
+  width: 85%;
+  padding-left: 40px;
+  padding-top: 130px;
 }
 
 #info-codexio .container-info-text {
-  width: 60%;
-  padding-bottom: 50px;
+  width: 50%;
+  padding-left: 20px;
+}
+
+#info-codexio .container-info-text .codexio-title {
+  padding-bottom: 60px;
 }
 
 #info-codexio .container-info-text h3 {
   color: #2E5CA9;
-  font-size: 4em;
-  font-weight: lighter;
+  font-size: 3.5em;
+  font-weight: 400;
   padding-bottom: 10px;
 }
 
 #info-codexio .container-info-text h4 {
-  font-size: 25px;
-  font-weight: lighter;
+  font-size: 30px;
+  font-weight: 300;
   color: #595a5a;
-  padding-bottom: 25px;
 }
 
 #info-codexio .container-info-text p {
-  font-size: 1.5em;
+  font-size: 26px;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+#info-codexio .container-info-text p:last-child {
+  padding-top: 14px;
 }
 
 #services {
   background: #f2f2f3;
-}
-
-#services .services-text {
-  padding-top: 80px;
+  padding: 150px 0;
 }
 
 #services .services-text h3 {
   text-align: center;
   font-size: 45px;
-  font-weight: lighter;
+  font-weight: 300;
   padding-bottom: 40px;
 }
 
 #services .services-text p {
   width: 80%;
   margin: auto;
-  font-size: 20px;
+  font-size: 22px;
   line-height: 1.5;
 }
 
-#services .read-one, #services .read-two, #services .read-three, #services .read-four {
+#services .services-container {
+  margin: auto;
+  padding-top: 3%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+#services .services-container article {
+  width: 20%;
+  padding-bottom: 30px;
+}
+
+#services .services-container article img {
+  width: 30%;
+}
+
+#services .services-container article .read-one,
+#services .services-container article .read-two,
+#services .services-container article .read-three,
+#services .services-container article .read-four {
   margin-left: 70px;
   border: none;
   background: #61c4be;
   color: #fff;
-  padding: 10px 15px;
+  padding: 5px 20px;
   font-size: 16px;
   cursor: pointer;
   border-radius: 16px;
   outline: none;
+  margin: auto;
 }
 
-#services .button-one, #services .button-two, #services .button-three, #services .button-four {
+#services .services-container article .button-one,
+#services .services-container article .button-two,
+#services .services-container article .button-three,
+#services .services-container article .button-four {
   background: none;
   border: none;
   color: #2f5daa;
@@ -150,76 +208,63 @@ header .div-header-center button {
   outline: none;
 }
 
-#services .services-container {
-  display: flex;
-  justify-content: center;
-}
-
 #services .services-container article h4 {
-  text-align: center;
   padding-top: 35px;
-  font-size: 1.5em;
+  font-size: 22px;
   font-weight: 500;
   padding-bottom: 20px;
   cursor: pointer;
 }
 
-.project-text {
-  padding-top: 80px;
+#project {
+  padding: 150px 0;
 }
 
-.project-text h3 {
+#project .project-text h3 {
   text-align: center;
   font-size: 45px;
-  font-weight: lighter;
+  font-weight: 300;
   padding-bottom: 40px;
 }
 
-.project-text p {
+#project .project-text p {
   width: 80%;
   margin: auto;
-  font-size: 20px;
+  font-size: 22px;
   line-height: 1.5;
 }
 
-#project-container .images {
-  padding-top: 100px;
+#project #project-container {
   display: flex;
   justify-content: center;
 }
 
-#project-container #lock-trip-logo {
-  padding: 90px 0 0 50px;
-  width: 75%;
-}
-
-#project-container .project-info h4 {
+#project #project-container h4 {
+  font-size: 30px;
+  margin: 50px;
   text-align: center;
-  font-size: 2em;
-  padding: 40px 0 20px 0;
 }
 
-#project-container .project-info p {
-  padding: 10px 0 60px 70px;
-  width: 20%;
+#project #project-container p {
+  width: 60%;
   line-height: 1.4;
   margin: auto;
+  font-size: 22px;
 }
 
-#project-container .project-info p a {
+#project #project-container p a {
   text-decoration: none;
   visibility: visible;
   color: #2E5CA9;
 }
 
 #clients {
-  padding: 60px 0 180px 0;
+  padding: 150px 0;
   background: url("img/clients-background.jpg") no-repeat;
   background-size: cover;
 }
 
 #clients h3 {
-  padding-top: 60px;
   text-align: center;
   font-size: 45px;
   font-weight: lighter;
@@ -238,12 +283,16 @@ header .div-header-center button {
   width: 25%;
 }
 
-#clients .clients-logos .clients-logos, #clients .clients-logos a, #clients .clients-logos img {
+#clients .clients-logos .clients-logos,
+#clients .clients-logos a,
+#clients .clients-logos img {
   width: 50%;
   margin: auto;
 }
 
-#clients .clients-logos .clients-logos, #clients .clients-logos a, #clients .clients-logos img:last-child {
+#clients .clients-logos .clients-logos,
+#clients .clients-logos a,
+#clients .clients-logos img:last-child {
   width: 60%;
   border-radius: 3px;
 }
@@ -251,7 +300,7 @@ header .div-header-center button {
 #contact-us {
   display: flex;
   justify-content: space-around;
-  padding-top: 100px;
+  padding: 150px 0;
 }
 
 #contact-us .left-part form {
@@ -307,7 +356,8 @@ header .div-header-center button {
   outline: none;
 }
 
-#contact-us .left-part button, #contact-us .left-part .button-two {
+#contact-us .left-part button,
+#contact-us .left-part .button-two {
   margin-top: 20px;
   border: none;
   background: #61c4be;
@@ -356,7 +406,7 @@ header .div-header-center button {
 
 footer {
   text-align: center;
-  padding: 50px;
+  padding: 150px 0;
   background-color: #29394B;
 }
 
