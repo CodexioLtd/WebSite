@@ -10,9 +10,9 @@ body {
 }
 
 header {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("img/background-header.jpg") no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url("img/background-header.jpg") no-repeat;
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 header .header-nav-bar {
@@ -40,14 +40,18 @@ header .header-nav-bar li a {
   /*  #4C4D4D; */
 }
 
+header .header-nav-bar li a:hover {
+  color: #61c4be;
+}
+
 header .div-header-center {
-  padding-top: 300px;
+  padding-top: 18%;
   text-align: center;
   color: #fff;
 }
 
 header .div-header-center h1 {
-  font-size: 8em;
+  font-size: 9em;
   padding-bottom: 15px;
   font-weight: 300;
   letter-spacing: 8px;
@@ -126,26 +130,35 @@ header .div-header-center button {
   line-height: 1.5;
 }
 
+#services .read-one, #services .read-two, #services .read-three, #services .read-four {
+  margin-left: 70px;
+  border: none;
+  background: #61c4be;
+  color: #fff;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 16px;
+  outline: none;
+}
+
 #services .services-container {
   display: flex;
   justify-content: space-around;
-  padding: 100px 100px 100px 20px;
+  padding: 100px;
 }
 
 #services .services-container article {
-  padding-left: 100px;
-}
-
-#services .services-container article img {
-  padding-left: 100px;
+  box-sizing: border-box;
 }
 
 #services .services-container article h4 {
   text-align: center;
   padding-top: 35px;
-  font-size: 25px;
+  font-size: 1.5em;
   font-weight: 500;
   padding-bottom: 20px;
+  cursor: pointer;
 }
 
 .project-text {
@@ -169,7 +182,7 @@ header .div-header-center button {
 #project-container .images {
   padding-top: 100px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 #project-container #lock-trip-logo {
@@ -177,21 +190,16 @@ header .div-header-center button {
   width: 75%;
 }
 
-#project-container .project-info {
-  display: flex;
-  justify-content: space-between;
-}
-
 #project-container .project-info h4 {
   text-align: center;
-  font-size: 20px;
-  padding: 20px 0;
+  font-size: 2em;
+  padding: 40px 0 20px 0;
 }
 
 #project-container .project-info p {
-  padding: 10px 0 100px 70px;
-  width: 60%;
-  line-height: 1.5;
+  padding: 10px 0 60px 70px;
+  width: 20%;
+  line-height: 1.4;
   margin: auto;
 }
 
@@ -201,13 +209,10 @@ header .div-header-center button {
   color: #2E5CA9;
 }
 
-#project-container .project-info p a:active {
-  color: blue;
-}
-
 #clients {
-  padding: 0 0 80px 0;
-  background: lightblue;
+  padding: 60px 0 180px 0;
+  background: url("img/clients-background.jpg") no-repeat;
+  background-size: cover;
 }
 
 #clients h3 {

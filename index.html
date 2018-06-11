@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
     <link rel="icon" href="img/Logo.png" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
         crossorigin="anonymous">
 
@@ -73,65 +74,33 @@
             </div>
 
             <section class="services-container">
-                <article>
+                <article class="article-web">
                     <div>
                         <img src="img/chip-01-100x100.png" alt="icon-services">
                     </div>
-                    <h4>Web Development</h4>
-                    <p>
-                        Most of you might not remember, but the software was once shipped physically by discettes and discs and then installed on
-                        the user's computer. Although there is a decent amount of software still installed on our computers
-                        we used to make our day-to-day operations by using web applications.
-                    </p>
-                    <p>
-                        We have specialized in creating web applications of any scale capable of serving to any amount of users simultaneously. From
-                        simple informational web sites (e.g. landing pages, business web sites) to complex applications running
-                        in the web browser (e.g. ERP, CRM).
-                    </p>
+                    <h4 id="web-development">Web Development</h4>
+                    <button class="read-one">Read</button>
                 </article>
-                <article>
+                <article class="article-mobile">
                     <div>
                         <img src="img/chip-01-100x100.png" alt="icon-services">
                     </div>
-                    <h4>Mobile Development</h4>
-                    <p>
-                        What time is it? Correct. You've just looked at your phone to check it. Admit it, we are using our mobile phones everyday
-                        more than anything else. If something can run on your mobile phone, it will eventually run.
-                    </p>
-                    <p>
-                        Creating any service or informational application for mobile is our "Good morning!" phrase. That’s why it is very important
-                        to us to be able to run in one and the same way on all of the major mobile operating systems.
-                    </p>
+                    <h4 id="mobile-development">Mobile Development</h4>
+                    <button class="read-two">Read</button>
                 </article>
-                <article>
+                <article class="article-blockchain">
                     <div>
                         <img src="img/chip-01-100x100.png" alt="icon-services">
                     </div>
                     <h4>Bloсkchain Development</h4>
-                    <p>
-                        Economic models nowadays have become way too complex. Middlemen are everywhere. Validation by authorities. Trust. But the
-                        way we work removes the need for a middleman, leaving just the peer to peer communication.
-                    </p>
-                    <p>
-                        Creating decentralized applications, smart contracts or running a new blockchain network are just a few of the services we
-                        offer in this area. We have proven our skills by creating the biggest platform in the travelling
-                        industry purely relying on blockchain operations.
-                    </p>
+                    <button class="read-three">Read</button>
                 </article>
-                <article>
+                <article class="article-consultancy">
                     <div>
                         <img src="img/chip-01-100x100.png" alt="icon-services">
                     </div>
                     <h4>Consultancy</h4>
-                    <p>
-                        You are already working with an existing software development team? Are they hard to organize? Are they facing showstoppers?
-                        Or their power is not enough for the project's needs?
-                    </p>
-                    <p>
-                        We are here to not only solve all of these problems but also many more others that may arise. We can plug into an existing
-                        team and solve organizational or technical problems by providing innovative solutions. We can follow
-                        the existing process and suggest improvements, because we believe in the procedural way of working.
-                    </p>
+                    <button class="read-four">Read</button>
                 </article>
             </section>
         </section>
@@ -152,38 +121,12 @@
                             <img id="lock-trip-logo" src="img/LockTrip_logo.png" alt="LockTrip-logo">
                         </a>
                     </div>
-                    <div class="SEO-logo-container">
-                        <a href="#">
-                            <img id="SEO-logo" src="img/seo-art-tiny-300x200-300x200.png" alt="SEO-logo">
-                        </a>
-                    </div>
-                    <div class="lock-trip-logo-container">
-                        <a href="#">
-                            <img id="web-design-logo" src="img/web-design-project-300x200-300x200.png" alt="web-design-logo">
-                        </a>
-                    </div>
+                   
+                    
                 </article>
                 <article class="project-info">
                     <div class="lock-trip">
                         <h4>Lock Trip</h4>
-                        <p>Our main product is developing a blockchain-based platform which entirely changes the travelling
-                            industry. By removing the need for a middleman we are cutting the commission to zero, providing
-                            both transparency and the best prices for booking hotels, homes and travelling tickets. Visit
-                            (and read more) on:
-                            <a href="https://locktrip.com/">https://locktrip.com/</a>
-                        </p>
-                    </div>
-                    <div class="SEO-Project">
-                        <h4>SEO Project</h4>
-                        <p>Our main product is developing a blockchain-based platform which entirely changes the travelling
-                            industry. By removing the need for a middleman we are cutting the commission to zero, providing
-                            both transparency and the best prices for booking hotels, homes and travelling tickets. Visit
-                            (and read more) on:
-                            <a href="https://locktrip.com/">https://locktrip.com/</a>
-                        </p>
-                    </div>
-                    <div class="Web-Design-Project">
-                        <h4>Web Design Project</h4>
                         <p>Our main product is developing a blockchain-based platform which entirely changes the travelling
                             industry. By removing the need for a middleman we are cutting the commission to zero, providing
                             both transparency and the best prices for booking hotels, homes and travelling tickets. Visit
@@ -197,17 +140,6 @@
         </section>
         <section id="clients">
             <h3>Clients</h3>
-            <article class="clients-logos">
-                <a href="https://softuni.bg/">
-                    <img id="" softuni-logo "" src="img/SoftUni-logo.png" alt="SoftUni-logo">
-                </a>
-                <a href="https://locktrip.com/">
-                    <img src="img/LockTrip-logo.png" alt="LockTrip-logo">
-                </a>
-                <a href="https://www.xs-software.com/">
-                    <img src="img/XS-software-300x150.png" alt="xs-software-logo">
-                </a>
-            </article>
             <article class="clients-logos">
                 <a href="https://softuni.bg/">
                     <img id="" softuni-logo "" src="img/SoftUni-logo.png" alt="SoftUni-logo">
@@ -316,14 +248,24 @@
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDS9q2bfOep2OlZCFWgW9KaCsIHopKo354&callback=initMap" async
             defer></script>
 
-
+        <script src="dom.js"></script>
+        <script src="event.js"></script>
+        
 
 
     </main>
     <footer>
-        <img src="img/codexio-white.png" alt="Codexio-Logo">
+        <img src="img/Codexio-Logo11.png" alt="Codexio-Logo">
         <p>© 2018 CODEXIO. ALL RIGHTS RESERVED.</p>
     </footer>
+
+
+<script>
+    append();
+    Click();
+</script>
+
+
 
 </body>
 
