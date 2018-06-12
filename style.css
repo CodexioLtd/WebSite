@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700");
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -101,115 +106,116 @@ header .div-header-center button:hover {
 }
 
 #info-codexio {
-  padding: 150px 0;
+  padding: 100px 0;
+}
+
+#info-codexio .info-title {
   display: flex;
   justify-content: center;
 }
 
-#info-codexio img {
-  width: 20%;
+#info-codexio .info-title div {
+  width: 30%;
 }
 
-.codexio-title {
-  padding-bottom: 60px;
+#info-codexio .info-title .text-title {
+  width: 50%;
 }
 
-h3 {
+#info-codexio .container-info-text .logo-with-text {
+  display: flex;
+}
+
+#info-codexio .container-info-text .logo-with-text div {
+  flex-grow: 2;
+}
+
+#info-codexio .container-info-text .logo-with-text div img {
+  flex-grow: 1;
+  float: right;
+}
+
+#info-codexio .container-info-text h3 {
+  color: #2E5CA9;
   font-size: 3.5em;
   font-weight: 400;
   padding-bottom: 10px;
 }
 
-h4 {
-  font-size: 30px;
-  font-weight: 300;
+#info-codexio .container-info-text h4 {
+  font-size: 1.8em;
+  font-weight: 400;
   color: #595a5a;
+  padding-bottom: 20px;
 }
 
-.info-paragraph p {
-  width: 90%;
-  font-size: 22px;
+#info-codexio .container-info-text .pharagraph-text p {
+  padding-top: 22px;
+  font-size: 20px;
   line-height: 1.6;
   font-weight: 400;
 }
 
-.info-paragraph p:last-child {
-  padding-top: 14px;
+#info-codexio .container-info-text .pharagraph-text p:last-child {
+  padding-top: 6px;
 }
 
 #services {
   background: #f2f2f3;
-  padding: 150px 0;
+  padding: 100px 0;
 }
 
-#services .services-text h3 {
+#services h3 {
   text-align: center;
   font-size: 45px;
   font-weight: 300;
   padding-bottom: 40px;
 }
 
-#services .services-text p {
-  width: 80%;
-  margin: auto;
-  font-size: 22px;
-  line-height: 1.5;
+#services .services-icons {
+  padding-top: 70px;
+  display: flex;
+  justify-content: space-around;
 }
 
-#services .services-container {
-  margin: auto;
-  padding-top: 3%;
-  display: flex;
-  justify-content: center;
+#services .services-icons .web h4,
+#services .services-icons .mobile h4,
+#services .services-icons .blockchain h4,
+#services .services-icons .consultancy h4 {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+#services .services-icons .web,
+#services .services-icons .mobile,
+#services .services-icons .blockchain,
+#services .services-icons .consultancy {
   text-align: center;
 }
 
-#services .services-container article {
-  width: 20%;
-  padding-bottom: 30px;
-}
-
-#services .services-container article img {
-  width: 30%;
-}
-
-#services .services-container article .read-one,
-#services .services-container article .read-two,
-#services .services-container article .read-three,
-#services .services-container article .read-four {
-  margin-left: 70px;
-  border: none;
-  background: #61c4be;
-  color: #fff;
-  padding: 5px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 16px;
-  outline: none;
+#services .services-icons .web img,
+#services .services-icons .mobile img,
+#services .services-icons .blockchain img,
+#services .services-icons .consultancy img {
+  text-align: center;
   margin: auto;
 }
 
-#services .services-container article .button-one,
-#services .services-container article .button-two,
-#services .services-container article .button-three,
-#services .services-container article .button-four {
-  background: none;
-  border: none;
-  color: #2f5daa;
-  cursor: pointer;
-  outline: none;
+#services .image-background {
+  margin: auto;
+  width: 80%;
+  border: 2px solid lightgray;
+  padding: 50px;
+  margin-top: 70px;
 }
 
-#services .services-container article h4 {
-  padding-top: 35px;
-  font-size: 22px;
-  font-weight: 500;
-  padding-bottom: 20px;
-  cursor: pointer;
+#services .text-services p {
+  width: 80%;
+  margin: auto;
 }
 
 #project {
-  padding: 150px 0;
+  padding: 100px 0;
 }
 
 #project .project-text h3 {
@@ -222,14 +228,23 @@ h4 {
 #project .project-text p {
   width: 80%;
   margin: auto;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 1.5;
 }
 
 #project #project-container {
   display: flex;
   justify-content: center;
-  padding-top: 70px;
+  padding-top: 100px;
+}
+
+#project #project-container img {
+  padding-top: 20px;
+}
+
+#project #project-container img:hover {
+  padding-bottom: 8px;
+  border-bottom: 3px solid #D87A5F;
 }
 
 #project #project-container p {
@@ -237,7 +252,7 @@ h4 {
   width: 50%;
   line-height: 1.4;
   margin: 0;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 #project #project-container p a {
@@ -247,7 +262,7 @@ h4 {
 }
 
 #clients {
-  padding: 150px 0;
+  padding: 100px 0;
   background: url("img/clients-background.jpg") no-repeat;
   background-size: cover;
 }
@@ -256,7 +271,7 @@ h4 {
   text-align: center;
   font-size: 45px;
   font-weight: lighter;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
 }
 
 #clients .clients-logos {
@@ -286,14 +301,34 @@ h4 {
   border-radius: 3px;
 }
 
+#careers {
+  background: lightgray;
+  padding: 100px 0;
+}
+
+#careers h3 {
+  text-align: center;
+  font-size: 45px;
+  font-weight: lighter;
+  padding-bottom: 40px;
+}
+
+#careers div {
+  text-align: center;
+}
+
+#careers img {
+  width: 30%;
+}
+
 #contact-us {
   display: flex;
   justify-content: space-around;
-  padding: 150px 0;
+  padding: 100px 0;
 }
 
 #contact-us .left-part form {
-  padding: 0 0 0 250px;
+  padding: 0 0 0 200px;
 }
 
 #contact-us .left-part form h3 {
@@ -395,7 +430,7 @@ h4 {
 
 footer {
   text-align: center;
-  padding: 150px 0;
+  padding: 100px 0;
   background-color: #29394B;
 }
 
@@ -411,7 +446,7 @@ footer p {
 }
 
 #map {
-  height: 500px;
+  height: 400px;
 }
 
 #content {

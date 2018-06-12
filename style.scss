@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 $large: 30px;
-$small: 22px;
+$small: 20px;
 //font-size 
-$padding: 150px 0;
+$padding: 100px 0;
 // default padding = 100px
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+// default width for each sections
 @mixin button-read() {
     margin-left: 70px;
     border: none;
@@ -92,14 +98,13 @@ header {
             font-weight: 300;
         }
         .we-are-hiring:hover {
-            background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2));
+            background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
             border: 2px solid #61c4be;
-            
         }
         button {
             outline: none;
             background: none;
-            border: 2px solid #61c4be;          
+            border: 2px solid #61c4be;
             color: #fff;
             padding: 10px 40px;
             font-size: 1.3em;
@@ -108,7 +113,7 @@ header {
             border-radius: 16px;
         }
         button:hover {
-            background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2));
+            background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
             background: #61c4be;
             color: #fff;
         }
@@ -117,43 +122,104 @@ header {
 
 #info-codexio {
     padding: $padding;
+    .info-title {
         display: flex;
         justify-content: center;
-        img {
-            width: 20%;
+        div {
+            width: 30%;
+        }
+        .text-title {
+            width: 50%;
         }
     }
-           .codexio-title {
-            padding-bottom: 60px;
+    .container-info-text {
+        .logo-with-text {
+            display: flex;
+            div {
+                // width: 40%;
+                flex-grow: 2;
+            img {
+                flex-grow: 1;
+                // width: 50%;
+                float: right;
+            }
+        }
         }
         h3 {
+            color: #2E5CA9;
             font-size: 3.5em;
             font-weight: 400;
             padding-bottom: 10px;
         }
         h4 {
-            font-size: $large;
-            font-weight: 300;
+            font-size: 1.8em;
+            font-weight: 400;
             color: #595a5a;
+            padding-bottom: 20px;
         }
-        .info-paragraph {
+        .pharagraph-text {
             p {
-                width: 90%;
-                font-size: 22px;
+                padding-top: 22px;
+                font-size: $small;
                 line-height: 1.6;
                 font-weight: 400;
             }
             p:last-child {
-                padding-top: 14px;
+                padding-top: 6px;
             }
         }
-    
-
-
+    }
+}
 #services {
     background: #f2f2f3;
     padding: $padding;
-    .services-text {
+    h3 {
+        text-align: center;
+        font-size: 45px;
+        font-weight: 300;
+        padding-bottom: 40px;
+    }
+    .services-icons {
+        padding-top: 70px;
+        display: flex;
+        justify-content: space-around;
+        .web h4,
+        .mobile h4,
+        .blockchain h4,
+        .consultancy h4 {
+            font-weight: 400;
+            font-size: $small;
+        }
+        .web,
+        .mobile,
+        .blockchain,
+        .consultancy {
+            text-align: center;
+        }
+        .web img,
+        .mobile img,
+        .blockchain img,
+        .consultancy img {
+            text-align: center;
+            margin: auto;
+        }
+    }
+    .image-background {
+        margin: auto;
+        width: 80%;
+        border: 2px solid lightgray;
+        padding: 50px;
+        margin-top: 70px; // background: url("img/image-background-services.png");
+    }
+    .text-services p {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+#project {
+    padding: $padding;
+    .project-text {
         h3 {
             text-align: center;
             font-size: 45px;
@@ -163,73 +229,27 @@ header {
         p {
             width: 80%;
             margin: auto;
-            font-size: $small;
+            font-size: 20px;
             line-height: 1.5;
         }
     }
-    .services-container {
-        margin: auto;
-        padding-top: 3%;
+    #project-container {
         display: flex;
         justify-content: center;
-        text-align: center;
-        
-        article {
-            width: 20%;
-            padding-bottom: 30px;
-            img {
-                width: 30%;
-            }
-            .read-one,
-            .read-two,
-            .read-three,
-            .read-four {
-                @include button-read();
-            }
-            .button-one,
-            .button-two,
-            .button-three,
-            .button-four {
-                @include button-readmore();
-            }
-            h4 {
-                padding-top: 35px;
-                font-size: $small;
-                font-weight: 500;
-                padding-bottom: 20px;
-                cursor: pointer;
-            }
+        padding-top: 100px;
+        img {
+            padding-top: 20px;
         }
-    }
-}
-#project{
-    padding: $padding;
-
-.project-text {
-    h3 {
-        text-align: center;
-        font-size: 45px;
-        font-weight: 300;
-        padding-bottom: 40px;
-    }
-    p {
-        width: 80%;
-        margin: auto;
-        font-size: $small;
-        line-height: 1.5;
-    }
-}
-
-#project-container {
-        display: flex;
-        justify-content: center;
-        padding-top: 70px; 
+        img:hover {
+            padding-bottom: 8px;
+            border-bottom: 3px solid #D87A5F;
+        }
         p {
             padding-left: 30px;
             width: 50%;
             line-height: 1.4;
-            margin:0;
-            font-size: $small;
+            margin: 0;
+            font-size: 20px;
             a {
                 text-decoration: none;
                 visibility: visible;
@@ -238,6 +258,7 @@ header {
         }
     }
 }
+
 #clients {
     padding: $padding;
     background: url("img/clients-background.jpg") no-repeat;
@@ -246,7 +267,7 @@ header {
         text-align: center;
         font-size: 45px;
         font-weight: lighter;
-        padding-bottom: 30px;
+        padding-bottom: 40px;
     }
     .clients-logos {
         width: 80%;
@@ -272,6 +293,22 @@ header {
         }
     }
 }
+#careers{
+    background: lightgray;
+    padding: $padding;
+    h3{
+        text-align: center;
+        font-size: 45px;
+        font-weight: lighter;
+        padding-bottom: 40px;
+    }
+    div {
+        text-align: center;
+    }
+    img {
+        width: 30%;
+    }
+}
 
 #contact-us {
     display: flex;
@@ -279,7 +316,7 @@ header {
     padding: $padding;
     .left-part {
         form {
-            padding: 0 0 0 250px;
+            padding: 0 0 0 200px;
             h3 {
                 padding-bottom: 90px;
                 font-size: 45px;
@@ -383,7 +420,7 @@ footer {
 }
 
 #map {
-    height: 500px;
+    height: 400px;
 }
 
 #content {
@@ -394,14 +431,17 @@ footer {
     font-weight: 400;
 }
 
+//-----scrollbar-----//
 ::-webkit-scrollbar {
     width: 6px;
 }
+
 ::-webkit-scrollbar-track {
-    background:lightgray;
+    background: lightgray;
     border-radius: 5px;
 }
+
 ::-webkit-scrollbar-thumb {
-    background:#4083B0;
+    background: #4083B0;
     border-radius: 5px;
 }
