@@ -182,13 +182,6 @@ header .div-header-center button:hover {
   cursor: pointer;
 }
 
-#services .services-icons #web img:hover,
-#services .services-icons #mobile img:hover,
-#services .services-icons #blockchain img:hover,
-#services .services-icons #consultancy img:hover {
-  opacity: 1;
-}
-
 #services .services-icons #web h4,
 #services .services-icons #mobile h4,
 #services .services-icons #blockchain h4,
@@ -211,13 +204,22 @@ header .div-header-center button:hover {
   opacity: 0.5;
 }
 
+#services .services-icons #web img:hover,
+#services .services-icons #mobile img:hover,
+#services .services-icons #blockchain img:hover,
+#services .services-icons #consultancy img:hover {
+  opacity: 1;
+}
+
 #services .image-background {
   margin: auto;
-  width: 40%;
+  width: 80%;
+  height: 200px;
   padding: 100px;
   margin-top: 70px;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("img/services-.jpg");
+  background: url("img/Picture3.png") no-repeat;
   background-size: cover;
+  background-position: center;
   border-radius: 6px;
 }
 
@@ -225,15 +227,18 @@ header .div-header-center button:hover {
   color: #fff;
   font-size: 30px;
   text-align: center;
-  padding-bottom: 15px;
+  padding-bottom: 20px;
+  letter-spacing: 1px;
+  font-weight: 500;
 }
 
 #services .service-description {
   color: #fff;
   width: 60%;
-  font-weight: 300;
-  line-height: 1.4;
+  font-weight: 400;
+  line-height: 1.3;
   font-size: 20px;
+  line-height: 30px;
   margin: auto;
 }
 
