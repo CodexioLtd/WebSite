@@ -103,15 +103,9 @@
                 </article>
                 <div class="image-background">
                     <div class="text-services">
+                        <h4 class="heading-description"></h4>
                         <p class="service-description"></p>
-                        <h4 class="heading-web"></h4>
-                        <p class="web-text-p"></p>
-                        <h4 class="heading-mobile"></h4>
-                        <p class="mobile-text-p"></p>
-                        <h4 class="heading-blockchain"></h4>
-                        <p class="blockchain-text-p"></p>
-                        <h4 class="heading-consultancy"></h4>
-                        <p class="consultancy-text-p"></p>
+
                     </div>
                 </div>
             </div>
@@ -168,45 +162,45 @@
                     results into masters in the end.</p>
 
                 <span>Stages</span>
-                    <div class="table-text">
-                <div class="first-column">
-                    <h4>Start Date</h4>
-                    <p>18.06.2018</p>
-                    <p>25.06.2018</p>
-                    <p>27.06.2018</p>
-                    <p>02.07.2018</p>
-                    <p>09.07.2018</p>
-                    <p>16.07.2018</p>
+                <div class="table-text">
+                    <div class="first-column">
+                        <h4>Start Date</h4>
+                        <p>18.06.2018</p>
+                        <p>25.06.2018</p>
+                        <p>27.06.2018</p>
+                        <p>02.07.2018</p>
+                        <p>09.07.2018</p>
+                        <p>16.07.2018</p>
+                    </div>
+                    <div class="second-column">
+                        <h4>End Date</h4>
+                        <p>25.06.2018</p>
+                        <p>27.06.2018</p>
+                        <p>30.06.2018</p>
+                        <p>07.07.2018</p>
+                        <p>13.07.2018</p>
+                        <p>~</p>
+                    </div>
+                    <div class="third-column">
+                        <h4>Stage</h4>
+                        <p>Apply only with motivational letter</p>
+                        <p>Selecting the most motivated applicants</p>
+                        <p>Meetings with the selected people</p>
+                        <p>Selected people develop a task in teams</p>
+                        <p>Task evaluation and top 10 selection</p>
+                        <p>Programme start and diving into the deep</p>
+                    </div>
                 </div>
-                <div class="second-column">
-                    <h4>End Date</h4>
-                    <p>25.06.2018</p>
-                    <p>27.06.2018</p>
-                    <p>30.06.2018</p>
-                    <p>07.07.2018</p>
-                    <p>13.07.2018</p>
-                    <p>~</p>
-                </div>
-                <div class="third-column">
-                    <h4>Stage</h4>
-                    <p>Apply only with motivational letter</p>
-                    <p>Selecting the most motivated applicants</p>
-                    <p>Meetings with the selected people</p>
-                    <p>Selected people develop a task in teams</p>
-                    <p>Task evaluation and top 10 selection</p>
-                    <p>Programme start and diving into the deep</p>
-                </div>
-            </div>
-            <h2>Vacant Positions</h2>
-            <p>If you already feel being a master of one of the below positions, send your application to
-                <span>careers@codexio.bg</span>
-            </p>
-            <ul>
-                <li>Mid-Level Java Developer</li>
-                <li>Senior Java Developer</li>
-                <li>Mid-Level Front-end Developer</li>
-                <li>Senior Front-end Developer</li>
-            </ul>
+                <h2>Vacant Positions</h2>
+                <p>If you already feel being a master of one of the below positions, send your application to
+                    <span>careers@codexio.bg</span>
+                </p>
+                <ul>
+                    <li>Mid-Level Java Developer</li>
+                    <li>Senior Java Developer</li>
+                    <li>Mid-Level Front-end Developer</li>
+                    <li>Senior Front-end Developer</li>
+                </ul>
             </div>
         </section>
         <section id=contact-us>
@@ -214,16 +208,17 @@
                 <form action="">
                     <h3>Contact us</h3>
                     <label>
-                    <p class="form-label-main">Name
-                        <span class="form-label-required">*</span>
-                    </p>
+                        <p class="form-label-main">Name
+                            <span class="form-label-required">*</span>
+                        </p>
                         <input type="text" name="" placeholder="First">
                         <input type="text" name="" placeholder="Last">
                     </label>
                     <label class="email-label">
                         <p class="form-label-main">Email
                             <span class="form-label-required">*</span>
-                        </span></p>
+                            </span>
+                        </p>
                         <input type="email" name="" placeholder="Email">
                     </label>
                     <label class="comment-text">
@@ -256,52 +251,52 @@
                 </div>
             </article>
         </section>
-            
 
 
-            <div id="map"></div>
 
-            <script>
-                function initMap() {
-                    // Create a map object and specify the DOM element for display.
-                    const map = new google.maps.Map(document.getElementById('map'), {
-                        center: {
-                            lat: 42.66667709999999,
-                            lng: 23.352353300000004
-                        },
-                        zoom: 19
-                    });
+        <div id="map"></div>
 
-                    const markerIcon = {
-                        url: 'http://image.flaticon.com/icons/svg/252/252025.svg',
-                        scaledSize: new google.maps.Size(25, 40),
-                        origin: new google.maps.Point(0, -20),
-                        anchor: new google.maps.Point(40, 50),
-                        labelOrigin: new google.maps.Point(10, 70)
-                    };
+        <script>
+            function initMap() {
+                // Create a map object and specify the DOM element for display.
+                const map = new google.maps.Map(document.getElementById('map'), {
+                    center: {
+                        lat: 42.66667709999999,
+                        lng: 23.352353300000004
+                    },
+                    zoom: 19
+                });
 
-                    const marker = new google.maps.Marker({
-                        position: new google.maps.LatLng(42.66667709999999, 23.352353300000004),
-                        map: map,
-                        icon: markerIcon,
-                        label: {
-                            text: 'Codexio Ltd.',
-                            color: "#eb3a44",
-                            fontSize: "19px",
-                            fontWeight: "500"
-                        }
-                    });
+                const markerIcon = {
+                    url: 'http://image.flaticon.com/icons/svg/252/252025.svg',
+                    scaledSize: new google.maps.Size(25, 40),
+                    origin: new google.maps.Point(0, -20),
+                    anchor: new google.maps.Point(40, 50),
+                    labelOrigin: new google.maps.Point(10, 70)
+                };
 
-                    const content = '<div id="content">Sofia, </br> Izgrev, str. "Tintyava" 15-17, floor 3</div>';
-                    const infoWindow = new google.maps.InfoWindow({
-                        content: content,
-                    });
+                const marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(42.66667709999999, 23.352353300000004),
+                    map: map,
+                    icon: markerIcon,
+                    label: {
+                        text: 'Codexio Ltd.',
+                        color: "#eb3a44",
+                        fontSize: "19px",
+                        fontWeight: "500"
+                    }
+                });
 
-                    google.maps.event.addListener(marker, 'click', function () {
-                        infoWindow.open(map, marker);
-                    });
-                }
-            </script>
+                const content = '<div id="content">Sofia, </br> Izgrev, str. "Tintyava" 15-17, floor 3</div>';
+                const infoWindow = new google.maps.InfoWindow({
+                    content: content,
+                });
+
+                google.maps.event.addListener(marker, 'click', function () {
+                    infoWindow.open(map, marker);
+                });
+            }
+        </script>
 
     </main>
     <footer>

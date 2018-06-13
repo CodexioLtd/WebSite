@@ -210,17 +210,14 @@ header .div-header-center button:hover {
   border-radius: 6px;
 }
 
-#services .heading-web,
-#services .heading-mobile,
-#services .heading-blockchain,
-#services .heading-consultancy {
+#services .heading-description {
   color: #fff;
   font-size: 30px;
   text-align: center;
   padding-bottom: 15px;
 }
 
-#services .text-services p {
+#services .service-description {
   color: #fff;
   width: 60%;
   font-weight: 300;

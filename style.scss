@@ -210,16 +210,13 @@ header {
         background-size: cover;
         border-radius: 6px;
     }
-    .heading-web,
-    .heading-mobile,
-    .heading-blockchain,
-    .heading-consultancy {
+    .heading-description {
         color: #fff;
         font-size: $large;
         text-align: center;
         padding-bottom: 15px;
     }
-    .text-services p {
+    .service-description {
         color: #fff;
         width: 60%;
         font-weight: 300;
