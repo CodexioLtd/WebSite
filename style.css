@@ -136,7 +136,7 @@ header .div-header-center button:hover {
   width: 220px;
   position: absolute;
   left: -230px;
-  bottom: -10px;
+  top: -10px;
 }
 
 .pharagraph-text p {
@@ -321,14 +321,6 @@ header .div-header-center button:hover {
   font-size: 45px;
   font-weight: lighter;
   padding-bottom: 40px;
-}
-
-#careers div {
-  text-align: center;
-}
-
-#careers img {
-  width: 20%;
 }
 
 #contact-us {

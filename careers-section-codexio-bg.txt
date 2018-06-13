@@ -1,0 +1,30 @@
+# Careers
+
+## Codexio Dev Camp
+
+'Sharing is carrying' has always been our leitmotif. We believe that the right people don't just appear in the middle of your life. You need to grow up with them from the beginning. That's why we want to invest time and energy into building people's knowledge and skills.
+
+Codexio Dev Camp is three months internship programme where people with minimal knowledge in the beginning results into masters in the end.
+
+* Stages
+
+-------------------------------------------------------------------------------------
+|    Start Date     |    End Date   |                   Stage                       |  
+|------------------------------------------------------------------------------------
+|    18.06.2018     |   25.06.2018  |     Apply only with motivational letter       |
+|    25.06.2018     |   27.06.2018  |    Selecting the most motivated applicants    |
+|    27.06.2018     |   30.06.2018  |      Meetings with the selected people        |
+|    02.07.2018     |   07.07.2018  |    Selected people develop a task in teams    |
+|    09.07.2018     |   13.07.2018  |      Task evaluation and top 10 selection     |
+|    16.07.2018     |       ~       |    Programme start and diving into the deep   |
+------------------------------------------------------------------------------------- 
+
+
+## Vacant Positions
+
+If you already feel being a master of one of the below positions, send your application to careers@codexio.bg
+
+- Mid-Level Java Developer
+- Senior Java Developer
+- Mid-Level Front-end Developer
+- Senior Front-end Developer

@@ -145,7 +145,7 @@ header {
                 width: 220px;
                 position: absolute;
                 left: -230px;
-                bottom: -10px;
+                top: -10px;
             }
             p {
                 font-size: 24px;
@@ -307,13 +307,12 @@ header {
             font-weight: lighter;
             padding-bottom: 40px;
         }
-        div {
-            text-align: center;
+        .first-column {
+            
         }
-        img {
-            width: 20%;
-        }
+       
     }
+    
     #contact-us {
         display: flex;
         justify-content: space-around;
