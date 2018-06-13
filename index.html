@@ -228,10 +228,8 @@
 
                     const markerIcon = {
                         url: 'http://image.flaticon.com/icons/svg/252/252025.svg',
-                        scaledSize: new google.maps.Size(25, 40),
-                        origin: new google.maps.Point(0, -20),
-                        anchor: new google.maps.Point(40, 50),
-                        labelOrigin: new google.maps.Point(10, 70)
+                        scaledSize: new google.maps.Size(30, 40),
+                        labelOrigin: new google.maps.Point(10, 50)
                     };
 
                     const marker = new google.maps.Marker({
@@ -243,7 +241,8 @@
                             color: "#eb3a44",
                             fontSize: "19px",
                             fontWeight: "500"
-                        }
+                        },
+                        zIndex: "9999"
                     });
 
                     const content = '<div id="content">Sofia, </br> Izgrev, str. "Tintyava" 15-17, floor 3</div>';
