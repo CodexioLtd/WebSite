@@ -85,19 +85,19 @@
                 </p>
                 <article class="services-icons">
                     <div id="web">
-                        <img src="img/chip-01-100x100.png" alt="">
+                        <img id="web-img" src="img/web-img.png" alt="web-icon">
                         <h4>Web Development</h4>
                     </div>
                     <div id="mobile">
-                        <img src="img/chip-01-100x100.png" alt="">
+                        <img id="mobile-img" src="img/mobile-img.png" alt="mobile-icon">
                         <h4>Mobile Development</h4>
                     </div>
                     <div id="blockchain">
-                        <img src="img/chip-01-100x100.png" alt="">
+                        <img id="blockchain-img" src="img/blockchain-img.png" alt="blockchain-icon">
                         <h4>Bloсkchain Development</h4>
                     </div>
                     <div id="consultancy">
-                        <img src="img/chip-01-100x100.png" alt="">
+                        <img id="consultancy-img" src="img/consultancy-img.png" alt="consultancy-icon">
                         <h4>Consultancy</h4>
                     </div>
                 </article>
@@ -153,47 +153,60 @@
         <section id="careers">
             <div class="container">
                 <h3>Careers</h3>
+                <div class="codexio-dev-camp">
                 <h2>Codexio Dev Camp</h2>
-                <p>Sharing is carrying' has always been our leitmotif. We believe that the right people don't just appear in
-                    the middle of your life. You need to grow up with them from the beginning. That's why we want to invest
-                    time and energy into building people's knowledge and skills.
-                </p>
-                <p> Codexio Dev Camp is three months internship programme where people with minimal knowledge in the beginning
-                    results into masters in the end.</p>
-
-                <span>Stages</span>
-                <div class="table-text">
-                    <div class="first-column">
-                        <h4>Start Date</h4>
-                        <p>18.06.2018</p>
-                        <p>25.06.2018</p>
-                        <p>27.06.2018</p>
-                        <p>02.07.2018</p>
-                        <p>09.07.2018</p>
-                        <p>16.07.2018</p>
-                    </div>
-                    <div class="second-column">
-                        <h4>End Date</h4>
-                        <p>25.06.2018</p>
-                        <p>27.06.2018</p>
-                        <p>30.06.2018</p>
-                        <p>07.07.2018</p>
-                        <p>13.07.2018</p>
-                        <p>~</p>
-                    </div>
-                    <div class="third-column">
-                        <h4>Stage</h4>
-                        <p>Apply only with motivational letter</p>
-                        <p>Selecting the most motivated applicants</p>
-                        <p>Meetings with the selected people</p>
-                        <p>Selected people develop a task in teams</p>
-                        <p>Task evaluation and top 10 selection</p>
-                        <p>Programme start and diving into the deep</p>
-                    </div>
+                <div class="text-dev-camp">
+                    <p>Sharing is carrying' has always been our leitmotif. We believe that the right people don't just appear
+                        in the middle of your life. You need to grow up with them from the beginning. That's why we want
+                        to invest time and energy into building people's knowledge and skills.
+                    </p>
+                    <p> Codexio Dev Camp is three months internship programme where people with minimal knowledge in the beginning
+                        results into masters in the end.</p>
                 </div>
+                <span class="stages">Stages</span>
+                <table>
+                    <tr>
+                        <th>Start Date</th>
+                        <th>End Date</th>
+                        <th>Stage</th>
+                    </tr>
+                    <tr>
+                        <td>18.06.2018</td>
+                        <td>25.06.2018</td>
+                        <td>Apply only with motivational letter</td>
+                    </tr>
+                    <tr>
+                        <td>25.06.2018</td>
+                        <td>27.06.2018</td>
+                        <td>Selecting the most motivated applicants</td>
+                    </tr>
+                    <tr>
+                        <td>27.06.2018</td>
+                        <td>30.06.2018</td>
+                        <td>Meetings with the selected people</td>
+                    </tr>
+                    <tr>
+                        <td>02.07.2018</td>
+                        <td>07.07.2018</td>
+                        <td>Selected people develop a task in teams</td>
+                    </tr>
+                    <tr>
+                        <td>09.07.2018</td>
+                        <td>13.07.2018</td>
+                        <td>Task evaluation and top 10 selection</td>
+                    </tr>
+
+                    <tr>
+                        <td>16.07.2018</td>
+                        <td>~</td>
+                        <td>Programme start and diving into the deep</td>
+                    </tr>
+                </table>
+            </div>
+                <div class="vacant-positions-container">
                 <h2>Vacant Positions</h2>
-                <p>If you already feel being a master of one of the below positions, send your application to
-                    <span>careers@codexio.bg</span>
+                <p class="text-vacant-positions">If you already feel being a master of one of the below positions, send your application to
+                    <span class="codexio-link">careers@codexio.bg</span>
                 </p>
                 <ul>
                     <li>Mid-Level Java Developer</li>
@@ -201,9 +214,13 @@
                     <li>Mid-Level Front-end Developer</li>
                     <li>Senior Front-end Developer</li>
                 </ul>
+                <button type="submit">Upload file</button>
             </div>
+        </div>
         </section>
         <section id=contact-us>
+                <div class="container">
+                    <div id="wrapper">
             <article class="left-part">
                 <form action="">
                     <h3>Contact us</h3>
@@ -217,7 +234,6 @@
                     <label class="email-label">
                         <p class="form-label-main">Email
                             <span class="form-label-required">*</span>
-                            </span>
                         </p>
                         <input type="email" name="" placeholder="Email">
                     </label>
@@ -250,8 +266,9 @@
                     <p>кв.Изгрев, ул. “Тинтява” 15-17, етаж 3</p>
                 </div>
             </article>
+        </div>
+        </div>
         </section>
-
 
 
         <div id="map"></div>

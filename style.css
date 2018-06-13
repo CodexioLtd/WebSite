@@ -174,30 +174,41 @@ header .div-header-center button:hover {
   justify-content: space-around;
 }
 
-#services .services-icons .web h4,
-#services .services-icons .mobile h4,
-#services .services-icons .blockchain h4,
-#services .services-icons .consultancy h4 {
-  padding-top: 10px;
-  font-weight: 400;
+#services .services-icons #web,
+#services .services-icons #mobile,
+#services .services-icons #blockchain,
+#services .services-icons #consultancy {
+  text-align: center;
+  cursor: pointer;
+}
+
+#services .services-icons #web img:hover,
+#services .services-icons #mobile img:hover,
+#services .services-icons #blockchain img:hover,
+#services .services-icons #consultancy img:hover {
+  opacity: 1;
+}
+
+#services .services-icons #web h4,
+#services .services-icons #mobile h4,
+#services .services-icons #blockchain h4,
+#services .services-icons #consultancy h4 {
   font-size: 20px;
-  text-align: center;
-  margin: auto;
+  padding-top: 20px;
+  text-transform: uppercase;
+  font-weight: 400;
 }
 
-#services .services-icons .web,
-#services .services-icons .mobile,
-#services .services-icons .blockchain,
-#services .services-icons .consultancy {
-  text-align: center;
-}
-
-#services .services-icons .web img,
-#services .services-icons .mobile img,
-#services .services-icons .blockchain img,
-#services .services-icons .consultancy img {
+#services .services-icons #web img,
+#services .services-icons #mobile img,
+#services .services-icons #blockchain img,
+#services .services-icons #consultancy img {
+  width: 130px;
+  height: auto;
+  border-radius: 50%;
   text-align: center;
   margin: auto;
+  opacity: 0.5;
 }
 
 #services .image-background {
@@ -221,7 +232,8 @@ header .div-header-center button:hover {
   color: #fff;
   width: 60%;
   font-weight: 300;
-  line-height: 1.6;
+  line-height: 1.4;
+  font-size: 20px;
   margin: auto;
 }
 
@@ -259,7 +271,7 @@ header .div-header-center button:hover {
   width: 50%;
   line-height: 1.4;
   margin: 0;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 #project #project-container p a {
@@ -309,7 +321,6 @@ header .div-header-center button:hover {
 }
 
 #careers {
-  background: #EDE8EA;
   padding: 100px 0;
 }
 
@@ -320,34 +331,114 @@ header .div-header-center button:hover {
   padding-bottom: 40px;
 }
 
+#careers .codexio-dev-camp h2 {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+#careers .codexio-dev-camp .text-dev-camp {
+  padding-bottom: 40px;
+}
+
+#careers .codexio-dev-camp .text-dev-camp p {
+  padding-top: 8px;
+  padding-bottom: 5px;
+  width: 70%;
+  font-size: 18px;
+}
+
+#careers .codexio-dev-camp .stages {
+  font-size: 25px;
+  padding-top: 50px;
+  font-weight: 400;
+  border-bottom: 2px solid #61c4be;
+}
+
+#careers .codexio-dev-camp table {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+}
+
+#careers .codexio-dev-camp table th {
+  font-size: 20px;
+  border-bottom: 1px solid #61c4be;
+  padding: 10px;
+}
+
+#careers .codexio-dev-camp table td {
+  border-bottom: 1px solid lightgray;
+  padding: 10px;
+  font-size: 18px;
+}
+
+#careers .vacant-positions-container h2 {
+  padding-top: 50px;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+#careers .text-vacant-positions {
+  padding-top: 8px;
+  padding-bottom: 30px;
+  width: 70%;
+  font-size: 18px;
+}
+
+#careers .text-vacant-positions .codexio-link {
+  color: #2E5CA9;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+#careers ul li {
+  margin: 15px 0;
+  font-size: 20px;
+}
+
+#careers button {
+  margin-top: 20px;
+  border: none;
+  background: #61c4be;
+  color: #fff;
+  padding: 10px 30px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: 16px;
+  outline: none;
+}
+
 #contact-us {
-  display: flex;
-  justify-content: space-around;
   padding: 100px 0;
 }
 
-#contact-us .left-part form {
-  padding: 0 0 0 200px;
+#contact-us #wrapper {
+  display: flex;
+  justify-content: space-around;
 }
 
-#contact-us .left-part form h3 {
+#contact-us #wrapper .left-part {
+  width: 53%;
+}
+
+#contact-us #wrapper .left-part form h3 {
   padding-bottom: 50px;
   font-size: 45px;
   font-weight: lighter;
 }
 
-#contact-us .left-part form .form-label-main {
+#contact-us #wrapper .left-part form .form-label-main {
   font-size: 20px;
   font-weight: 700;
   padding-bottom: 10px;
 }
 
-#contact-us .left-part form .form-label-main .form-label-required {
+#contact-us #wrapper .left-part form .form-label-main .form-label-required {
   color: #61c4be;
   /*    color:#2f5daa   */
 }
 
-#contact-us .left-part form label input[type=text] {
+#contact-us #wrapper .left-part form label input[type=text] {
   padding: 12px 40px 12px 10px;
   margin-right: 20px;
   border: 1px solid gray;
@@ -355,37 +446,36 @@ header .div-header-center button:hover {
   outline: none;
 }
 
-#contact-us .left-part form .email-label p {
+#contact-us #wrapper .left-part form .email-label p {
   padding-top: 20px;
   padding-bottom: 10px;
 }
 
-#contact-us .left-part form .comment-text p {
+#contact-us #wrapper .left-part form .comment-text p {
   padding-top: 20px;
   padding-bottom: 10px;
 }
 
-#contact-us .left-part label input[type=email] {
+#contact-us #wrapper .left-part label input[type=email] {
   padding: 12px 280px 12px 10px;
   border: 1px solid gray;
   border-radius: 10px;
   outline: none;
 }
 
-#contact-us .left-part .comment-text h4 {
+#contact-us #wrapper .left-part .comment-text h4 {
   padding-top: 25px;
   padding-bottom: 8px;
 }
 
-#contact-us .left-part label textarea {
+#contact-us #wrapper .left-part label textarea {
   padding: 10px 600px 100px 10px;
   border: 1px solid gray;
   border-radius: 10px;
   outline: none;
 }
 
-#contact-us .left-part button,
-#contact-us .left-part .button-two {
+#contact-us #wrapper .left-part button {
   margin-top: 20px;
   border: none;
   background: #61c4be;
@@ -398,7 +488,7 @@ header .div-header-center button:hover {
 }
 
 .right-part {
-  padding: 60px 0 0 80px;
+  width: 40%;
 }
 
 .right-part div img {
