@@ -1,7 +1,7 @@
 function append() {
 
-    let pfirst = $("<p>");
-    pfirst
-        .addClass("p-text-first")
-        .appendTo(".article-web")
+    let headingOne = $("<h4>");
+    headingOne
+        .addClass("heading-first")
+        .appendTo(".web")
 };

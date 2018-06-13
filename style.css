@@ -23,7 +23,7 @@ header {
 header .header-nav-bar {
   padding-top: 60px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 header .header-nav-bar .logo-wrapper img {
@@ -109,54 +109,43 @@ header .div-header-center button:hover {
   padding: 100px 0;
 }
 
-#info-codexio .info-title {
-  display: flex;
-  justify-content: center;
+#info-codexio .text-title {
+  margin-left: 20%;
 }
 
-#info-codexio .info-title div {
-  width: 30%;
-}
-
-#info-codexio .info-title .text-title {
-  width: 50%;
-}
-
-#info-codexio .container-info-text .logo-with-text {
-  display: flex;
-}
-
-#info-codexio .container-info-text .logo-with-text div {
-  flex-grow: 2;
-}
-
-#info-codexio .container-info-text .logo-with-text div img {
-  flex-grow: 1;
-  float: right;
-}
-
-#info-codexio .container-info-text h3 {
+#info-codexio .text-title h3 {
   color: #2E5CA9;
   font-size: 3.5em;
   font-weight: 400;
   padding-bottom: 10px;
 }
 
-#info-codexio .container-info-text h4 {
+#info-codexio .text-title h4 {
   font-size: 1.8em;
   font-weight: 400;
   color: #595a5a;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 
-#info-codexio .container-info-text .pharagraph-text p {
-  padding-top: 22px;
-  font-size: 20px;
+.pharagraph-text {
+  margin-left: 20%;
+  position: relative;
+}
+
+.pharagraph-text img {
+  width: 220px;
+  position: absolute;
+  left: -230px;
+  bottom: -10px;
+}
+
+.pharagraph-text p {
+  font-size: 24px;
   line-height: 1.6;
   font-weight: 400;
 }
 
-#info-codexio .container-info-text .pharagraph-text p:last-child {
+.pharagraph-text p:last-child {
   padding-top: 6px;
 }
 
@@ -172,8 +161,15 @@ header .div-header-center button:hover {
   padding-bottom: 40px;
 }
 
+#services .services-text-p {
+  width: 80%;
+  margin: auto;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
 #services .services-icons {
-  padding-top: 70px;
+  padding-top: 90px;
   display: flex;
   justify-content: space-around;
 }
@@ -182,8 +178,11 @@ header .div-header-center button:hover {
 #services .services-icons .mobile h4,
 #services .services-icons .blockchain h4,
 #services .services-icons .consultancy h4 {
+  padding-top: 10px;
   font-weight: 400;
   font-size: 20px;
+  text-align: center;
+  margin: auto;
 }
 
 #services .services-icons .web,
@@ -203,14 +202,29 @@ header .div-header-center button:hover {
 
 #services .image-background {
   margin: auto;
-  width: 80%;
-  border: 2px solid lightgray;
-  padding: 50px;
+  width: 40%;
+  padding: 100px;
   margin-top: 70px;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("img/services-.jpg");
+  background-size: cover;
+  border-radius: 6px;
+}
+
+#services .heading-web,
+#services .heading-mobile,
+#services .heading-blockchain,
+#services .heading-consultancy {
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  padding-bottom: 15px;
 }
 
 #services .text-services p {
-  width: 80%;
+  color: #fff;
+  width: 60%;
+  font-weight: 300;
+  line-height: 1.6;
   margin: auto;
 }
 
@@ -235,11 +249,7 @@ header .div-header-center button:hover {
 #project #project-container {
   display: flex;
   justify-content: center;
-  padding-top: 100px;
-}
-
-#project #project-container img {
-  padding-top: 20px;
+  padding-top: 90px;
 }
 
 #project #project-container img:hover {
@@ -252,7 +262,7 @@ header .div-header-center button:hover {
   width: 50%;
   line-height: 1.4;
   margin: 0;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 #project #project-container p a {
@@ -302,7 +312,7 @@ header .div-header-center button:hover {
 }
 
 #careers {
-  background: lightgray;
+  background: #EDE8EA;
   padding: 100px 0;
 }
 
@@ -318,7 +328,7 @@ header .div-header-center button:hover {
 }
 
 #careers img {
-  width: 30%;
+  width: 20%;
 }
 
 #contact-us {
@@ -332,7 +342,7 @@ header .div-header-center button:hover {
 }
 
 #contact-us .left-part form h3 {
-  padding-bottom: 90px;
+  padding-bottom: 50px;
   font-size: 45px;
   font-weight: lighter;
 }
@@ -388,7 +398,6 @@ header .div-header-center button:hover {
   color: #fff;
   padding: 10px 50px;
   font-size: 1.3em;
-  margin-bottom: 100px;
   cursor: pointer;
   border-radius: 16px;
   outline: none;
