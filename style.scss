@@ -137,305 +137,315 @@ header {
             padding-bottom: 30px;
         }
     }
-}  
-        .pharagraph-text {
-            margin-left: 20%;
-            position: relative;
-            img {
-                width: 220px;
-                position: absolute;
-                left: -230px;
-                top: -10px;
-            }
-            p {
-                font-size: 24px;
-                line-height: 1.6;
-                font-weight: 400;
-            }
-            p:last-child {
-                padding-top: 6px;
-            }
+}
+
+.pharagraph-text {
+    margin-left: 20%;
+    position: relative;
+    img {
+        width: 220px;
+        position: absolute;
+        left: -230px;
+        top: -10px;
+    }
+    p {
+        font-size: 24px;
+        line-height: 1.6;
+        font-weight: 400;
+    }
+    p:last-child {
+        padding-top: 6px;
+    }
+}
+
+#services {
+    background: #f2f2f3;
+    padding: $padding;
+    h3 {
+        text-align: center;
+        font-size: 45px;
+        font-weight: 300;
+        padding-bottom: 40px;
+    }
+    .services-text-p {
+        width: 80%;
+        margin: auto;
+        font-size: $small;
+        line-height: 1.5;
+    }
+    .services-icons {
+        padding-top: 90px;
+        display: flex;
+        justify-content: space-around;
+        .web h4,
+        .mobile h4,
+        .blockchain h4,
+        .consultancy h4 {
+            padding-top: 10px;
+            font-weight: 400;
+            font-size: $small;
+            text-align: center;
+            margin: auto;
         }
-    
-    #services {
-        background: #f2f2f3;
-        padding: $padding;
+        .web,
+        .mobile,
+        .blockchain,
+        .consultancy {
+            text-align: center;
+        }
+        .web img,
+        .mobile img,
+        .blockchain img,
+        .consultancy img {
+            text-align: center;
+            margin: auto;
+        }
+    }
+    .image-background {
+        margin: auto;
+        width: 40%;
+        padding: 100px;
+        margin-top: 70px;
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("img/services-.jpg");
+        background-size: cover;
+        border-radius: 6px;
+    }
+    .heading-web,
+    .heading-mobile,
+    .heading-blockchain,
+    .heading-consultancy {
+        color: #fff;
+        font-size: $large;
+        text-align: center;
+        padding-bottom: 15px;
+    }
+    .text-services p {
+        color: #fff;
+        width: 60%;
+        font-weight: 300;
+        line-height: 1.6;
+        margin: auto;
+    }
+}
+
+#project {
+    padding: $padding;
+    .project-text {
         h3 {
             text-align: center;
             font-size: 45px;
             font-weight: 300;
             padding-bottom: 40px;
         }
-        .services-text-p {
+        p {
             width: 80%;
             margin: auto;
             font-size: $small;
             line-height: 1.5;
         }
-        .services-icons {
-            padding-top: 90px;
-            display: flex;
-            justify-content: space-around;
-            .web h4,
-            .mobile h4,
-            .blockchain h4,
-            .consultancy h4 {
-                padding-top: 10px;
-                font-weight: 400;
-                font-size: $small;
-                text-align: center;
-                margin: auto;
-            }
-            .web,
-            .mobile,
-            .blockchain,
-            .consultancy {
-                text-align: center;
-            }
-            .web img,
-            .mobile img,
-            .blockchain img,
-            .consultancy img {
-                text-align: center;
-                margin: auto;
-            }
-        }
-        .image-background {
-            margin: auto;
-            width: 40%;
-            padding: 100px;
-            margin-top: 70px;
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("img/services-.jpg");
-            background-size: cover;
-            border-radius: 6px;
-        }
-        .heading-web,
-        .heading-mobile,
-        .heading-blockchain,
-        .heading-consultancy {
-            color: #fff;
-            font-size: $large;
-            text-align: center;
-            padding-bottom: 15px;
-        }
-        .text-services p {
-            color: #fff;
-            width: 60%;
-            font-weight: 300;
-            line-height: 1.6;
-            margin: auto;
-        }
     }
-    #project {
-        padding: $padding;
-        .project-text {
-            h3 {
-                text-align: center;
-                font-size: 45px;
-                font-weight: 300;
-                padding-bottom: 40px;
-            }
-            p {
-                width: 80%;
-                margin: auto;
-                font-size: $small;
-                line-height: 1.5;
-            }
-        }
-        #project-container {
-            display: flex;
-            justify-content: center;
-            padding-top: 90px;
-            img:hover {
-                padding-bottom: 8px;
-                border-bottom: 3px solid #D87A5F;
-            }
-            p {
-                padding-left: 30px;
-                width: 50%;
-                line-height: 1.4;
-                margin: 0;
-                font-size: 16px;
-                a {
-                    text-decoration: none;
-                    visibility: visible;
-                    color: #2E5CA9;
-                }
-            }
-        }
-    }
-    #clients {
-        padding: $padding;
-        background: url("img/clients-background.jpg") no-repeat;
-        background-size: cover;
-        h3 {
-            text-align: center;
-            font-size: 45px;
-            font-weight: lighter;
-            padding-bottom: 40px;
-        }
-        .clients-logos {
-            width: 80%;
-            padding: 50px 0;
-            display: flex;
-            justify-content: space-between;
-            text-align: center;
-            margin: auto;
-            #softuni-logo {
-                width: 25%;
-            }
-            .clients-logos,
-            a,
-            img {
-                width: 50%;
-                margin: auto;
-            }
-            .clients-logos,
-            a,
-            img:last-child {
-                width: 60%;
-                border-radius: 3px;
-            }
-        }
-    }
-    #careers {
-        background: #EDE8EA;
-        padding: $padding;
-        h3 {
-            text-align: center;
-            font-size: 45px;
-            font-weight: lighter;
-            padding-bottom: 40px;
-        }
-        .first-column {
-            
-        }
-       
-    }
-    
-    #contact-us {
+    #project-container {
         display: flex;
-        justify-content: space-around;
-        padding: $padding;
-        .left-part {
-            form {
-                padding: 0 0 0 200px;
-                h3 {
-                    padding-bottom: 50px;
-                    font-size: 45px;
-                    font-weight: lighter;
-                }
-                h4 {
-                    padding-bottom: 8px;
-                    font-size: 20px;
-                    font-weight: 600;
-                    span {
-                        color: #61c4be;
-                        /*    color:#2f5daa   */
-                    }
-                }
-                label input[type=text] {
-                    padding: 12px 40px 12px 5px;
-                    margin-right: 20px;
-                    border: 1px solid gray;
-                    border-radius: 10px;
-                    outline: none;
-                }
-            }
-            .email-label h4 {
-                padding-top: 25px;
-                padding-bottom: 8px;
-            }
-            label input[type=email] {
-                padding: 12px 280px 12px 5px;
-                border: 1px solid gray;
-                border-radius: 10px;
-                outline: none;
-            }
-            .comment-text h4 {
-                padding-top: 25px;
-                padding-bottom: 8px;
-            }
-            label textarea {
-                padding: 10px 600px 100px 5px;
-                border: 1px solid gray;
-                border-radius: 10px;
-                outline: none;
-            }
-            button,
-            .button-two {
-                margin-top: 20px;
-                border: none;
-                background: #61c4be;
-                color: #fff;
-                padding: 10px 50px;
-                font-size: 1.3em;
-                cursor: pointer;
-                border-radius: 16px;
-                outline: none;
-            }
+        justify-content: center;
+        padding-top: 90px;
+        img:hover {
+            padding-bottom: 8px;
+            border-bottom: 3px solid #D87A5F;
         }
-    }
-    .right-part {
-        padding: 60px 0 0 80px;
-        div img {
+        p {
+            padding-left: 30px;
             width: 50%;
-        }
-        .right-text-container p {
-            padding: 0 0 0 20px;
-            font-size: $small;
-            margin: 5px 0;
+            line-height: 1.4;
+            margin: 0;
+            font-size: 16px;
+            a {
+                text-decoration: none;
+                visibility: visible;
+                color: #2E5CA9;
+            }
         }
     }
-    .social-media {
+}
+
+#clients {
+    padding: $padding;
+    background: url("img/clients-background.jpg") no-repeat;
+    background-size: cover;
+    h3 {
+        text-align: center;
+        font-size: 45px;
+        font-weight: lighter;
+        padding-bottom: 40px;
+    }
+    .clients-logos {
+        width: 80%;
+        padding: 50px 0;
         display: flex;
-        p {
-            padding: 10px 0 0 20px;
-            font-size: $small;
-            padding-left: 20px;
-        }
-        i {
-            font-size: 40px;
-            padding-left: 10px;
-            color: #4267B2;
-        }
-        .fa-linkedin-square {
-            color: #0077B5;
-        }
-    }
-    footer {
+        justify-content: space-between;
         text-align: center;
-        padding: $padding;
-        background-color: #29394B;
+        margin: auto;
+        #softuni-logo {
+            width: 25%;
+        }
+        .clients-logos,
+        a,
         img {
-            width: 15%;
+            width: 50%;
+            margin: auto;
         }
-        p {
-            padding-top: 10px;
-            font-size: 14px;
-            color: #999E9A;
-            font-weight: 600;
+        .clients-logos,
+        a,
+        img:last-child {
+            width: 60%;
+            border-radius: 3px;
         }
     }
-    #map {
-        height: 400px;
-    }
-    #content {
-        padding: 60px 60px 20px 60px;
+}
+
+#careers {
+    background: #EDE8EA;
+    padding: $padding;
+    h3 {
         text-align: center;
-        font-size: 17px;
-        height: 100px;
-        font-weight: 400;
+        font-size: 45px;
+        font-weight: lighter;
+        padding-bottom: 40px;
     }
-    //-----scrollbar-----//
-    ::-webkit-scrollbar {
-        width: 6px;
+}
+
+#contact-us {
+    display: flex;
+    justify-content: space-around;
+    padding: $padding;
+    .left-part {
+        form {
+            padding: 0 0 0 200px;
+            h3 {
+                padding-bottom: 50px;
+                font-size: 45px;
+                font-weight: lighter;
+            }
+            .form-label-main {
+                font-size: $small;
+                font-weight: 700;
+                padding-bottom: 10px;
+                .form-label-required {
+                    color: #61c4be;
+                    /*    color:#2f5daa   */
+                }
+            }
+            label input[type=text] {
+                padding: 12px 40px 12px 10px;
+                margin-right: 20px;
+                border: 1px solid gray;
+                border-radius: 10px;
+                outline: none;
+            }
+            .email-label p {
+                padding-top: 20px;
+                padding-bottom: 10px;
+            }
+            .comment-text p {
+                padding-top: 20px;
+                padding-bottom: 10px;
+            }
+        }
+        label input[type=email] {
+            padding: 12px 280px 12px 10px;
+            border: 1px solid gray;
+            border-radius: 10px;
+            outline: none;
+        }
+        .comment-text h4 {
+            padding-top: 25px;
+            padding-bottom: 8px;
+        }
+        label textarea {
+            padding: 10px 600px 100px 10px;
+            border: 1px solid gray;
+            border-radius: 10px;
+            outline: none;
+        }
+        button,
+        .button-two {
+            margin-top: 20px;
+            border: none;
+            background: #61c4be;
+            color: #fff;
+            padding: 10px 50px;
+            font-size: 1.3em;
+            cursor: pointer;
+            border-radius: 16px;
+            outline: none;
+        }
     }
-    ::-webkit-scrollbar-track {
-        background: lightgray;
-        border-radius: 5px;
+}
+
+.right-part {
+    padding: 60px 0 0 80px;
+    div img {
+        width: 50%;
     }
-    ::-webkit-scrollbar-thumb {
-        background: #4083B0;
-        border-radius: 5px;
+    .right-text-container p {
+        padding: 0 0 0 20px;
+        font-size: $small;
+        margin: 5px 0;
     }
+}
+
+.social-media {
+    display: flex;
+    p {
+        padding: 10px 0 0 20px;
+        font-size: $small;
+        padding-left: 20px;
+    }
+    i {
+        font-size: 40px;
+        padding-left: 10px;
+        color: #4267B2;
+    }
+    .fa-linkedin-square {
+        color: #0077B5;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: $padding;
+    background-color: #29394B;
+    img {
+        width: 15%;
+    }
+    p {
+        padding-top: 10px;
+        font-size: 14px;
+        color: #999E9A;
+        font-weight: 600;
+    }
+}
+
+#map {
+    height: 400px;
+}
+
+#content {
+    padding: 60px 60px 20px 60px;
+    text-align: center;
+    font-size: 17px;
+    height: 100px;
+    font-weight: 400;
+} //-----scrollbar-----//
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: lightgray;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4083B0;
+    border-radius: 5px;
+}

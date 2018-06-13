@@ -1,7 +1,7 @@
 function ClickWeb() {
-    $('.web').click(function () {
+    $('#web').click(function () {
 
-        $('.web-text-p').text(`Most of you might not remember, but the software was once shipped physically by discettes and discs and then installed 
+        $('.service-description').text(`Most of you might not remember, but the software was once shipped physically by discettes and discs and then installed 
         on the user's computer. Although there is a decent amount of software still installed on our computers we used to make our day-to-day operations 
         by using web applications. 
         We have specialized in creating web applications of any scale capable of serving to any amount of users simultaneously. From simple informational
@@ -11,7 +11,7 @@ function ClickWeb() {
 };
 
 function ClickMobile() {
-    $('.mobile').click(function () {
+    $('#mobile').click(function () {
 
         $('.web-text-p').hide();
         $('.mobile-text-p').text(`What time is it? Correct. You've just looked at your phone to check it. Admit it, we are using our mobile phones everyda 
@@ -24,7 +24,7 @@ function ClickMobile() {
 };
 
 function ClickBlockchain() {
-    $('.blockchain').click(function () {
+    $('#blockchain').click(function () {
 
         $('.web-text-p').hide();
         $('.mobile-text-p').hide();
@@ -38,7 +38,7 @@ function ClickBlockchain() {
 };
 
 function ClickConsultancy() {
-    $('.consultancy').click(function () {
+    $('#consultancy').click(function () {
 
         $('.web-text-p').hide();
         $('.blockchain-text-p').hide();
