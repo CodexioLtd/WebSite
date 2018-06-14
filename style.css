@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700");
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 .container {
-  width: 90%;
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -20,23 +20,23 @@ header {
   min-height: 100vh;
 }
 
-header .header-nav-bar {
+header .header-nav-bar nav {
   padding-top: 60px;
   display: flex;
   justify-content: space-between;
 }
 
-header .header-nav-bar .logo-wrapper img {
+header .header-nav-bar nav .logo-wrapper img {
   width: 100%;
 }
 
-header .header-nav-bar li {
+header .header-nav-bar nav li {
   padding-top: 20px;
   display: inline-block;
   padding-left: 25px;
 }
 
-header .header-nav-bar li a {
+header .header-nav-bar nav li a {
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -45,12 +45,12 @@ header .header-nav-bar li a {
   /*  #4C4D4D; */
 }
 
-header .header-nav-bar li a:hover {
+header .header-nav-bar nav li a:hover {
   color: #61c4be;
 }
 
 header .div-header-center {
-  padding-top: 18%;
+  padding-top: 12%;
   text-align: center;
   color: #fff;
 }
@@ -133,14 +133,14 @@ header .div-header-center button:hover {
 }
 
 .pharagraph-text img {
-  width: 220px;
+  width: 150px;
   position: absolute;
-  left: -230px;
-  top: -10px;
+  left: -180px;
+  top: 0px;
 }
 
 .pharagraph-text p {
-  font-size: 24px;
+  font-size: 20px;
   line-height: 1.6;
   font-weight: 400;
 }
@@ -162,7 +162,6 @@ header .div-header-center button:hover {
 }
 
 #services .services-text-p {
-  width: 80%;
   margin: auto;
   font-size: 20px;
   line-height: 1.5;
@@ -201,7 +200,6 @@ header .div-header-center button:hover {
 
 #services .image-background {
   margin: auto;
-  width: 80%;
   height: 200px;
   padding: 60px 100px 150px 100px;
   margin-top: 70px;
@@ -248,7 +246,6 @@ header .div-header-center button:hover {
 }
 
 #project .project-text p {
-  width: 80%;
   margin: auto;
   font-size: 20px;
   line-height: 1.5;
@@ -538,7 +535,7 @@ footer p {
 }
 
 #map {
-  height: 400px;
+  height: 500px;
 }
 
 #content {
@@ -561,5 +558,16 @@ footer p {
 ::-webkit-scrollbar-thumb {
   background: #4083B0;
   border-radius: 5px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: #DBDBDB;
+  width: 100%;
+  opacity: 0.99;
+  box-shadow: 0 2px 2px #C0C0C0;
+  z-index: 999;
 }
 /*# sourceMappingURL=style.css.map */

@@ -9,9 +9,22 @@ function setServiceDescription(serviceTitle, serviceHtmlDescription, hoveredElem
     $('.service-description').html(serviceHtmlDescription);
 }
 
-
 $(".service-container").hover(e => setServiceDescription(
     $(e.currentTarget).find("h4").text(),
     $(e.currentTarget).find("codexio-service-description").html(),
     e.currentTarget)
 );
+
+$(document).ready(() => {
+  var waypoint = new Waypoint({
+    element: document.getElementById('header'),
+    handler: function(direction) {
+      if (direction === 'down') {
+          $('.header-nav-bar').addClass('sticky');
+      } else {
+          $('.header-nav-bar').removeClass('sticky');
+      }
+    },
+    offset: -100
+  });
+});
