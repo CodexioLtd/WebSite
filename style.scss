@@ -203,18 +203,15 @@ header {
             margin: auto;
             opacity: 0.5;
         }
-
         .service-container img:hover {
             opacity: 1;
         }
-
         #selected-service-icon {
             opacity: 1;
         }
     }
     .image-background {
         margin: auto;
-        width: 93%;
         height: 30vh;
         padding: 60px 60px 60px 73px;
         margin-top: 70px;
@@ -278,19 +275,17 @@ header {
     .lock-trip-logo-container {
         text-align: center;
         width: 17%;
-        margin: auto;
-        //box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin: auto; //box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         padding: 25px;
         margin-top: 67px;
     }
     .lock-trip-logo-container:hover {
-        -webkit-filter: drop-shadow(5px 5px 3px rgba(0,0,0,0.2));
+        -webkit-filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.2));
     }
     #project-container {
         display: flex;
         justify-content: space-around;
         padding-top: 90px;
-       
         img {
             padding: 30px;
             transition: transform .7s;
@@ -299,17 +294,19 @@ header {
             margin: 0 auto;
         }
         img:hover {
-            -ms-transform: scale(1.5); /* IE 9 */
-            -webkit-transform: scale(1.5); /* Safari 3-8 */
-            transform: scale(2); 
+            -ms-transform: scale(1.5);
+            /* IE 9 */
+            -webkit-transform: scale(1.5);
+            /* Safari 3-8 */
+            transform: scale(2);
         }
     }
 }
 
 #clients {
     padding: $padding;
-    background: url("img/clients-background.jpg") no-repeat;
-    background-size: cover;
+    // background: url("img/clients-background.jpg") no-repeat;
+    // background-size: cover;
     h3 {
         text-align: center;
         font-size: 45px;
@@ -322,13 +319,14 @@ header {
         justify-content: space-between;
         text-align: center;
         margin: auto;
-    }
-    .clients-logos a img:hover {
-        -webkit-filter: drop-shadow(5px 5px 3px rgba(0,0,0,0.2));
-    }
+    } //.clients-logos a img:hover {
+    //  -webkit-filter: drop-shadow(5px 5px 3px rgba(0,0,0,0.2));
+    // }
 }
 
 #careers {
+    background: url("img/clients-background.jpg") no-repeat;
+    background-size: cover;
     padding: $padding;
     h3 {
         text-align: center;
@@ -338,10 +336,10 @@ header {
     }
     .codexio-dev-camp {
         h2 {
-            //border-bottom: 2px solid #61c4be;
+            text-align: center; //border-bottom: 2px solid #61c4be;
             font-size: $large;
-            padding-left: 16%;
             font-weight: 400;
+            letter-spacing: 1px;
         }
         .text-dev-camp {
             padding-bottom: 50px;
@@ -350,7 +348,7 @@ header {
                 margin: auto;
                 padding-top: 18px;
                 padding-bottom: 5px;
-                width: 70%;
+                width: 80%;
                 font-size: 18px;
             }
         }
@@ -376,6 +374,7 @@ header {
     .vacant-positions-container {
         text-align: center;
         h2 {
+            letter-spacing: 1px;
             padding-top: 50px;
             font-size: $large;
             font-weight: 400; //border-bottom: 2px solid #61c4be;
@@ -383,26 +382,27 @@ header {
     }
     .text-vacant-positions {
         margin: auto;
-        padding-top: 8px;
+        padding-top: 18px;
         padding-bottom: 30px;
         width: 70%;
         font-size: 18px;
         .codexio-email {
             color: #2E5CA9;
-            font-weight: 600;
+            font-weight: 500;
             font-size: $small;
         }
     }
     ul {
+        padding-top: 15px;
         li {
             text-transform: uppercase;
             list-style: none;
-            margin: 15px 0;
+            padding: 4px 0;
             font-size: $small;
         }
     }
     button {
-        margin-top: 20px;
+        margin-top: 40px;
         border: none;
         background: #61c4be;
         color: #fff;

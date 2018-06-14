@@ -213,7 +213,6 @@ header .div-header-center button:hover {
 
 #services .image-background {
   margin: auto;
-  width: 93%;
   height: 30vh;
   padding: 60px 60px 60px 73px;
   margin-top: 70px;
@@ -315,8 +314,6 @@ header .div-header-center button:hover {
 
 #clients {
   padding: 100px 0;
-  background: url("img/clients-background.jpg") no-repeat;
-  background-size: cover;
 }
 
 #clients h3 {
@@ -334,11 +331,9 @@ header .div-header-center button:hover {
   margin: auto;
 }
 
-#clients .clients-logos a img:hover {
-  -webkit-filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.2));
-}
-
 #careers {
+  background: url("img/clients-background.jpg") no-repeat;
+  background-size: cover;
   padding: 100px 0;
 }
 
@@ -350,9 +345,10 @@ header .div-header-center button:hover {
 }
 
 #careers .codexio-dev-camp h2 {
+  text-align: center;
   font-size: 30px;
-  padding-left: 16%;
   font-weight: 400;
+  letter-spacing: 1px;
 }
 
 #careers .codexio-dev-camp .text-dev-camp {
@@ -364,7 +360,7 @@ header .div-header-center button:hover {
   margin: auto;
   padding-top: 18px;
   padding-bottom: 5px;
-  width: 70%;
+  width: 80%;
   font-size: 18px;
 }
 
@@ -394,6 +390,7 @@ header .div-header-center button:hover {
 }
 
 #careers .vacant-positions-container h2 {
+  letter-spacing: 1px;
   padding-top: 50px;
   font-size: 30px;
   font-weight: 400;
@@ -401,7 +398,7 @@ header .div-header-center button:hover {
 
 #careers .text-vacant-positions {
   margin: auto;
-  padding-top: 8px;
+  padding-top: 18px;
   padding-bottom: 30px;
   width: 70%;
   font-size: 18px;
@@ -409,19 +406,23 @@ header .div-header-center button:hover {
 
 #careers .text-vacant-positions .codexio-email {
   color: #2E5CA9;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 20px;
+}
+
+#careers ul {
+  padding-top: 15px;
 }
 
 #careers ul li {
   text-transform: uppercase;
   list-style: none;
-  margin: 15px 0;
+  padding: 4px 0;
   font-size: 20px;
 }
 
 #careers button {
-  margin-top: 20px;
+  margin-top: 40px;
   border: none;
   background: #61c4be;
   color: #fff;
