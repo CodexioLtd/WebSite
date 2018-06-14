@@ -217,7 +217,6 @@ header .div-header-center button:hover {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  border-radius: 5px;
 }
 
 #services .heading-description {
@@ -302,30 +301,11 @@ header .div-header-center button:hover {
 }
 
 #clients .clients-logos {
-  width: 80%;
-  padding: 50px 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   text-align: center;
   margin: auto;
-}
-
-#clients .clients-logos #softuni-logo {
-  width: 25%;
-}
-
-#clients .clients-logos .clients-logos,
-#clients .clients-logos a,
-#clients .clients-logos img {
-  width: 50%;
-  margin: auto;
-}
-
-#clients .clients-logos .clients-logos,
-#clients .clients-logos a,
-#clients .clients-logos img:last-child {
-  width: 60%;
-  border-radius: 3px;
 }
 
 #careers {
@@ -341,31 +321,26 @@ header .div-header-center button:hover {
 
 #careers .codexio-dev-camp h2 {
   font-size: 30px;
-  text-align: center;
+  padding-left: 16%;
   font-weight: 400;
 }
 
 #careers .codexio-dev-camp .text-dev-camp {
-  padding-bottom: 40px;
+  padding-bottom: 50px;
 }
 
 #careers .codexio-dev-camp .text-dev-camp p {
   text-align: center;
-  padding-top: 8px;
+  margin: auto;
+  padding-top: 18px;
   padding-bottom: 5px;
   width: 70%;
   font-size: 18px;
 }
 
-#careers .codexio-dev-camp .stages {
-  font-size: 25px;
-  padding-top: 50px;
-  font-weight: 400;
-  border-bottom: 2px solid #61c4be;
-}
-
 #careers .codexio-dev-camp table {
   text-align: center;
+  padding: 30px 0;
   width: 50%;
   margin: auto;
 }
@@ -384,6 +359,10 @@ header .div-header-center button:hover {
   font-size: 18px;
 }
 
+#careers .vacant-positions-container {
+  text-align: center;
+}
+
 #careers .vacant-positions-container h2 {
   padding-top: 50px;
   font-size: 30px;
@@ -391,19 +370,22 @@ header .div-header-center button:hover {
 }
 
 #careers .text-vacant-positions {
+  margin: auto;
   padding-top: 8px;
   padding-bottom: 30px;
   width: 70%;
   font-size: 18px;
 }
 
-#careers .text-vacant-positions .codexio-link {
+#careers .text-vacant-positions .codexio-email {
   color: #2E5CA9;
   font-weight: 600;
   font-size: 18px;
 }
 
 #careers ul li {
+  text-transform: uppercase;
+  list-style: none;
   margin: 15px 0;
   font-size: 18px;
 }
