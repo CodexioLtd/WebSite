@@ -16,6 +16,19 @@ $(".service-container").hover(e => setServiceDescription(
 );
 
 $(document).ready(() => {
+  var waypoint = new Waypoint({
+      element: document.getElementById('info-codexio'),
+      handler: function (direction) {
+          if (direction === 'down') {
+              $('.header-nav-bar').addClass('sticky');
+              $('.header-nav-bar').removeClass('sticky-header');
+          } else {
+              $('.header-nav-bar').removeClass('sticky');
+              $('.header-nav-bar').addClass('sticky-header');
+          }
+      },
+      offset: 100
+  });
     var waypoint = new Waypoint({
         element: document.getElementById('header'),
         handler: function (direction) {
@@ -26,19 +39,5 @@ $(document).ready(() => {
             }
         },
         offset: -1
-    });
-
-    var waypoint = new Waypoint({
-        element: document.getElementById('info-codexio'),
-        handler: function (direction) {
-            if (direction === 'down') {
-                $('.header-nav-bar').addClass('sticky');
-                $('.header-nav-bar').removeClass('sticky-header');
-            } else {
-                $('.header-nav-bar').removeClass('sticky');
-                $('.header-nav-bar').addClass('sticky-header');
-            }
-        },
-        offset: 100
     });
 });

@@ -2,7 +2,7 @@
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
 $large: 30px;
-$small: 20px;
+$small: 18px;
 
 //font-size 
 $padding: 100px 0;
@@ -172,6 +172,7 @@ header {
 #services {
     background: #f2f2f3;
     padding: $padding;
+    padding-bottom: 0;
     h3 {
         text-align: center;
         font-size: 45px;
