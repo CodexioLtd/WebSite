@@ -203,7 +203,12 @@ header {
             margin: auto;
             opacity: 0.5;
         }
+
         .service-container img:hover {
+            opacity: 1;
+        }
+
+        #selected-service-icon {
             opacity: 1;
         }
     }
@@ -217,6 +222,7 @@ header {
         background-size: cover;
         background-position: center;
         background-attachment: fixed; //border-radius: 5px;
+        overflow: hidden;
     }
     .heading-description {
         padding-top: 20px;

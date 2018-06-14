@@ -207,6 +207,10 @@ header .div-header-center button:hover {
   opacity: 1;
 }
 
+#services .services-icons #selected-service-icon {
+  opacity: 1;
+}
+
 #services .image-background {
   margin: auto;
   width: 93%;
@@ -217,6 +221,7 @@ header .div-header-center button:hover {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  overflow: hidden;
 }
 
 #services .heading-description {

@@ -1,4 +1,5 @@
 function changeAllOpacities(currentElement) {
+    
     $('.service-img-icon').css('opacity', '0.5');
     $(currentElement).find("img").css('opacity', '1');
 }
