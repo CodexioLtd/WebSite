@@ -235,7 +235,7 @@ header .div-header-center button:hover {
   font-size: 20px;
   line-height: 30px;
   margin: auto;
-  padding-top: 1.5%;
+  margin-bottom: 1.5%;
 }
 
 #services .service-description p:last-child {
