@@ -275,8 +275,15 @@ header .div-header-center button:hover {
 }
 
 #project .lock-trip-logo-container {
-  padding-top: 50px;
   text-align: center;
+  width: 17%;
+  margin: auto;
+  padding: 25px;
+  margin-top: 67px;
+}
+
+#project .lock-trip-logo-container:hover {
+  -webkit-filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.2));
 }
 
 #project #project-container {
@@ -323,7 +330,7 @@ header .div-header-center button:hover {
 }
 
 #clients .clients-logos a img:hover {
-  opacity: 0.7;
+  -webkit-filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.2));
 }
 
 #careers {

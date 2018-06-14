@@ -270,8 +270,15 @@ header {
         }
     }
     .lock-trip-logo-container {
-        padding-top: 50px;
         text-align: center;
+        width: 17%;
+        margin: auto;
+        //box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        padding: 25px;
+        margin-top: 67px;
+    }
+    .lock-trip-logo-container:hover {
+        -webkit-filter: drop-shadow(5px 5px 3px rgba(0,0,0,0.2));
     }
     #project-container {
         display: flex;
@@ -311,7 +318,7 @@ header {
         margin: auto;
     }
     .clients-logos a img:hover {
-        opacity: 0.7;
+        -webkit-filter: drop-shadow(5px 5px 3px rgba(0,0,0,0.2));
     }
 }
 
