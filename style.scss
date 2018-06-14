@@ -254,33 +254,26 @@ header {
             font-weight: 300;
             padding-bottom: 40px;
         }
-        p {
-            // width: 80%;
-            margin: auto;
-            font-size: $small;
-            line-height: 1.5;
-        }
-        p {
-            padding-bottom: 10px;
-            padding-left: 30px;
-            line-height: 1.5;
-            font-size: $small;
-            a {
-                text-decoration: none;
-                visibility: visible;
-                color: #2E5CA9;
-            }
-        }
     }
     .lock-trip-logo-container {
         text-align: center;
         width: 17%;
         margin: auto; //box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         padding: 25px;
-        margin-top: 67px;
     }
     .lock-trip-logo-container:hover {
         -webkit-filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.2));
+    }
+    p {
+        padding-bottom: 10px;
+        padding-left: 30px;
+        line-height: 1.5;
+        font-size: $small;
+        a {
+            text-decoration: none;
+            visibility: visible;
+            color: #2E5CA9;
+        }
     }
     #project-container {
         display: flex;
@@ -304,8 +297,7 @@ header {
 }
 
 #clients {
-    padding: $padding;
-    // background: url("img/clients-background.jpg") no-repeat;
+    padding: $padding; // background: url("img/clients-background.jpg") no-repeat;
     // background-size: cover;
     h3 {
         text-align: center;
@@ -334,57 +326,39 @@ header {
         font-weight: lighter;
         padding-bottom: 40px;
     }
+    #careers-container {
+        display: flex;
+        justify-content: space-around;
+    }
+    .left-part-careers {
+        width: 60%;
+    
     .codexio-dev-camp {
         h2 {
-            text-align: center; //border-bottom: 2px solid #61c4be;
             font-size: $large;
-            font-weight: 400;
+            font-weight: 500;
             letter-spacing: 1px;
         }
-        .text-dev-camp {
-            padding-bottom: 50px;
-            p {
-                text-align: center;
-                margin: auto;
-                padding-top: 18px;
-                padding-bottom: 5px;
-                width: 80%;
-                font-size: 18px;
-            }
-        }
-        table {
-            text-align: center;
-            padding: 30px 0;
-            width: 50%;
-            margin: auto;
-            th {
-                font-size: 18px;
-                text-transform: uppercase;
-                font-weight: 500;
-                border-bottom: 1px solid #61c4be;
-                padding: 10px;
-            }
-            td {
-                border-bottom: 1px solid lightgray;
-                padding: 10px;
-                font-size: 18px;
-            }
+    }
+    .text-dev-camp {
+        p {
+            padding-top: 18px;
+            padding-bottom: 30px;
+            width: 80%;
+            font-size: 18px;
         }
     }
     .vacant-positions-container {
-        text-align: center;
         h2 {
             letter-spacing: 1px;
-            padding-top: 50px;
             font-size: $large;
-            font-weight: 400; //border-bottom: 2px solid #61c4be;
+            font-weight: 500;
         }
     }
     .text-vacant-positions {
-        margin: auto;
         padding-top: 18px;
         padding-bottom: 30px;
-        width: 70%;
+        width: 80%;
         font-size: 18px;
         .codexio-email {
             color: #2E5CA9;
@@ -398,21 +372,119 @@ header {
             text-transform: uppercase;
             list-style: none;
             padding: 4px 0;
-            font-size: $small;
+            font-size: 18px;
         }
     }
     button {
-        margin-top: 40px;
+        margin-top: 30px;
         border: none;
         background: #61c4be;
         color: #fff;
-        padding: 10px 30px;
+        padding: 10px 20px;
         font-size: 1.2em;
         cursor: pointer;
         border-radius: 16px;
         outline: none;
     }
 }
+    .right-part-careers  {
+        width: 50%;
+        table {
+        text-align: center;
+        padding-top: 100px;
+        th {
+            font-size: 18px;
+            text-transform: uppercase;
+            font-weight: 500;
+            border-bottom: 1px solid #61c4be;
+            padding: 10px;
+        }
+        td {
+            border-bottom: 1px solid lightgray;
+            padding: 10px;
+            font-size: 18px;
+        }
+    }
+    }
+} //     .codexio-dev-camp {
+//         h2 {
+//             text-align: center; //border-bottom: 2px solid #61c4be;
+//             font-size: $large;
+//             font-weight: 400;
+//             letter-spacing: 1px;
+//         }
+//         .text-dev-camp {
+//             padding-bottom: 50px;
+//             p {
+//                 text-align: center;
+//                 margin: auto;
+//                 padding-top: 18px;
+//                 padding-bottom: 5px;
+//                 width: 80%;
+//                 font-size: 18px;
+//             }
+//         }
+//         table {
+//             text-align: center;
+//             padding: 30px 0;
+//             width: 50%;
+//             margin: auto;
+//             th {
+//                 font-size: 18px;
+//                 text-transform: uppercase;
+//                 font-weight: 500;
+//                 border-bottom: 1px solid #61c4be;
+//                 padding: 10px;
+//             }
+//             td {
+//                 border-bottom: 1px solid lightgray;
+//                 padding: 10px;
+//                 font-size: 18px;
+//             }
+//         }
+//     }
+//     .vacant-positions-container {
+//         text-align: center;
+//         h2 {
+//             letter-spacing: 1px;
+//             padding-top: 50px;
+//             font-size: $large;
+//             font-weight: 400; //border-bottom: 2px solid #61c4be;
+//         }
+//     }
+//     .text-vacant-positions {
+//         margin: auto;
+//         padding-top: 18px;
+//         padding-bottom: 30px;
+//         width: 70%;
+//         font-size: 18px;
+//         .codexio-email {
+//             color: #2E5CA9;
+//             font-weight: 500;
+//             font-size: $small;
+//         }
+//     }
+//     ul {
+//         padding-top: 15px;
+//         li {
+//             text-transform: uppercase;
+//             list-style: none;
+//             padding: 4px 0;
+//             font-size: $small;
+//         }
+//     }
+//     button {
+//         margin-top: 40px;
+//         border: none;
+//         background: #61c4be;
+//         color: #fff;
+//         padding: 10px 30px;
+//         font-size: 1.2em;
+//         cursor: pointer;
+//         border-radius: 16px;
+//         outline: none;
+//     }
+
 
 #contact-us {
     padding: $padding;

@@ -259,35 +259,28 @@ header .div-header-center button:hover {
   padding-bottom: 40px;
 }
 
-#project .project-text p {
+#project .lock-trip-logo-container {
+  text-align: center;
+  width: 17%;
   margin: auto;
-  font-size: 20px;
-  line-height: 1.5;
+  padding: 25px;
 }
 
-#project .project-text p {
+#project .lock-trip-logo-container:hover {
+  -webkit-filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.2));
+}
+
+#project p {
   padding-bottom: 10px;
   padding-left: 30px;
   line-height: 1.5;
   font-size: 20px;
 }
 
-#project .project-text p a {
+#project p a {
   text-decoration: none;
   visibility: visible;
   color: #2E5CA9;
-}
-
-#project .lock-trip-logo-container {
-  text-align: center;
-  width: 17%;
-  margin: auto;
-  padding: 25px;
-  margin-top: 67px;
-}
-
-#project .lock-trip-logo-container:hover {
-  -webkit-filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.2));
 }
 
 #project #project-container {
@@ -344,34 +337,80 @@ header .div-header-center button:hover {
   padding-bottom: 40px;
 }
 
-#careers .codexio-dev-camp h2 {
-  text-align: center;
+#careers #careers-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+#careers .left-part-careers {
+  width: 60%;
+}
+
+#careers .left-part-careers .codexio-dev-camp h2 {
   font-size: 30px;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 1px;
 }
 
-#careers .codexio-dev-camp .text-dev-camp {
-  padding-bottom: 50px;
-}
-
-#careers .codexio-dev-camp .text-dev-camp p {
-  text-align: center;
-  margin: auto;
+#careers .left-part-careers .text-dev-camp p {
   padding-top: 18px;
-  padding-bottom: 5px;
+  padding-bottom: 30px;
   width: 80%;
   font-size: 18px;
 }
 
-#careers .codexio-dev-camp table {
-  text-align: center;
-  padding: 30px 0;
-  width: 50%;
-  margin: auto;
+#careers .left-part-careers .vacant-positions-container h2 {
+  letter-spacing: 1px;
+  font-size: 30px;
+  font-weight: 500;
 }
 
-#careers .codexio-dev-camp table th {
+#careers .left-part-careers .text-vacant-positions {
+  padding-top: 18px;
+  padding-bottom: 30px;
+  width: 80%;
+  font-size: 18px;
+}
+
+#careers .left-part-careers .text-vacant-positions .codexio-email {
+  color: #2E5CA9;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+#careers .left-part-careers ul {
+  padding-top: 15px;
+}
+
+#careers .left-part-careers ul li {
+  text-transform: uppercase;
+  list-style: none;
+  padding: 4px 0;
+  font-size: 18px;
+}
+
+#careers .left-part-careers button {
+  margin-top: 30px;
+  border: none;
+  background: #61c4be;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: 16px;
+  outline: none;
+}
+
+#careers .right-part-careers {
+  width: 50%;
+}
+
+#careers .right-part-careers table {
+  text-align: center;
+  padding-top: 100px;
+}
+
+#careers .right-part-careers table th {
   font-size: 18px;
   text-transform: uppercase;
   font-weight: 500;
@@ -379,58 +418,10 @@ header .div-header-center button:hover {
   padding: 10px;
 }
 
-#careers .codexio-dev-camp table td {
+#careers .right-part-careers table td {
   border-bottom: 1px solid lightgray;
   padding: 10px;
   font-size: 18px;
-}
-
-#careers .vacant-positions-container {
-  text-align: center;
-}
-
-#careers .vacant-positions-container h2 {
-  letter-spacing: 1px;
-  padding-top: 50px;
-  font-size: 30px;
-  font-weight: 400;
-}
-
-#careers .text-vacant-positions {
-  margin: auto;
-  padding-top: 18px;
-  padding-bottom: 30px;
-  width: 70%;
-  font-size: 18px;
-}
-
-#careers .text-vacant-positions .codexio-email {
-  color: #2E5CA9;
-  font-weight: 500;
-  font-size: 20px;
-}
-
-#careers ul {
-  padding-top: 15px;
-}
-
-#careers ul li {
-  text-transform: uppercase;
-  list-style: none;
-  padding: 4px 0;
-  font-size: 20px;
-}
-
-#careers button {
-  margin-top: 40px;
-  border: none;
-  background: #61c4be;
-  color: #fff;
-  padding: 10px 30px;
-  font-size: 1.2em;
-  cursor: pointer;
-  border-radius: 16px;
-  outline: none;
 }
 
 #contact-us {
