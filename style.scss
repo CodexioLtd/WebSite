@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-
 $large: 30px;
 $small: 20px;
-
 //font-size 
 $padding: 100px 0;
 // default padding = 100px
@@ -52,31 +50,29 @@ header {
         top: 0;
         left: 0;
         width: 100%;
-        padding: 20px 0;
-        // background: rgba(63, 93, 145, 0.2);
-        
+        padding: 20px 0; // background: rgba(63, 93, 145, 0.2);
         nav {
-          display: flex;
-          justify-content: space-between;
-          .logo-wrapper img {
-              width: 100%;
-          }
-          li {
-              padding-top: 20px;
-              display: inline-block;
-              padding-left: 25px;
-              a {
-                  text-decoration: none;
-                  text-transform: uppercase;
-                  letter-spacing: 1px;
-                  color: #fff;
-                  font-size: 19px;
-                  /*  #4C4D4D; */
-              }
-              a:hover {
-                  color: #61c4be;
-              }
-          }
+            display: flex;
+            justify-content: space-between;
+            .logo-wrapper img {
+                width: 100%;
+            }
+            li {
+                padding-top: 20px;
+                display: inline-block;
+                padding-left: 25px;
+                a {
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    color: #fff;
+                    font-size: 19px;
+                    /*  #4C4D4D; */
+                }
+                a:hover {
+                    color: #61c4be;
+                }
+            }
         }
     }
     .div-header-center {
@@ -172,6 +168,7 @@ header {
 #services {
     background: #f2f2f3;
     padding: $padding;
+    padding-bottom: 0;
     h3 {
         text-align: center;
         font-size: 45px;
@@ -218,8 +215,8 @@ header {
         margin-top: 70px;
         background: url("img/Picture3.png") no-repeat;
         background-size: cover;
-        background-position: center;  background-attachment: fixed;
-        border-radius: 5px;
+        background-position: center;
+        background-attachment: fixed; //border-radius: 5px;
     }
     .heading-description {
         padding-top: 20px;
@@ -238,7 +235,7 @@ header {
         font-size: $small;
         line-height: 30px;
         margin: auto;
-       margin-bottom: 1.2%;
+        margin-bottom: 1.2%;
     }
     .service-description p:last-child {
         margin-top: 1%;
@@ -295,27 +292,11 @@ header {
         padding-bottom: 40px;
     }
     .clients-logos {
-        width: 80%;
-        padding: 50px 0;
+        width: 100%;
         display: flex;
         justify-content: space-between;
         text-align: center;
         margin: auto;
-        #softuni-logo {
-            width: 25%;
-        }
-        .clients-logos,
-        a,
-        img {
-            width: 50%;
-            margin: auto;
-        }
-        .clients-logos,
-        a,
-        img:last-child {
-            width: 60%;
-            border-radius: 3px;
-        }
     }
 }
 
@@ -328,31 +309,26 @@ header {
         padding-bottom: 40px;
     }
     .codexio-dev-camp {
-        
         h2 {
+            //border-bottom: 2px solid #61c4be;
             font-size: $large;
-            text-align: center;
+            padding-left: 16%;
             font-weight: 400;
         }
         .text-dev-camp {
-            
-            padding-bottom: 40px;
+            padding-bottom: 50px;
             p {
                 text-align: center;
-                padding-top: 8px;
+                margin: auto;
+                padding-top: 18px;
                 padding-bottom: 5px;
                 width: 70%;
                 font-size: 18px;
             }
         }
-        .stages {
-            font-size: 25px;
-            padding-top: 50px;
-            font-weight: 400;
-            border-bottom: 2px solid #61c4be;
-        }
         table {
             text-align: center;
+            padding: 30px 0;
             width: 50%;
             margin: auto;
             th {
@@ -370,18 +346,21 @@ header {
         }
     }
     .vacant-positions-container {
+        text-align: center;
         h2 {
             padding-top: 50px;
             font-size: $large;
             font-weight: 400;
+            //border-bottom: 2px solid #61c4be;
         }
     }
     .text-vacant-positions {
+        margin: auto;
         padding-top: 8px;
         padding-bottom: 30px;
         width: 70%;
         font-size: 18px;
-        .codexio-link {
+        .codexio-email {
             color: #2E5CA9;
             font-weight: 600;
             font-size: $small;
@@ -389,6 +368,8 @@ header {
     }
     ul {
         li {
+            text-transform: uppercase;
+            list-style: none;
             margin: 15px 0;
             font-size: $small;
         }
@@ -546,10 +527,8 @@ footer {
 
 .sticky {
     background-color: #3F5D91;
-    color: #DBDBDB;
-    // width: 100%;
-    opacity: 0.99;
-    // box-shadow: 0 2px 2px #C0C0C0;
+    color: #DBDBDB; // width: 100%;
+    opacity: 0.99; // box-shadow: 0 2px 2px #C0C0C0;
     z-index: 999;
 }
 
