@@ -148,7 +148,7 @@ header .div-header-center button:hover {
 }
 
 .pharagraph-text p {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.6;
   font-weight: 400;
 }
@@ -172,7 +172,7 @@ header .div-header-center button:hover {
 
 #services .services-text-p {
   margin: auto;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.5;
 }
 
@@ -188,14 +188,14 @@ header .div-header-center button:hover {
 }
 
 #services .services-icons .service-container h4 {
-  font-size: 18px;
+  font-size: 20px;
   padding-top: 20px;
   text-transform: uppercase;
   font-weight: 400;
 }
 
 #services .services-icons .service-container img {
-  width: 100px;
+  width: 130px;
   height: auto;
   border-radius: 50%;
   text-align: center;
@@ -231,14 +231,13 @@ header .div-header-center button:hover {
 
 #services .service-description {
   color: #fff;
-  width: 80%;
+  width: 70%;
   font-weight: 400;
   line-height: 1.3;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 30px;
   margin: auto;
   margin-bottom: 1.2%;
-  text-align: center;
 }
 
 #services .service-description p:last-child {
@@ -258,33 +257,37 @@ header .div-header-center button:hover {
 
 #project .project-text p {
   margin: auto;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.5;
+}
+
+#project .project-text p {
+  padding-bottom: 10px;
+  padding-left: 30px;
+  line-height: 1.5;
+  font-size: 20px;
+}
+
+#project .project-text p a {
+  text-decoration: none;
+  visibility: visible;
+  color: #2E5CA9;
+}
+
+#project .lock-trip-logo-container {
+  padding-top: 50px;
+  text-align: center;
 }
 
 #project #project-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   padding-top: 90px;
 }
 
-#project #project-container img:hover {
-  padding-bottom: 8px;
-  border-bottom: 3px solid #D87A5F;
-}
-
-#project #project-container p {
-  padding-left: 30px;
-  width: 50%;
-  line-height: 1.4;
-  margin: 0;
-  font-size: 18px;
-}
-
-#project #project-container p a {
-  text-decoration: none;
-  visibility: visible;
-  color: #2E5CA9;
+#project #project-container img {
+  width: 30%;
+  height: 20vh;
 }
 
 #clients {
@@ -306,6 +309,10 @@ header .div-header-center button:hover {
   justify-content: space-between;
   text-align: center;
   margin: auto;
+}
+
+#clients .clients-logos a img:hover {
+  opacity: 0.7;
 }
 
 #careers {
@@ -380,14 +387,14 @@ header .div-header-center button:hover {
 #careers .text-vacant-positions .codexio-email {
   color: #2E5CA9;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 #careers ul li {
   text-transform: uppercase;
   list-style: none;
   margin: 15px 0;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 #careers button {
@@ -422,7 +429,7 @@ header .div-header-center button:hover {
 }
 
 #contact-us #wrapper .left-part form .form-label-main {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 700;
   padding-bottom: 10px;
 }
@@ -491,7 +498,7 @@ header .div-header-center button:hover {
 
 .right-part .right-text-container p {
   padding: 0 0 0 20px;
-  font-size: 18px;
+  font-size: 20px;
   margin: 5px 0;
 }
 
@@ -501,7 +508,7 @@ header .div-header-center button:hover {
 
 .social-media p {
   padding: 10px 0 0 20px;
-  font-size: 18px;
+  font-size: 20px;
   padding-left: 20px;
 }
 
