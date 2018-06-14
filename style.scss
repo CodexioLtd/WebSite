@@ -177,7 +177,6 @@ header {
         padding-top: 90px;
         display: flex;
         justify-content: space-around;
-    
         .service-container {
             text-align: center;
             cursor: pointer;
@@ -189,7 +188,7 @@ header {
             font-weight: 400;
         }
         .service-container img {
-            width: 130px; 
+            width: 130px;
             height: auto;
             border-radius: 50%;
             text-align: center;
@@ -208,8 +207,7 @@ header {
         margin-top: 70px;
         background: url("img/Picture3.png") no-repeat;
         background-size: cover;
-        background-position: center;
-        // background-attachment: fixed;
+        background-position: center; // background-attachment: fixed;
         border-radius: 5px;
     }
     .heading-description {
