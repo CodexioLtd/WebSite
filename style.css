@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700");
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 .container {
-  width: 90%;
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -21,22 +21,29 @@ header {
 }
 
 header .header-nav-bar {
-  padding-top: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 0;
+}
+
+header .header-nav-bar nav {
   display: flex;
   justify-content: space-between;
 }
 
-header .header-nav-bar .logo-wrapper img {
+header .header-nav-bar nav .logo-wrapper img {
   width: 100%;
 }
 
-header .header-nav-bar li {
+header .header-nav-bar nav li {
   padding-top: 20px;
   display: inline-block;
   padding-left: 25px;
 }
 
-header .header-nav-bar li a {
+header .header-nav-bar nav li a {
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -45,12 +52,12 @@ header .header-nav-bar li a {
   /*  #4C4D4D; */
 }
 
-header .header-nav-bar li a:hover {
+header .header-nav-bar nav li a:hover {
   color: #61c4be;
 }
 
 header .div-header-center {
-  padding-top: 18%;
+  padding-top: 12%;
   text-align: center;
   color: #fff;
 }
@@ -133,14 +140,14 @@ header .div-header-center button:hover {
 }
 
 .pharagraph-text img {
-  width: 220px;
+  width: 150px;
   position: absolute;
-  left: -230px;
-  top: -10px;
+  left: -180px;
+  top: 0px;
 }
 
 .pharagraph-text p {
-  font-size: 24px;
+  font-size: 20px;
   line-height: 1.6;
   font-weight: 400;
 }
@@ -162,7 +169,6 @@ header .div-header-center button:hover {
 }
 
 #services .services-text-p {
-  width: 80%;
   margin: auto;
   font-size: 20px;
   line-height: 1.5;
@@ -201,13 +207,13 @@ header .div-header-center button:hover {
 
 #services .image-background {
   margin: auto;
-  width: 80%;
   height: 200px;
   padding: 60px 100px 150px 100px;
   margin-top: 70px;
   background: url("img/Picture3.png") no-repeat;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   border-radius: 5px;
 }
 
@@ -248,7 +254,6 @@ header .div-header-center button:hover {
 }
 
 #project .project-text p {
-  width: 80%;
   margin: auto;
   font-size: 20px;
   line-height: 1.5;
@@ -332,6 +337,7 @@ header .div-header-center button:hover {
 
 #careers .codexio-dev-camp h2 {
   font-size: 30px;
+  text-align: center;
   font-weight: 400;
 }
 
@@ -340,6 +346,7 @@ header .div-header-center button:hover {
 }
 
 #careers .codexio-dev-camp .text-dev-camp p {
+  text-align: center;
   padding-top: 8px;
   padding-bottom: 5px;
   width: 70%;
@@ -360,7 +367,9 @@ header .div-header-center button:hover {
 }
 
 #careers .codexio-dev-camp table th {
-  font-size: 20px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
   border-bottom: 1px solid #61c4be;
   padding: 10px;
 }
@@ -538,7 +547,7 @@ footer p {
 }
 
 #map {
-  height: 400px;
+  height: 500px;
 }
 
 #content {
@@ -561,5 +570,16 @@ footer p {
 ::-webkit-scrollbar-thumb {
   background: #4083B0;
   border-radius: 5px;
+}
+
+.sticky {
+  background-color: #3F5D91;
+  color: #DBDBDB;
+  opacity: 0.99;
+  z-index: 999;
+}
+
+.sticky-header {
+  background-color: rgba(63, 93, 145, 0.6);
 }
 /*# sourceMappingURL=style.css.map */
