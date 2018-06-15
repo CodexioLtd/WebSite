@@ -258,44 +258,48 @@ header .div-header-center .button:hover {
   padding-bottom: 0;
 }
 
-#project .project-text h3 {
+#project #images-container {
+  background: rgba(0, 0, 0, 0.66);
+}
+
+#project #images-container .project-text h3 {
   text-align: center;
   font-size: 45px;
   font-weight: 300;
 }
 
-#project .lock-trip-logo-container {
+#project #images-container .lock-trip-logo-container {
   text-align: center;
   margin: auto;
   padding: 25px;
 }
 
-#project .lock-trip-logo-container #lock-trip-logo {
+#project #images-container .lock-trip-logo-container #lock-trip-logo {
   width: 20%;
 }
 
-#project .lock-trip-logo-container:hover {
+#project #images-container .lock-trip-logo-container:hover {
   -webkit-filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.2));
 }
 
-#project p {
+#project #images-container p {
   padding-left: 30px;
   line-height: 1.5;
   font-size: 16px;
 }
 
-#project p a {
+#project #images-container p a {
   text-decoration: none;
   visibility: visible;
   color: #2E5CA9;
 }
 
-#project #project-container {
+#project #images-container #project-container {
   display: flex;
   justify-content: center;
 }
 
-#project #project-container img {
+#project #images-container #project-container img {
   padding: 30px;
   transition: transform .7s;
   width: 28%;
@@ -303,22 +307,22 @@ header .div-header-center .button:hover {
   margin: 0 auto;
 }
 
-#project #project-container .popup {
+#project #images-container #project-container .popup {
   width: 900px;
   margin: auto;
   text-align: center;
 }
 
-#project #project-container .popup img {
+#project #images-container #project-container .popup img {
   cursor: pointer;
 }
 
-#project #project-container .show {
+#project #images-container #project-container .show {
   z-index: 999;
   display: none;
 }
 
-#project #project-container .show .overlay {
+#project #images-container #project-container .show .overlay {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.66);
@@ -327,18 +331,15 @@ header .div-header-center .button:hover {
   left: 0;
 }
 
-#project #project-container .show .img-show {
+#project #images-container #project-container .show .img-show {
   width: 600px;
   height: 400px;
   background: #FFF;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-42%, -4%);
   overflow: hidden;
 }
 
-#project #project-container .img-show span {
+#project #images-container #project-container .img-show span {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -346,7 +347,7 @@ header .div-header-center .button:hover {
   cursor: pointer;
 }
 
-#project #project-container .img-show img {
+#project #images-container #project-container .img-show img {
   width: 100%;
   height: 100%;
   position: absolute;

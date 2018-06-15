@@ -263,6 +263,9 @@ header {
 #project {
     padding: $padding;
     padding-bottom: 0;
+    #images-container {
+        background: rgba(0,0,0,.66); 
+    
     .project-text {
         h3 {
             text-align: center;
@@ -328,10 +331,11 @@ header {
             width: 600px;
             height: 400px;
             background: #FFF;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            // position: absolute;
+            // top: 50%;
+            // left: 50%;
+            transform: translate(-42%, -4%);
+            //transform: translate(-50%, -50%);
             overflow: hidden;
         }
         .img-show span {
@@ -349,6 +353,7 @@ header {
             left: 0;
         }
     }
+}
 }
 
 #clients {
@@ -485,7 +490,7 @@ header {
                 font-size: 18px;
             } //-------current-stages-----
             tr:nth-child(2) {
-                background: #61c4be; // color: #fff;
+                background: #61c4be;  //color:#fff;
             } //-------past-stages-------
             // tr:nth-child(2) {
             //     background: lightgray;
