@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-//font-size 
+//font-size
 $small: 16px;
 $large: 30px;
 // default padding = 100px
@@ -263,47 +263,77 @@ header {
 #project {
     padding: $padding;
     padding-bottom: 0;
+    .project-text {
+        h3 {
+            text-align: center;
+            font-size: 45px;
+            font-weight: 300; // padding-bottom: 40px;
+        }
+    }
+    .lock-trip-logo-container {
+        text-align: center; // width: 17%;
+        margin: auto; //box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        padding: 25px;
+        #lock-trip-logo {
+            width: 20%;
+        }
+    }
+    .lock-trip-logo-container:hover {
+        -webkit-filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.2));
+    }
+    p {
+        // padding-bottom: 10px;
+        padding-left: 30px;
+        line-height: 1.5;
+        font-size: $small;
+        a {
+            text-decoration: none;
+            visibility: visible;
+            color: #2E5CA9;
+        }
+    }
+    #project-container {
+        display: flex;
+        justify-content: center; // padding-top: 90px;
+        img {
+            cursor: pointer;
+            padding: 30px;
+            transition: transform .7s;
+            width: 28%;
+            height: 150px;
+            margin: 0 auto;
+        }
+
+        img:hover {
+            opacity: 0.7;
+        }
+    }
+
     #images-container {
-        background: rgba(0, 0, 0, .66);
-        .project-text {
-            h3 {
-                text-align: center;
-                font-size: 45px;
-                font-weight: 300; // padding-bottom: 40px;
-            }
+        position: fixed;
+        top: 15%;
+        left: 10%;
+        width: 80%;
+        height: 80%;
+        z-index: 1;
+
+        #opened-image {
+            width: 95%;
+            height: 100%;
         }
-        .lock-trip-logo-container {
-            text-align: center; // width: 17%;
-            margin: auto; //box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            padding: 25px;
-            #lock-trip-logo {
-                width: 20%;
-            }
+
+        #close-button {
+            font-size: 40px;
+            float: right;
+            color: #ff5d67;
+            position: relative;
+            bottom: 30px;
+            opacity: 0.85;
         }
-        .lock-trip-logo-container:hover {
-            -webkit-filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.2));
-        }
-        p {
-            // padding-bottom: 10px;
-            padding-left: 30px;
-            line-height: 1.5;
-            font-size: $small;
-            a {
-                text-decoration: none;
-                visibility: visible;
-                color: #2E5CA9;
-            }
-        }
-        #project-container {
-            display: flex;
-            justify-content: center; // padding-top: 90px;
-            img {
-                padding: 30px;
-                transition: transform .7s;
-                width: 28%;
-                height: 150px;
-                margin: 0 auto;
-            }
+
+        #close-button:hover {
+            opacity: 1;
+            cursor: pointer;
         }
     }
 }
@@ -440,16 +470,20 @@ header {
                 border-bottom: 1px solid lightgray;
                 padding: 20px 10px;
                 font-size: 18px;
-            } //-------current-stages-----
+            }
+            //-------current-stages-----
             tr:nth-child(2) {
                 background: #61c4be; //color:#fff;
-            } //-------past-stages-------
+            }
+            //-------past-stages-------
             // tr:nth-child(2) {
             //     background: lightgray;
             // }
         }
     }
-} //     .codexio-dev-camp {
+}
+
+//     .codexio-dev-camp {
 //         h2 {
 //             text-align: center; //border-bottom: 2px solid #61c4be;
 //             font-size: $large;
@@ -671,7 +705,9 @@ footer {
     font-size: 17px;
     height: 100px;
     font-weight: 400;
-} //-----scrollbar-----//
+}
+
+//-----scrollbar-----//
 ::-webkit-scrollbar {
     width: 6px;
 }

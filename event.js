@@ -16,7 +16,23 @@ $(".service-container").hover(e => setServiceDescription(
     e.currentTarget)
 );
 
+$("#project-container img").click(e => {
+    let clickedImageUrl = $(e.target).attr("src");
+    $("body").css("background", "grey");
+    $("#header").css("filter", "contrast(30%)");
+    $("#images-container").show();
+    $("#opened-image").attr("src", clickedImageUrl);
+});
+
+$("#close-button").click(() => {
+    $("body").css("background", "");
+    $("#header").css("filter", "");
+    $("#images-container").hide();
+});
+
 $(document).ready(() => {
+
+
     var waypoint = new Waypoint({
         element: document.getElementById('info-codexio'),
         handler: function (direction) {
@@ -41,20 +57,4 @@ $(document).ready(() => {
         },
         offset: -1
     });
-});
-
-
-$(function () {
-    "use strict";
-
-    $(".popup img").click(function () {
-        var $src = $(this).attr("src");
-        $(".show").fadeIn();
-        $(".img-show img").attr("src", $src);
-    });
-
-    $("span, .overlay").click(function () {
-        $(".show").fadeOut();
-    });
-
 });
