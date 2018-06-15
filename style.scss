@@ -302,40 +302,52 @@ header {
             height: 150px;
             margin: 0 auto;
         }
-        .image-source-link {
-            color: #98C3D1;
+        .popup {
+            width: 900px;
+            margin: auto;
+            text-align: center;
         }
-        
-        .mfp-with-zoom .mfp-container,
-        .mfp-with-zoom.mfp-bg {
-            opacity: 0;
-            -webkit-backface-visibility: hidden;
-            /* ideally, transition speed should match zoom duration */
-            -webkit-transition: all 0.3s ease-out; 
-            -moz-transition: all 0.3s ease-out; 
-            -o-transition: all 0.3s ease-out; 
-            transition: all 0.3s ease-out;
+        .popup img {
+            // width: 200px;
+            // height: 200px;
+            cursor: pointer;
         }
-        
-        .mfp-with-zoom.mfp-ready .mfp-container {
-                opacity: 1;
+        .show {
+            z-index: 999;
+            display: none;
         }
-        .mfp-with-zoom.mfp-ready.mfp-bg {
-                opacity: 0.8;
+        .show .overlay {
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, .66);
+            position: absolute;
+            top: 0;
+            left: 0;
         }
-        
-        .mfp-with-zoom.mfp-removing .mfp-container, 
-        .mfp-with-zoom.mfp-removing.mfp-bg {
-            opacity: 0;
+        .show .img-show {
+            width: 600px;
+            height: 400px;
+            background: #FFF;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            overflow: hidden;
         }
-        
-    //  //   img:hover {
-    //         -ms-transform: scale(1.5);
-    //         /* IE 9 */
-    //         -webkit-transform: scale(1.5);
-    //         /* Safari 3-8 */
-    //         transform: scale(2);
-    //     }
+        .img-show span {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 99;
+            cursor: pointer;
+        }
+        .img-show img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
     }
 }
 
@@ -356,7 +368,6 @@ header {
             display: flex;
             align-items: center;
             justify-content: center;
-
             width: 25%;
             height: 150px;
             padding: 20px; // margin-right: 3%;
@@ -364,14 +375,14 @@ header {
             .img-holder {
                 width: 60%;
             }
-
             .img-holder img {
                 width: 100%;
                 height: auto;
             }
-        } // .logo-container img {
-        //     width: 100%;
-        // }
+        }
+        .logo-container img {
+            width: 100%;
+        }
         .logo-container:hover {
             border: 1px solid black;
             transition: border $animation-time;
@@ -391,10 +402,10 @@ header {
     }
     #careers-container {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
     }
     .left-part-careers {
-        width: 60%;
+        width: 50%;
         .codexio-dev-camp {
             h2 {
                 font-size: $large;
@@ -438,7 +449,6 @@ header {
             }
         }
         button {
-            
             outline: none;
             border: none;
             background: #61c4be;
@@ -466,14 +476,20 @@ header {
             th {
                 font-size: 18px;
                 font-weight: 500;
-                border-bottom: 1px solid #61c4be;
+                border-bottom: 2px solid #61c4be;
                 padding: 20px 10px;
             }
             td {
                 border-bottom: 1px solid lightgray;
                 padding: 20px 10px;
                 font-size: 18px;
-            }
+            } //-------current-stages-----
+            tr:nth-child(2) {
+                background: #61c4be; // color: #fff;
+            } //-------past-stages-------
+            // tr:nth-child(2) {
+            //     background: lightgray;
+            // }
         }
     }
 } //     .codexio-dev-camp {
