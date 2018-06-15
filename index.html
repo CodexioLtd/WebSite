@@ -279,34 +279,34 @@
                             <th>Stage</th>
                         </tr>
                         <tr>
-                            <td>18.06.2018</td>
-                            <td>25.06.2018</td>
+                            <td class="start-date">18.06.2018</td>
+                            <td class="end-date">25.06.2018</td>
                             <td>Apply only with motivational letter</td>
                         </tr>
                         <tr>
-                            <td>25.06.2018</td>
-                            <td>27.06.2018</td>
+                            <td class="start-date">25.06.2018</td>
+                            <td class="end-date">27.06.2018</td>
                             <td>Selecting the most motivated applicants</td>
                         </tr>
                         <tr>
-                            <td>27.06.2018</td>
-                            <td>30.06.2018</td>
+                            <td class="start-date">27.06.2018</td>
+                            <td class="end-date">30.06.2018</td>
                             <td>Meetings with the selected people</td>
                         </tr>
                         <tr>
-                            <td>02.07.2018</td>
-                            <td>07.07.2018</td>
+                            <td class="start-date">02.07.2018</td>
+                            <td class="end-date">07.07.2018</td>
                             <td>Selected people develop a task in teams</td>
                         </tr>
                         <tr>
-                            <td>09.07.2018</td>
-                            <td>13.07.2018</td>
+                            <td class="start-date">09.07.2018</td>
+                            <td class="end-date">13.07.2018</td>
                             <td>Task evaluation and top 10 selection</td>
                         </tr>
 
                         <tr>
-                            <td>16.07.2018</td>
-                            <td>~</td>
+                            <td class="start-date">16.07.2018</td>
+                            <td class="end-date">~</td>
                             <td>Programme start and diving into the deep</td>
                         </tr>
                         </tbody>
@@ -319,28 +319,30 @@
         <div class="container">
             <div id="wrapper">
                 <article class="left-part">
+                    <div class="msg-success"></div>
+                    <div class="msg-error"></div>
                     <form action="">
                         <h3>Contact us</h3>
                         <label>
                             <p class="form-label-main">Name
                                 <span class="form-label-required">*</span>
                             </p>
-                            <input type="text" name="" placeholder="First">
-                            <input type="text" name="" placeholder="Last">
+                            <input type="text" id="first-name" placeholder="First">
+                            <input type="text" id="last-name" placeholder="Last">
                         </label>
                         <label class="email-label">
                             <p class="form-label-main">Email
                                 <span class="form-label-required">*</span>
                             </p>
-                            <input type="email" name="" placeholder="Email">
+                            <input type="email" id="from" placeholder="Email">
                         </label>
                         <label class="comment-text">
                             <p class="form-label-main">Comment or Message
                                 <span class="form-label-required">*</span>
                             </p>
-                            <textarea name="comment" form="usrform" placeholder="Comment or Massage.."></textarea>
+                            <textarea id="message" placeholder="Comment or Massage.."></textarea>
                         </label>
-                        <button type="submit">Send</button>
+                        <button id="send-mail">Send</button>
                     </form>
                 </article>
                 <article class="right-part">

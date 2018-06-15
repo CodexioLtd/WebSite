@@ -421,9 +421,6 @@ header .div-header-center .button:hover {
   padding: 20px 10px;
   font-size: 18px;
 }
-#careers .right-part-careers table tr:nth-child(2) {
-  background: #61c4be;
-}
 
 #contact-us {
   padding: 100px 0;
@@ -573,6 +570,24 @@ footer p {
 .sticky-header {
   background-color: rgba(63, 93, 145, 0.6);
   z-index: 999;
+}
+
+.msg-success {
+  display: none;
+  text-align: center;
+  font-size: 24px;
+  padding: 10px;
+  border-radius: 10px;
+  background: #c8ffd1;
+}
+
+.msg-error {
+  display: none;
+  text-align: center;
+  font-size: 24px;
+  padding: 10px;
+  border-radius: 10px;
+  background: #ffe1e4;
 }
 
 /*# sourceMappingURL=style.css.map */

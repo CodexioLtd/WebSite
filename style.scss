@@ -37,6 +37,14 @@ $animation-time: 0.5s;
     outline: none;
 }
 
+@mixin infobox() {
+    display: none;
+    text-align: center;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -473,9 +481,9 @@ header {
                 font-size: 18px;
             }
             //-------current-stages-----
-            tr:nth-child(2) {
-                background: #61c4be; //color:#fff;
-            }
+            //tr:nth-child(2) {
+            //    background: #61c4be; //color:#fff;
+            //}
             //-------past-stages-------
             // tr:nth-child(2) {
             //     background: lightgray;
@@ -733,4 +741,14 @@ footer {
 .sticky-header {
     background-color: rgba(63, 93, 145, 0.6);
     z-index: 999;
+}
+
+.msg-success {
+    @include infobox;
+    background: #c8ffd1;
+}
+
+.msg-error {
+    @include infobox;
+    background: #ffe1e4;
 }
