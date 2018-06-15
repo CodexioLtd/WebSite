@@ -264,96 +264,48 @@ header {
     padding: $padding;
     padding-bottom: 0;
     #images-container {
-        background: rgba(0,0,0,.66); 
-    
-    .project-text {
-        h3 {
-            text-align: center;
-            font-size: 45px;
-            font-weight: 300; // padding-bottom: 40px;
+        background: rgba(0, 0, 0, .66);
+        .project-text {
+            h3 {
+                text-align: center;
+                font-size: 45px;
+                font-weight: 300; // padding-bottom: 40px;
+            }
+        }
+        .lock-trip-logo-container {
+            text-align: center; // width: 17%;
+            margin: auto; //box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            padding: 25px;
+            #lock-trip-logo {
+                width: 20%;
+            }
+        }
+        .lock-trip-logo-container:hover {
+            -webkit-filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.2));
+        }
+        p {
+            // padding-bottom: 10px;
+            padding-left: 30px;
+            line-height: 1.5;
+            font-size: $small;
+            a {
+                text-decoration: none;
+                visibility: visible;
+                color: #2E5CA9;
+            }
+        }
+        #project-container {
+            display: flex;
+            justify-content: center; // padding-top: 90px;
+            img {
+                padding: 30px;
+                transition: transform .7s;
+                width: 28%;
+                height: 150px;
+                margin: 0 auto;
+            }
         }
     }
-    .lock-trip-logo-container {
-        text-align: center; // width: 17%;
-        margin: auto; //box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        padding: 25px;
-        #lock-trip-logo {
-            width: 20%;
-        }
-    }
-    .lock-trip-logo-container:hover {
-        -webkit-filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.2));
-    }
-    p {
-        // padding-bottom: 10px;
-        padding-left: 30px;
-        line-height: 1.5;
-        font-size: $small;
-        a {
-            text-decoration: none;
-            visibility: visible;
-            color: #2E5CA9;
-        }
-    }
-    #project-container {
-        display: flex;
-        justify-content: center; // padding-top: 90px;
-        img {
-            padding: 30px;
-            transition: transform .7s;
-            width: 28%;
-            height: 150px;
-            margin: 0 auto;
-        }
-        .popup {
-            width: 900px;
-            margin: auto;
-            text-align: center;
-        }
-        .popup img {
-            // width: 200px;
-            // height: 200px;
-            cursor: pointer;
-        }
-        .show {
-            z-index: 999;
-            display: none;
-        }
-        .show .overlay {
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, .66);
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-        .show .img-show {
-            width: 600px;
-            height: 400px;
-            background: #FFF;
-            // position: absolute;
-            // top: 50%;
-            // left: 50%;
-            transform: translate(-42%, -4%);
-            //transform: translate(-50%, -50%);
-            overflow: hidden;
-        }
-        .img-show span {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            z-index: 99;
-            cursor: pointer;
-        }
-        .img-show img {
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-    }
-}
 }
 
 #clients {
@@ -490,7 +442,7 @@ header {
                 font-size: 18px;
             } //-------current-stages-----
             tr:nth-child(2) {
-                background: #61c4be;  //color:#fff;
+                background: #61c4be; //color:#fff;
             } //-------past-stages-------
             // tr:nth-child(2) {
             //     background: lightgray;
