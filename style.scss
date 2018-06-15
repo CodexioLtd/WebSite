@@ -377,6 +377,12 @@ header {
     }
 }
 
+.codexio-email {
+    color: #2E5CA9;
+    font-weight: 500;
+    font-size: $small;
+}
+
 #careers {
     background: url("img/clients-background.jpg") no-repeat;
     background-size: cover;
@@ -420,11 +426,6 @@ header {
             padding-bottom: 30px;
             width: 80%;
             font-size: 18px;
-            .codexio-email {
-                color: #2E5CA9;
-                font-weight: 500;
-                font-size: $small;
-            }
         }
         ul {
             padding-top: 15px;

@@ -329,6 +329,12 @@ header .div-header-center .button:hover {
   transition: border 0.5s;
 }
 
+.codexio-email {
+  color: #2E5CA9;
+  font-weight: 500;
+  font-size: 16px;
+}
+
 #careers {
   background: url("img/clients-background.jpg") no-repeat;
   background-size: cover;
@@ -368,11 +374,6 @@ header .div-header-center .button:hover {
   padding-bottom: 30px;
   width: 80%;
   font-size: 18px;
-}
-#careers .left-part-careers .text-vacant-positions .codexio-email {
-  color: #2E5CA9;
-  font-weight: 500;
-  font-size: 16px;
 }
 #careers .left-part-careers ul {
   padding-top: 15px;
