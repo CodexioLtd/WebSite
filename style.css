@@ -316,11 +316,33 @@ header .div-header-center button:hover {
 }
 
 #clients .clients-logos {
-  width: 100%;
   display: flex;
   justify-content: space-between;
-  text-align: center;
-  margin: auto;
+}
+
+#clients .clients-logos .logo-container {
+  border: 1px solid lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  height: 150px;
+  padding: 20px;
+  transition: border 0.5s;
+}
+
+#clients .clients-logos .logo-container .img-holder {
+  width: 60%;
+}
+
+#clients .clients-logos .logo-container .img-holder img {
+  width: 100%;
+  height: auto;
+}
+
+#clients .clients-logos .logo-container:hover {
+  border: 1px solid black;
+  transition: border 0.5s;
 }
 
 #careers {
