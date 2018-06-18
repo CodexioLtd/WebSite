@@ -490,69 +490,68 @@ header .div-header-center .button-contact-us:hover {
   padding: 100px 0;
 }
 
-#contact-us #wrapper-careers {
+#contact-us #wrapper-contact-us {
   display: flex;
   justify-content: space-around;
 }
 
-#contact-us #wrapper-careers .left-part-careers {
-  width: 53%;
+#contact-us #wrapper-contact-us .left-part-contact-us {
+  width: 60%;
 }
 
-#contact-us #wrapper-careers .left-part-careers form h3 {
+#contact-us #wrapper-contact-us .left-part-contact-us form h3 {
   padding-bottom: 50px;
   font-size: 3em;
   font-weight: lighter;
 }
 
-#contact-us #wrapper-careers .left-part-careers form .form-label-main {
-  font-size: 16px;
-  font-weight: 700;
-  padding-bottom: 10px;
-}
-
-#contact-us #wrapper-careers .left-part-careers form .form-label-main .form-label-required {
+#contact-us #wrapper-contact-us .left-part-contact-us form .form-label-required {
   color: #61c4be;
 }
 
-#contact-us #wrapper-careers .left-part-careers form label input[type=text] {
-  padding: 12px 40px 12px 10px;
-  margin-right: 20px;
+#contact-us #wrapper-contact-us .left-part-contact-us form .form-element {
+  margin-bottom: 10px;
+}
+
+#contact-us #wrapper-contact-us .left-part-contact-us form label input[type=text] {
+  padding: 10px;
+  margin-right: 10px;
   border: 1px solid gray;
   border-radius: 10px;
   outline: none;
 }
 
-#contact-us #wrapper-careers .left-part-careers form .email-label p {
+#contact-us #wrapper-contact-us .left-part-contact-us form .email-label p {
   padding-top: 20px;
   padding-bottom: 10px;
 }
 
-#contact-us #wrapper-careers .left-part-careers form .comment-text p {
+#contact-us #wrapper-contact-us .left-part-contact-us form .comment-text p {
   padding-top: 20px;
   padding-bottom: 10px;
 }
 
-#contact-us #wrapper-careers .left-part-careers label input[type=email] {
-  padding: 12px 280px 12px 10px;
+#contact-us #wrapper-contact-us .left-part-contact-us label input[type=email] {
+  padding: 10px;
   border: 1px solid gray;
   border-radius: 10px;
   outline: none;
+  width: 64%;
 }
 
-#contact-us #wrapper-careers .left-part-careers .comment-text h4 {
+#contact-us #wrapper-contact-us .left-part-contact-us .comment-text h4 {
   padding-top: 25px;
   padding-bottom: 8px;
 }
 
-#contact-us #wrapper-careers .left-part-careers label textarea {
-  padding: 10px 600px 100px 10px;
+#contact-us #wrapper-contact-us .left-part-contact-us label textarea {
+  padding: 10px;
   border: 1px solid gray;
   border-radius: 10px;
   outline: none;
 }
 
-#contact-us #wrapper-careers .left-part-careers button {
+#contact-us #wrapper-contact-us .left-part-contact-us button {
   font-weight: 300;
   margin-top: 20px;
   border: none;
@@ -565,15 +564,15 @@ header .div-header-center .button-contact-us:hover {
   outline: none;
 }
 
-.right-part-careers {
-  width: 40%;
+.right-part-contact-us {
+  width: 30%;
 }
 
-.right-part-careers div img {
+.right-part-contact-us div img {
   width: 50%;
 }
 
-.right-part-careers .right-text-container p {
+.right-part-contact-us .right-text-container p {
   padding: 0 0 0 20px;
   font-size: 16px;
   margin: 5px 0;
@@ -666,6 +665,7 @@ footer p {
 }
 
 /* End of Sticky-nav-bar */
+/* message */
 .msg-success {
   display: none;
   text-align: center;

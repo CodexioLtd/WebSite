@@ -1,3 +1,44 @@
+function initMap() {
+    const latitude = 42.66667709999999;
+    const longitude = 23.352353300000004;
+    // Create a map object and specify the DOM element for display.
+    const map = new google.maps.Map(document.getElementById('map'), {
+        center: {
+            lat: latitude,
+            lng: longitude
+        },
+        zoom: 19
+    });
+
+    const markerIcon = {
+        url: 'http://image.flaticon.com/icons/svg/252/252025.svg',
+        scaledSize: new google.maps.Size(25, 40),
+        // origin: new google.maps.Point(0, -20),
+        // anchor: new google.maps.Point(40, 50),
+        labelOrigin: new google.maps.Point(15, 50)
+    };
+
+    const marker = new google.maps.Marker({
+        position: new google.maps.LatLng(latitude, longitude),
+        map: map,
+        icon: markerIcon,
+        label: {
+            text: 'Codexio Ltd.',
+            color: "#eb3a44",
+            fontSize: "19px",
+            fontWeight: "500"
+        }
+    });
+
+    const content = '<div id="content">Sofia, </br> Izgrev, str. "Tintyava" 15-17, floor 3</div>';
+    const infoWindow = new google.maps.InfoWindow({
+        content: content,
+    });
+
+    google.maps.event.addListener(marker, 'click', function () {
+        infoWindow.open(map, marker);
+    });
+}
 // Services - Description:
 function changeAllOpacities(currentElement) {
     $('.service-img-icon').css('opacity', '0.5');

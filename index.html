@@ -208,9 +208,9 @@
                         </div>
                     </div>
                 </article>
-                </div>
-                
-                </div>
+            </div>
+
+            </div>
             </div>
         </section>
         <!-- End of Clients -->
@@ -223,12 +223,15 @@
                         <div class="codexio-dev-camp">
                             <h2>Codexio Dev Camp</h2>
                             <div class="text-dev-camp">
-                                <p>"<em>Sharing is carrying</em>" has always been our leitmotif. We believe that the right people don't
-                                    just appear in the middle of your life. You need to grow up with them from the beginning.
-                                    That's why we want to invest time and energy into building people's knowledge and skills.
+                                <p>"
+                                    <em>Sharing is carrying</em>" has always been our leitmotif. We believe that the right people
+                                    don't just appear in the middle of your life. You need to grow up with them from the
+                                    beginning. That's why we want to invest time and energy into building people's knowledge
+                                    and skills.
                                 </p>
-                                <p> <strong>Codexio Dev Camp</strong> is three months internship programme where people with minimal knowledge
-                                    in the beginning results into masters in the end.</p>
+                                <p>
+                                    <strong>Codexio Dev Camp</strong> is three months internship programme where people with minimal
+                                    knowledge in the beginning results into masters in the end.</p>
                                 <p>Send your
                                     <strong>cover letter</strong> or any questions regarding the dev camp to
                                     <span>
@@ -303,37 +306,43 @@
         <!-- Contact us -->
         <section id=contact-us>
             <div class="container">
-                <div id="wrapper-careers">
-                    <article class="left-part-careers">
+                <div id="wrapper-contact-us">
+                    <div class="left-part-contact-us">
                         <div class="msg-success"></div>
                         <div class="msg-error"></div>
                         <form action="">
                             <h3>Contact us</h3>
-                            <label>
-                                <p class="form-label-main">Name
-                                    <span class="form-label-required">*</span>
-                                </p>
-                                <input type="text" id="first-name" placeholder="First">
-                                <input type="text" id="last-name" placeholder="Last">
-                            </label>
-                            <label class="email-label">
-                                <p class="form-label-main">Email
-                                    <span class="form-label-required">*</span>
-                                </p>
-                                <input type="email" id="from" placeholder="Email">
-                            </label>
-                            <label class="comment-text">
-                                <p class="form-label-main">Comment or Message
-                                    <span class="form-label-required">*</span>
-                                </p>
-                                <textarea id="message" placeholder="Comment or Message.."></textarea>
-                            </label>
+                            <div class="form-groups">
+                                <label>
+                                    <div class="form-element">Name
+                                        <span class="form-label-required">*</span>
+                                    </div>
+                                    <input type="text" id="first-name" placeholder="First" class="form-element">
+                                    <input type="text" id="last-name" placeholder="Last" class="form-element">
+                                </label>
+                            </div>
+                            <div class="form-groups">
+                                <label class="email-label">
+                                    <div class="form-element">Email
+                                        <span class="form-label-required">*</span>
+                                    </div>
+                                    <input type="email" id="from" placeholder="Email" class="form-element">
+                                </label>
+                            </div>
+                            <div class="form-groups">
+                                <label class="comment-text">
+                                    <div class="form-element">Comment or Message
+                                        <span class="form-label-required">*</span>
+                                    </div>
+                                    <textarea id="message" placeholder="Comment or Message.." class="form-element"></textarea>
+                                </label>
+                            </div>
                             <button id="send-mail">Send</button>
                         </form>
-                    </article>
-                    <article class="right-part-careers">
+                    </div>
+                    <div class="right-part-contact-us">
                         <div>
-                            <img src="img/Logo3.jpg" alt="codexio-logo">
+                            <img src="img/logo-form.jpg" alt="codexio-logo">
                         </div>
                         <div class="social-media">
                             <p>info@codexio.bg</p>
@@ -349,7 +358,7 @@
                             <p>15-17 Tintyava str.,</p>
                             <p>Sofia, Bulgaria</p>
                         </div>
-                    </article>
+                    </div>
                 </div>
             </div>
         </section>
@@ -357,51 +366,8 @@
 
         <div id="map"></div>
 
-        <script>
-            function initMap() {
-                const latitude = 42.66667709999999;
-                const longitude = 23.352353300000004;
-                // Create a map object and specify the DOM element for display.
-                const map = new google.maps.Map(document.getElementById('map'), {
-                    center: {
-                        lat: latitude,
-                        lng: longitude
-                    },
-                    zoom: 19
-                });
-
-                const markerIcon = {
-                    url: 'http://image.flaticon.com/icons/svg/252/252025.svg',
-                    scaledSize: new google.maps.Size(25, 40),
-                    // origin: new google.maps.Point(0, -20),
-                    // anchor: new google.maps.Point(40, 50),
-                    labelOrigin: new google.maps.Point(15, 50)
-                };
-
-                const marker = new google.maps.Marker({
-                    position: new google.maps.LatLng(latitude, longitude),
-                    map: map,
-                    icon: markerIcon,
-                    label: {
-                        text: 'Codexio Ltd.',
-                        color: "#eb3a44",
-                        fontSize: "19px",
-                        fontWeight: "500"
-                    }
-                });
-
-                const content = '<div id="content">Sofia, </br> Izgrev, str. "Tintyava" 15-17, floor 3</div>';
-                const infoWindow = new google.maps.InfoWindow({
-                    content: content,
-                });
-
-                google.maps.event.addListener(marker, 'click', function () {
-                    infoWindow.open(map, marker);
-                });
-            }
-        </script>
-
     </main>
+    <!-- Footer -->
     <footer>
         <div class="container">
             <img src="img/Codexio-Logo11.png" alt="Codexio-Logo">
