@@ -1,3 +1,4 @@
+// Services - Description:
 function changeAllOpacities(currentElement) {
     $('.service-img-icon').css('opacity', '0.5');
     $(currentElement).find("img").css('opacity', '1');
@@ -8,7 +9,7 @@ function setServiceDescription(serviceTitle, serviceHtmlDescription, hoveredElem
     $('.heading-description').text(serviceTitle);
     $('.service-description').html(serviceHtmlDescription);
 }
-
+// Sticky header-nav-bar:
 $(document).ready(() => {
     new Waypoint({
         element: document.getElementById('info-codexio'),
@@ -34,14 +35,14 @@ $(document).ready(() => {
         },
         offset: -1
     });
-
+    // Service - Description
     $(".service-container").hover(e => setServiceDescription(
         $(e.currentTarget).find("h4").text(),
         $(e.currentTarget).find("codexio-service-description").html(),
         e.currentTarget)
     );
-
-    $("#project-container img").click(e => {
+    // Projects images open
+    $("#projects-container img").click(e => {
         let clickedImageUrl = $(e.target).attr("src");
         $("body").css("background", "grey");
         $("#header").css("filter", "contrast(30%)");
@@ -54,7 +55,7 @@ $(document).ready(() => {
         $("#header").css("filter", "");
         $("#images-container").hide();
     });
-
+    // Form 
     $("#send-mail").click((e) => {
         e.preventDefault();
         let fullName = $("#first-name").val() + " " + $("#last-name").val();
@@ -70,9 +71,9 @@ $(document).ready(() => {
                     msg: msg
                 },
                 "success": resp => {
-                        $(".msg-success").show();
-                        $(".msg-success").text(resp.response);
-                        setTimeout(() => $(".msg-success").hide(), 5000);
+                    $(".msg-success").show();
+                    $(".msg-success").text(resp.response);
+                    setTimeout(() => $(".msg-success").hide(), 5000);
                 },
                 "error": err => {
                     $(".msg-error").show();
@@ -82,7 +83,7 @@ $(document).ready(() => {
             }
         )
     });
-
+    // past-stages, current-stages, future-stages --> (changing backgrounds)
     let startDates = $(".start-date");
     let endDates = $(".end-date");
     let none = true;

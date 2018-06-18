@@ -12,16 +12,18 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   line-height: 1.5;
   font-size: 16px;
 }
 
+/* Header */
 header {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url("img/background-header.jpg") no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url("../img/background-header.jpg") no-repeat;
   background-size: cover;
   height: 100vh;
 }
+
 header .header-nav-bar {
   position: fixed;
   top: 0;
@@ -29,32 +31,38 @@ header .header-nav-bar {
   width: 100%;
   padding: 15px;
 }
+
 header .header-nav-bar nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-header .header-nav-bar nav .logo-wrapper {
+
+header .header-nav-bar nav .header-logo-container {
   width: 20%;
 }
-header .header-nav-bar nav .logo-wrapper img {
+
+header .header-nav-bar nav .header-logo-container img {
   width: 100%;
 }
+
 header .header-nav-bar nav li {
   display: inline-block;
   padding-left: 10px;
 }
+
 header .header-nav-bar nav li a {
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #fff;
   font-size: 16px;
-  /*  #4C4D4D; */
 }
+
 header .header-nav-bar nav li a:hover {
   color: #61c4be;
 }
+
 header .div-header-center {
   text-align: center;
   color: #fff;
@@ -64,122 +72,144 @@ header .div-header-center {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
+
 header .div-header-center h1 {
   font-size: 7em;
   font-weight: 300;
   letter-spacing: 8px;
   margin: 0;
 }
+
 header .div-header-center h2 {
   font-weight: 300;
   padding-bottom: 40px;
   text-transform: uppercase;
 }
-header .div-header-center .we-are-hiring {
-  outline: none;
-  border: none;
-  background: #61c4be;
-  color: #fff;
-  padding: 10px 30px;
-  font-size: 1.3em;
-  cursor: pointer;
-  margin-right: 10px;
-  border-radius: 200px;
-  font-weight: 300;
-  border: 2px solid #61c4be;
+
+header .div-header-center .button-hiring {
   text-decoration: none;
-}
-header .div-header-center .we-are-hiring:hover {
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
-  border: 2px solid #61c4be;
-}
-header .div-header-center .button {
-  text-decoration: none;
-  font-weight: 300;
-  outline: none;
   background: none;
-  border: 2px solid #61c4be;
   color: #fff;
-  padding: 10px 40px;
   font-size: 1.3em;
-  cursor: pointer;
+  font-weight: 300;
+  padding: 10px 30px;
+  border: 2px solid #61c4be;
   border-radius: 200px;
-}
-header .div-header-center .button:hover {
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+  outline: none;
+  cursor: pointer;
   background: #61c4be;
-  color: #fff;
+  margin-right: 10px;
 }
 
+header .div-header-center .button-contact-us {
+  text-decoration: none;
+  background: none;
+  color: #fff;
+  font-size: 1.3em;
+  font-weight: 300;
+  padding: 10px 30px;
+  border: 2px solid #61c4be;
+  border-radius: 200px;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 40px;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+}
+
+header .div-header-center .button-hiring:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+  border: 2px solid #61c4be;
+}
+
+header .div-header-center .button-contact-us:hover {
+  background: #61c4be;
+}
+
+/*  End of Header */
+/* Info Codexio */
 #info-codexio {
   padding: 100px 0;
 }
-#info-codexio .text-title {
+
+#info-codexio .codexio-title {
   margin-left: 20%;
 }
-#info-codexio .text-title h3 {
+
+#info-codexio .codexio-title h3 {
   color: #2E5CA9;
   font-size: 3.5em;
   font-weight: 400;
   padding-bottom: 10px;
 }
-#info-codexio .text-title h4 {
+
+#info-codexio .codexio-title h4 {
   font-size: 1.8em;
   font-weight: 400;
   color: #595a5a;
   padding-bottom: 30px;
 }
 
-.pharagraph-text {
+.codexio-info-text {
   margin-left: 20%;
   position: relative;
 }
-.pharagraph-text img {
+
+.codexio-info-text img {
   width: 150px;
   position: absolute;
   left: -180px;
   top: 0px;
 }
-.pharagraph-text p {
+
+.codexio-info-text p {
   font-size: 16px;
   line-height: 1.6;
   font-weight: 400;
 }
-.pharagraph-text p:last-child {
+
+.codexio-info-text p:last-child {
   padding-top: 6px;
 }
 
+/* End of Info Codexio */
+/* Services */
 #services {
   background: #f2f2f3;
   padding: 100px 0;
   padding-bottom: 0;
 }
+
 #services h3 {
   text-align: center;
-  font-size: 45px;
+  font-size: 3em;
   font-weight: 300;
   padding-bottom: 40px;
 }
-#services .services-text-p {
+
+#services .services-info-text {
   margin: auto;
   font-size: 16px;
   line-height: 1.5;
 }
+
 #services .services-icons {
   padding-top: 90px;
   display: flex;
   justify-content: space-around;
 }
+
 #services .services-icons .service-container {
   text-align: center;
   cursor: pointer;
 }
+
 #services .services-icons .service-container h4 {
   font-size: 16px;
   padding-top: 20px;
   text-transform: uppercase;
   font-weight: 400;
 }
+
 #services .services-icons .service-container img {
   width: 100px;
   height: auto;
@@ -188,22 +218,26 @@ header .div-header-center .button:hover {
   margin: auto;
   opacity: 0.5;
 }
+
 #services .services-icons .service-container img:hover {
   opacity: 1;
 }
+
 #services .services-icons #selected-service-icon {
   opacity: 1;
 }
-#services .image-background {
+
+#services .services-description-background {
   margin: auto;
   padding: 100px 0;
   margin-top: 70px;
-  background: url("img/Picture3.png") no-repeat;
+  background: url("../img/background-services.png") no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   overflow: hidden;
 }
+
 #services .heading-description {
   color: #fff;
   font-size: 30px;
@@ -212,61 +246,75 @@ header .div-header-center .button:hover {
   letter-spacing: 1px;
   font-weight: 500;
 }
+
 #services .service-description {
   color: #fff;
   font-size: 16px;
   text-align: center;
 }
+
 #services .service-description p:last-child {
   margin-top: 1%;
 }
 
-#project {
+/* End of Services */
+/* Projects */
+#projects {
   padding: 100px 0;
   padding-bottom: 0;
 }
-#project .project-text h3 {
+
+#projects h3 {
   text-align: center;
-  font-size: 45px;
+  font-size: 3em;
   font-weight: 300;
 }
-#project .lock-trip-logo-container {
+
+#projects .lock-trip-logo-container {
   text-align: center;
   margin: auto;
   padding: 25px;
 }
-#project .lock-trip-logo-container #lock-trip-logo {
+
+#projects .lock-trip-logo-container .lock-trip-logo {
   width: 20%;
 }
-#project .lock-trip-logo-container:hover {
+
+#projects .lock-trip-logo-container:hover {
   -webkit-filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.2));
 }
-#project p {
+
+#projects p {
   padding-left: 30px;
   line-height: 1.5;
   font-size: 16px;
 }
-#project p a {
+
+#projects p a {
   text-decoration: none;
   visibility: visible;
   color: #2E5CA9;
 }
-#project #project-container {
+
+#projects #projects-container {
   display: flex;
   justify-content: center;
 }
-#project #project-container img {
+
+#projects #projects-container img {
   cursor: pointer;
   padding: 30px;
-  transition: transform 0.7s;
+  transition: transform .7s;
   width: 28%;
   height: 150px;
   margin: 0 auto;
 }
-#project #project-container img:hover {
+
+#projects #projects-container img:hover {
   opacity: 0.7;
 }
-#project #images-container {
+
+#projects #images-container {
   position: fixed;
   top: 15%;
   left: 10%;
@@ -274,11 +322,13 @@ header .div-header-center .button:hover {
   height: 80%;
   z-index: 1;
 }
-#project #images-container #opened-image {
+
+#projects #images-container #opened-image {
   width: 95%;
   height: 100%;
 }
-#project #images-container #close-button {
+
+#projects #images-container #close-button {
   font-size: 40px;
   float: right;
   color: #ff5d67;
@@ -286,25 +336,31 @@ header .div-header-center .button:hover {
   bottom: 30px;
   opacity: 0.85;
 }
-#project #images-container #close-button:hover {
+
+#projects #images-container #close-button:hover {
   opacity: 1;
   cursor: pointer;
 }
 
+/* End of Projects */
+/* Clients */
 #clients {
   padding: 100px 0;
 }
+
 #clients h3 {
   text-align: center;
-  font-size: 45px;
+  font-size: 3em;
   font-weight: lighter;
   padding-bottom: 40px;
 }
-#clients .clients-logos {
+
+#clients .clients-logos-container {
   display: flex;
   justify-content: space-between;
 }
-#clients .clients-logos .logo-container {
+
+#clients .clients-logos-container .logo-container {
   border: 1px solid lightgray;
   display: flex;
   align-items: center;
@@ -314,170 +370,189 @@ header .div-header-center .button:hover {
   padding: 20px;
   transition: border 0.5s;
 }
-#clients .clients-logos .logo-container .img-holder {
+
+#clients .clients-logos-container .logo-container .img-holder {
   width: 60%;
 }
-#clients .clients-logos .logo-container .img-holder img {
+
+#clients .clients-logos-container .logo-container .img-holder img {
   width: 100%;
   height: auto;
 }
-#clients .clients-logos .logo-container img {
+
+#clients .clients-logos-container .logo-container img {
   width: 100%;
 }
-#clients .clients-logos .logo-container:hover {
+
+#clients .clients-logos-container .logo-container:hover {
   border: 1px solid black;
   transition: border 0.5s;
 }
 
-.codexio-email {
+/* End of Clients */
+/* Careers */
+#careers {
+  background: url("../img/careers-background.jpg") no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+}
+
+#careers h3 {
+  text-align: center;
+  font-size: 3em;
+  font-weight: lighter;
+  padding-bottom: 40px;
+}
+
+#careers #careers-container {
+  display: flex;
+  justify-content: center;
+}
+
+#careers .left-part-careers {
+  width: 50%;
+}
+
+#careers .left-part-careers .codexio-email {
   color: #2E5CA9;
   font-weight: 500;
   font-size: 16px;
 }
 
-#careers {
-  background: url("img/clients-background.jpg") no-repeat;
-  background-size: cover;
-  padding: 100px 0;
-}
-#careers h3 {
-  text-align: center;
-  font-size: 45px;
-  font-weight: lighter;
-  padding-bottom: 40px;
-}
-#careers #careers-container {
-  display: flex;
-  justify-content: center;
-}
-#careers .left-part-careers {
-  width: 50%;
-}
 #careers .left-part-careers .codexio-dev-camp h2 {
   font-size: 30px;
   font-weight: 500;
   letter-spacing: 1px;
 }
+
 #careers .left-part-careers .text-dev-camp p {
   padding-top: 18px;
   padding-bottom: 30px;
   width: 80%;
   font-size: 18px;
 }
+
 #careers .left-part-careers .vacant-positions-container h2 {
   letter-spacing: 1px;
   font-size: 30px;
   font-weight: 500;
 }
+
 #careers .left-part-careers .text-vacant-positions {
   padding-top: 18px;
   padding-bottom: 30px;
   width: 80%;
   font-size: 18px;
 }
+
 #careers .left-part-careers ul {
   padding-top: 15px;
 }
+
 #careers .left-part-careers ul li {
   text-transform: uppercase;
   list-style: none;
   padding: 3px 0;
   font-size: 18px;
 }
-#careers .left-part-careers button {
-  outline: none;
-  border: none;
-  background: #61c4be;
-  color: #fff;
-  padding: 10px 30px;
-  font-size: 1.3em;
-  margin-top: 20px;
-  cursor: pointer;
-  margin-right: 10px;
-  border-radius: 200px;
-  font-weight: 300;
-  border: 2px solid #61c4be;
-}
+
 #careers .right-part-careers {
   width: 50%;
 }
+
 #careers .right-part-careers h2 {
   letter-spacing: 1px;
   font-size: 30px;
   font-weight: 500;
   padding-left: 20px;
 }
+
 #careers .right-part-careers table {
   text-align: center;
 }
+
 #careers .right-part-careers table th {
   font-size: 18px;
   font-weight: 500;
   border-bottom: 2px solid #61c4be;
   padding: 20px 10px;
 }
+
 #careers .right-part-careers table td {
   border-bottom: 1px solid lightgray;
   padding: 20px 10px;
   font-size: 18px;
 }
 
+/* End of Careers */
+/* Contact us */
 #contact-us {
   padding: 100px 0;
 }
-#contact-us #wrapper {
+
+#contact-us #wrapper-careers {
   display: flex;
   justify-content: space-around;
 }
-#contact-us #wrapper .left-part {
+
+#contact-us #wrapper-careers .left-part-careers {
   width: 53%;
 }
-#contact-us #wrapper .left-part form h3 {
+
+#contact-us #wrapper-careers .left-part-careers form h3 {
   padding-bottom: 50px;
-  font-size: 45px;
+  font-size: 3em;
   font-weight: lighter;
 }
-#contact-us #wrapper .left-part form .form-label-main {
+
+#contact-us #wrapper-careers .left-part-careers form .form-label-main {
   font-size: 16px;
   font-weight: 700;
   padding-bottom: 10px;
 }
-#contact-us #wrapper .left-part form .form-label-main .form-label-required {
+
+#contact-us #wrapper-careers .left-part-careers form .form-label-main .form-label-required {
   color: #61c4be;
-  /*    color:#2f5daa   */
 }
-#contact-us #wrapper .left-part form label input[type=text] {
+
+#contact-us #wrapper-careers .left-part-careers form label input[type=text] {
   padding: 12px 40px 12px 10px;
   margin-right: 20px;
   border: 1px solid gray;
   border-radius: 10px;
   outline: none;
 }
-#contact-us #wrapper .left-part form .email-label p {
+
+#contact-us #wrapper-careers .left-part-careers form .email-label p {
   padding-top: 20px;
   padding-bottom: 10px;
 }
-#contact-us #wrapper .left-part form .comment-text p {
+
+#contact-us #wrapper-careers .left-part-careers form .comment-text p {
   padding-top: 20px;
   padding-bottom: 10px;
 }
-#contact-us #wrapper .left-part label input[type=email] {
+
+#contact-us #wrapper-careers .left-part-careers label input[type=email] {
   padding: 12px 280px 12px 10px;
   border: 1px solid gray;
   border-radius: 10px;
   outline: none;
 }
-#contact-us #wrapper .left-part .comment-text h4 {
+
+#contact-us #wrapper-careers .left-part-careers .comment-text h4 {
   padding-top: 25px;
   padding-bottom: 8px;
 }
-#contact-us #wrapper .left-part label textarea {
+
+#contact-us #wrapper-careers .left-part-careers label textarea {
   padding: 10px 600px 100px 10px;
   border: 1px solid gray;
   border-radius: 10px;
   outline: none;
 }
-#contact-us #wrapper .left-part button {
+
+#contact-us #wrapper-careers .left-part-careers button {
   font-weight: 300;
   margin-top: 20px;
   border: none;
@@ -490,43 +565,53 @@ header .div-header-center .button:hover {
   outline: none;
 }
 
-.right-part {
+.right-part-careers {
   width: 40%;
 }
-.right-part div img {
+
+.right-part-careers div img {
   width: 50%;
 }
-.right-part .right-text-container p {
+
+.right-part-careers .right-text-container p {
   padding: 0 0 0 20px;
   font-size: 16px;
   margin: 5px 0;
 }
 
+/* Social-media - Contact us*/
 .social-media {
   display: flex;
 }
+
 .social-media p {
   padding: 10px 0 0 20px;
   font-size: 16px;
   padding-left: 20px;
 }
+
 .social-media i {
   font-size: 40px;
   padding-left: 10px;
   color: #4267B2;
 }
+
 .social-media .fa-linkedin-square {
   color: #0077B5;
 }
 
+/* End of contact us */
+/* Footer */
 footer {
   text-align: center;
   padding: 100px 0;
   background-color: #29394B;
 }
+
 footer img {
   width: 15%;
 }
+
 footer p {
   padding-top: 10px;
   font-size: 14px;
@@ -534,6 +619,7 @@ footer p {
   font-weight: 600;
 }
 
+/* End of Footer */
 #map {
   height: 500px;
 }
@@ -546,6 +632,7 @@ footer p {
   font-weight: 400;
 }
 
+/* ScrollBar */
 ::-webkit-scrollbar {
   width: 6px;
 }
@@ -560,6 +647,8 @@ footer p {
   border-radius: 5px;
 }
 
+/* End of ScrollBar */
+/* Sticky-nav-bar */
 .sticky {
   background-color: #3F5D91;
   color: #DBDBDB;
@@ -572,6 +661,7 @@ footer p {
   z-index: 999;
 }
 
+/* End of Sticky-nav-bar */
 .msg-success {
   display: none;
   text-align: center;
@@ -589,5 +679,4 @@ footer p {
   border-radius: 10px;
   background: #ffe1e4;
 }
-
 /*# sourceMappingURL=style.css.map */
