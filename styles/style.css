@@ -11,6 +11,16 @@
   padding: 0;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.5;
@@ -96,6 +106,7 @@ header .div-header-center .button-hiring {
   border: 2px solid #61c4be;
   border-radius: 200px;
   outline: none;
+  display: inline-block;
   cursor: pointer;
   background: #61c4be;
   margin-right: 10px;
@@ -111,6 +122,7 @@ header .div-header-center .button-contact-us {
   border: 2px solid #61c4be;
   border-radius: 200px;
   outline: none;
+  display: inline-block;
   cursor: pointer;
   padding: 10px 40px;
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
@@ -297,13 +309,13 @@ header .div-header-center .button-contact-us:hover {
 }
 
 #projects #projects-container {
+  margin-top: 50px;
   display: flex;
   justify-content: center;
 }
 
 #projects #projects-container img {
   cursor: pointer;
-  padding: 30px;
   transition: transform .7s;
   width: 28%;
   height: 150px;
@@ -492,11 +504,12 @@ header .div-header-center .button-contact-us:hover {
 
 #contact-us #wrapper-contact-us {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 #contact-us #wrapper-contact-us .left-part-contact-us {
   width: 60%;
+  /* Form */
 }
 
 #contact-us #wrapper-contact-us .left-part-contact-us form h3 {
@@ -505,53 +518,54 @@ header .div-header-center .button-contact-us:hover {
   font-weight: lighter;
 }
 
+#contact-us #wrapper-contact-us .left-part-contact-us form .form-joint-input {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#contact-us #wrapper-contact-us .left-part-contact-us form .form-joint-input input[type=text] {
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 6px;
+  outline: none;
+  width: 50%;
+}
+
+#contact-us #wrapper-contact-us .left-part-contact-us form .form-joint-input input[type=text]:first-child {
+  margin-right: 1%;
+}
+
+#contact-us #wrapper-contact-us .left-part-contact-us form .form-element {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
 #contact-us #wrapper-contact-us .left-part-contact-us form .form-label-required {
   color: #61c4be;
 }
 
-#contact-us #wrapper-contact-us .left-part-contact-us form .form-element {
-  margin-bottom: 10px;
-}
-
-#contact-us #wrapper-contact-us .left-part-contact-us form label input[type=text] {
-  padding: 10px;
-  margin-right: 10px;
-  border: 1px solid gray;
-  border-radius: 10px;
-  outline: none;
-}
-
-#contact-us #wrapper-contact-us .left-part-contact-us form .email-label p {
-  padding-top: 20px;
-  padding-bottom: 10px;
-}
-
-#contact-us #wrapper-contact-us .left-part-contact-us form .comment-text p {
-  padding-top: 20px;
-  padding-bottom: 10px;
-}
-
-#contact-us #wrapper-contact-us .left-part-contact-us label input[type=email] {
+#contact-us #wrapper-contact-us .left-part-contact-us form input[type=email] {
   padding: 10px;
   border: 1px solid gray;
-  border-radius: 10px;
+  border-radius: 6px;
   outline: none;
-  width: 64%;
+  width: 80%;
 }
 
-#contact-us #wrapper-contact-us .left-part-contact-us .comment-text h4 {
-  padding-top: 25px;
-  padding-bottom: 8px;
-}
-
-#contact-us #wrapper-contact-us .left-part-contact-us label textarea {
+#contact-us #wrapper-contact-us .left-part-contact-us form #message {
   padding: 10px;
   border: 1px solid gray;
-  border-radius: 10px;
+  border-radius: 6px;
   outline: none;
+  width: 80%;
 }
 
-#contact-us #wrapper-contact-us .left-part-contact-us button {
+#contact-us #wrapper-contact-us .left-part-contact-us form ::placeholder {
+  font-weight: lighter;
+}
+
+#contact-us #wrapper-contact-us .left-part-contact-us form button {
   font-weight: 300;
   margin-top: 20px;
   border: none;
@@ -564,29 +578,29 @@ header .div-header-center .button-contact-us:hover {
   outline: none;
 }
 
+/* End of Form */
+/* Right Part Codexio-logo with address */
 .right-part-contact-us {
   width: 30%;
 }
 
+.right-part-contact-us div {
+  width: 70%;
+}
+
 .right-part-contact-us div img {
-  width: 50%;
+  width: 100%;
 }
 
-.right-part-contact-us .right-text-container p {
-  padding: 0 0 0 20px;
-  font-size: 16px;
-  margin: 5px 0;
-}
-
-/* Social-media - Contact us*/
+/* Social-media */
 .social-media {
   display: flex;
 }
 
 .social-media p {
-  padding: 10px 0 0 20px;
+  padding-left: 10px;
+  padding-top: 10px;
   font-size: 16px;
-  padding-left: 20px;
 }
 
 .social-media i {
@@ -601,6 +615,11 @@ header .div-header-center .button-contact-us:hover {
 
 .social-media .fa-linkedin-square {
   color: #0077B5;
+}
+
+.right-text-container p {
+  padding-left: 10px;
+  padding-bottom: 5px;
 }
 
 /* End of contact us */
@@ -623,6 +642,7 @@ footer p {
 }
 
 /* End of Footer */
+/* Style for the map */
 #map {
   height: 500px;
 }
@@ -635,7 +655,7 @@ footer p {
   font-weight: 400;
 }
 
-/* ScrollBar */
+/* Style for ScrollBar */
 ::-webkit-scrollbar {
   width: 6px;
 }

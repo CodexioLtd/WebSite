@@ -12,6 +12,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
         crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" media="screen" href="styles/queries.css" />
 </head>
 
 <body>
@@ -171,11 +172,11 @@
                     <a href="https://locktrip.com/">https://locktrip.com/</a>
                 </p>
                 <!-- Projects-images -->
-                <article id="projects-container">
+                <div id="projects-container">
                     <img src="img/landing-page.png" alt="landing-page">
                     <img src="img/search-results.png" alt="search-results">
                     <img src="img/search-results-map.png" alt="search-results-map">
-                </article>
+                </div>
                 <div id="images-container" style="display: none">
                     <img id="opened-image" />
                     <i class="fa fa-times-circle-o" id="close-button" aria-hidden="true"></i>
@@ -223,8 +224,7 @@
                         <div class="codexio-dev-camp">
                             <h2>Codexio Dev Camp</h2>
                             <div class="text-dev-camp">
-                                <p>"
-                                    <em>Sharing is carrying</em>" has always been our leitmotif. We believe that the right people
+                                <p>"<em>Sharing is carrying</em> " has always been our leitmotif. We believe that the right people
                                     don't just appear in the middle of your life. You need to grow up with them from the
                                     beginning. That's why we want to invest time and energy into building people's knowledge
                                     and skills.
@@ -317,25 +317,27 @@
                                     <div class="form-element">Name
                                         <span class="form-label-required">*</span>
                                     </div>
+                                </label>
+                                <div class="form-joint-input">
                                     <input type="text" id="first-name" placeholder="First" class="form-element">
                                     <input type="text" id="last-name" placeholder="Last" class="form-element">
-                                </label>
+                                </div>
                             </div>
                             <div class="form-groups">
                                 <label class="email-label">
                                     <div class="form-element">Email
                                         <span class="form-label-required">*</span>
                                     </div>
-                                    <input type="email" id="from" placeholder="Email" class="form-element">
                                 </label>
+                                <input type="email" id="from" placeholder="Email" class="form-element">
                             </div>
                             <div class="form-groups">
                                 <label class="comment-text">
                                     <div class="form-element">Comment or Message
                                         <span class="form-label-required">*</span>
                                     </div>
-                                    <textarea id="message" placeholder="Comment or Message.." class="form-element"></textarea>
                                 </label>
+                                <textarea rows="5" id="message" placeholder="Comment or Message.." class="form-element"></textarea>
                             </div>
                             <button id="send-mail">Send</button>
                         </form>

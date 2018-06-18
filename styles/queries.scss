@@ -1,0 +1,8 @@
+@media screen and (max-width: 480px) {
+    #services .services-icons {
+        flex-wrap: wrap;
+        .service-container {
+            width: 40%;
+        }
+    }
+}

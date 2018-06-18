@@ -1,0 +1,9 @@
+@media screen and (max-width: 480px) {
+  #services .services-icons {
+    flex-wrap: wrap;
+  }
+  #services .services-icons .service-container {
+    width: 40%;
+  }
+}
+/*# sourceMappingURL=queries.css.map */
