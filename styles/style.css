@@ -596,6 +596,10 @@ header .div-header-center .button-contact-us:hover {
   color: #4267B2;
 }
 
+.social-media i:hover {
+  opacity: 0.9;
+}
+
 .social-media .fa-linkedin-square {
   color: #0077B5;
 }
