@@ -111,7 +111,7 @@
     margin-bottom: 5%;
   }
   #projects p {
-    font-size: 0.9Em;
+    font-size: 0.9em;
   }
   #clients {
     padding: 60px 0;
@@ -198,6 +198,101 @@
   }
   footer img {
     width: 50%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  header {
+    height: 50vh;
+  }
+  header .div-header-center h1 {
+    font-size: 4.7em;
+  }
+  header .header-nav-bar nav .header-logo-container {
+    width: 60%;
+    padding-top: 10px;
+  }
+  header .div-header-center h2 {
+    font-size: 1em;
+  }
+  header .div-header-center .button-hiring,
+  header .div-header-center .button-contact-us {
+    padding: 6px 0;
+  }
+  #info-codexio {
+    padding: 40px 0;
+  }
+  #info-codexio .codexio-title h3 {
+    font-size: 2.8em;
+  }
+  #info-codexio .codexio-title h4 {
+    font-size: 0.8em;
+  }
+  .codexio-info-text img {
+    left: 60px;
+  }
+  .codexio-info-text p {
+    padding-top: 50%;
+    width: 100%;
+    font-size: 0.9em;
+  }
+  #services {
+    padding: 40px 0;
+    padding-bottom: 0;
+  }
+  #services h3 {
+    font-size: 2.7em;
+  }
+  #services .service-description {
+    font-size: 0.9em;
+  }
+  #services .services-info-text {
+    font-size: 0.9em;
+    width: 80%;
+  }
+  #projects {
+    padding: 40px 0;
+    padding-bottom: 0;
+  }
+  #projects h3 {
+    font-size: 2.8em;
+  }
+  #projects .lock-trip-logo-container .lock-trip-logo {
+    width: 50%;
+  }
+  #projects p {
+    font-size: 0.9em;
+  }
+  #projects #images-container #opened-image {
+    height: 20%;
+  }
+  #clients {
+    padding: 40px 0;
+  }
+  #clients h3 {
+    font-size: 2.7em;
+  }
+  #careers {
+    padding: 40px 0;
+  }
+  #careers h3 {
+    font-size: 2.7em;
+  }
+  #careers .right-part-careers table th {
+    font-size: 4em;
+  }
+  #careers .right-part-careers table td {
+    padding: 10px 8px;
+    font-size: 4.4em;
+  }
+  #careers .right-part-careers table tr td {
+    padding: 2px 6px;
+  }
+  #contact-us {
+    padding: 40px 0;
+  }
+  #contact-us #wrapper-contact-us .left-part-contact-us form h3 {
+    font-size: 2.7em;
   }
 }
 /*# sourceMappingURL=queries.css.map */
