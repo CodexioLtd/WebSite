@@ -191,12 +191,13 @@
   }
   .right-part-contact-us {
     width: 100%;
+    padding-top: 10%;
   }
   .right-part-contact-us div {
     margin: 0 auto;
   }
   #map {
-    height: 60vh;
+    height: 80vh;
   }
   footer {
     padding: 60px 0;
@@ -206,12 +207,12 @@
   }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 320px) {
   header {
-    height: 70vh;
+    height: 100vh;
   }
   header .div-header-center h1 {
-    font-size: 4.7em;
+    font-size: 4em;
   }
   header .header-nav-bar nav .header-logo-container {
     width: 60%;
@@ -228,13 +229,13 @@
     padding: 40px 0;
   }
   #info-codexio .codexio-title h3 {
-    font-size: 2.8em;
+    font-size: 2.6em;
   }
   #info-codexio .codexio-title h4 {
     font-size: 0.8em;
   }
   .codexio-info-text img {
-    left: 60px;
+    left: 50px;
   }
   .codexio-info-text p {
     padding-top: 50%;
@@ -303,7 +304,7 @@
     margin: 0 auto;
   }
   #map {
-    height: 50vh;
+    height: 80vh;
   }
 }
 /*# sourceMappingURL=queries.css.map */
