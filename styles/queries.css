@@ -3,7 +3,7 @@
     width: 90%;
   }
   header {
-    height: 60vh;
+    height: 100vh;
   }
   header .header-nav-bar nav .header-logo-container {
     width: 40%;
@@ -11,6 +11,10 @@
   }
   ul {
     display: none;
+  }
+  header .header-nav-bar .fa-bars {
+    display: block;
+    cursor: pointer;
   }
   header .div-header-center h1 {
     font-size: 6em;
@@ -180,18 +184,19 @@
   }
   #contact-us #wrapper-contact-us .left-part-contact-us form button {
     font-size: 1em;
-    padding: 8px 0;
-    width: 30%;
-    margin-top: 0;
+    padding: 10px 0;
+    width: 40%;
+    margin: auto;
+    display: block;
   }
   .right-part-contact-us {
     width: 100%;
   }
-  #map {
-    height: 200px;
+  .right-part-contact-us div {
+    margin: 0 auto;
   }
   #map {
-    height: 200px;
+    height: 60vh;
   }
   footer {
     padding: 60px 0;
@@ -203,7 +208,7 @@
 
 @media screen and (max-width: 360px) {
   header {
-    height: 50vh;
+    height: 70vh;
   }
   header .div-header-center h1 {
     font-size: 4.7em;
@@ -293,6 +298,12 @@
   }
   #contact-us #wrapper-contact-us .left-part-contact-us form h3 {
     font-size: 2.7em;
+  }
+  .right-part-contact-us div {
+    margin: 0 auto;
+  }
+  #map {
+    height: 50vh;
   }
 }
 /*# sourceMappingURL=queries.css.map */

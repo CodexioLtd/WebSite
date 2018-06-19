@@ -74,6 +74,11 @@ header {
         left: 0;
         width: 100%;
         padding: 15px;
+        .fa-bars {
+            color: #fff;
+            font-size: 1.8em;
+            display: none;
+        }
         nav {
             display: flex;
             justify-content: space-between;
@@ -518,6 +523,16 @@ header {
                 ::placeholder {
                     font-weight: lighter;
                 }
+                input[type=text]:focus {
+                    border: 1px solid $color;
+                }
+                input[type=email]:focus {
+                    border: 1px solid $color;
+                }
+                #message:focus {
+                    border: 1px solid $color;
+                }
+                
                 button {
                     font-weight: 300;
                     margin-top: 20px;

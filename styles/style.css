@@ -42,6 +42,12 @@ header .header-nav-bar {
   padding: 15px;
 }
 
+header .header-nav-bar .fa-bars {
+  color: #fff;
+  font-size: 1.8em;
+  display: none;
+}
+
 header .header-nav-bar nav {
   display: flex;
   justify-content: space-between;
@@ -563,6 +569,18 @@ header .div-header-center .button-contact-us:hover {
 
 #contact-us #wrapper-contact-us .left-part-contact-us form ::placeholder {
   font-weight: lighter;
+}
+
+#contact-us #wrapper-contact-us .left-part-contact-us form input[type=text]:focus {
+  border: 1px solid #61c4be;
+}
+
+#contact-us #wrapper-contact-us .left-part-contact-us form input[type=email]:focus {
+  border: 1px solid #61c4be;
+}
+
+#contact-us #wrapper-contact-us .left-part-contact-us form #message:focus {
+  border: 1px solid #61c4be;
 }
 
 #contact-us #wrapper-contact-us .left-part-contact-us form button {
