@@ -307,3 +307,16 @@
         height: 80vh;
     }
 }
+
+@media screen and (max-width: 360px) {
+    .container {
+        width: 70%;
+        margin: 0;
+    }
+    header .header-nav-bar nav .header-logo-container {
+        width: 60%;
+    }
+    header .header-nav-bar {
+        padding-left: 0;
+    }
+}
