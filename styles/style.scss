@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 //font-size
-$small: 16px;
-$large: 30px;
+$default-body-font: 16px;
+$small: 1.0em;
+$large: 1.88em;
 $extralarge: 3em;
 // default padding = 100px
 $padding: 100px 0;
@@ -59,7 +60,11 @@ html {
 body {
     font-family: 'Roboto', sans-serif;
     line-height: $line-height;
-    font-size: $small;
+    font-size: $default-body-font;
+}
+
+img {
+    max-width: 100%;
 }
 
 /* Header */
@@ -493,7 +498,7 @@ header {
                         border: 1px solid gray;
                         border-radius: 6px;
                         outline: none;
-                       width: 50%;
+                        width: 50%;
                     }
                     input[type=text]:first-child {
                         margin-right: 1%;
@@ -532,7 +537,6 @@ header {
                 #message:focus {
                     border: 1px solid $color;
                 }
-                
                 button {
                     font-weight: 300;
                     margin-top: 20px;

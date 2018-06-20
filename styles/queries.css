@@ -51,14 +51,14 @@
     padding-bottom: 10%;
   }
   .codexio-info-text {
-    margin-left: 10%;
+    margin-left: 2%;
   }
   .codexio-info-text img {
     left: 100px;
   }
   .codexio-info-text p {
     padding-top: 38%;
-    width: 90%;
+    width: 100%;
     font-size: 1em;
     line-height: 1.4;
   }
@@ -76,10 +76,10 @@
     padding-bottom: 5%;
   }
   #services .services-info-text {
-    width: 75%;
+    width: 100%;
   }
   #services .services-icons {
-    padding-top: 10%;
+    padding-top: 2%;
   }
   #services .services-icons .service-container h4 {
     padding-top: 2%;
@@ -96,6 +96,9 @@
   #services .heading-description {
     padding-bottom: 5%;
   }
+  #services .service-description-paragraph {
+    text-align: justify;
+  }
   #projects {
     padding: 60px 0;
     padding-bottom: 0;
@@ -111,11 +114,12 @@
     flex-direction: column;
   }
   #projects #projects-container img {
-    width: 75%;
+    width: 100%;
     margin-bottom: 5%;
   }
   #projects p {
     font-size: 0.9em;
+    padding-left: 0;
   }
   #clients {
     padding: 60px 0;
@@ -208,15 +212,21 @@
 }
 
 @media screen and (max-width: 320px) {
+  .container {
+    width: 90%;
+  }
   header {
     height: 100vh;
   }
   header .div-header-center h1 {
     font-size: 4em;
+    font-weight: 400;
+  }
+  header .header-nav-bar {
+    padding: 2%;
   }
   header .header-nav-bar nav .header-logo-container {
     width: 60%;
-    padding-top: 10px;
   }
   header .div-header-center h2 {
     font-size: 1em;
@@ -228,6 +238,9 @@
   #info-codexio {
     padding: 40px 0;
   }
+  #info-codexio .codexio-title {
+    margin-left: 9%;
+  }
   #info-codexio .codexio-title h3 {
     font-size: 2.6em;
   }
@@ -235,12 +248,14 @@
     font-size: 0.8em;
   }
   .codexio-info-text img {
-    left: 50px;
+    left: 65px;
   }
   .codexio-info-text p {
     padding-top: 50%;
     width: 100%;
     font-size: 0.9em;
+    text-align: justify;
+    line-height: 1.5;
   }
   #services {
     padding: 40px 0;
@@ -252,9 +267,19 @@
   #services .service-description {
     font-size: 0.9em;
   }
+  #services .service-description-paragraph {
+    text-align: justify;
+  }
+  #services .services-icons .service-container {
+    padding-top: 2%;
+  }
   #services .services-info-text {
     font-size: 0.9em;
-    width: 80%;
+    width: 100%;
+    text-align: justify;
+  }
+  #services .heading-description {
+    font-size: 1.4em;
   }
   #projects {
     padding: 40px 0;
@@ -268,6 +293,7 @@
   }
   #projects p {
     font-size: 0.9em;
+    text-align: justify;
   }
   #projects #images-container #opened-image {
     height: 20%;
@@ -283,6 +309,14 @@
   }
   #careers h3 {
     font-size: 2.7em;
+  }
+  #careers .left-part-careers .text-dev-camp p {
+    text-align: justify;
+    font-size: 0.9em;
+  }
+  #careers .left-part-careers .text-vacant-positions {
+    text-align: justify;
+    font-size: 0.9em;
   }
   #careers .right-part-careers table th {
     font-size: 4em;
@@ -305,19 +339,6 @@
   }
   #map {
     height: 80vh;
-  }
-}
-
-@media screen and (max-width: 360px) {
-  .container {
-    width: 70%;
-    margin: 0;
-  }
-  header .header-nav-bar nav .header-logo-container {
-    width: 60%;
-  }
-  header .header-nav-bar {
-    padding-left: 0;
   }
 }
 /*# sourceMappingURL=queries.css.map */

@@ -27,6 +27,10 @@ body {
   font-size: 16px;
 }
 
+img {
+  max-width: 100%;
+}
+
 /* Header */
 header {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url("../img/background-header.jpg") no-repeat;
@@ -180,7 +184,7 @@ header .div-header-center .button-contact-us:hover {
 }
 
 .codexio-info-text p {
-  font-size: 16px;
+  font-size: 1em;
   line-height: 1.6;
   font-weight: 400;
 }
@@ -206,7 +210,7 @@ header .div-header-center .button-contact-us:hover {
 
 #services .services-info-text {
   margin: auto;
-  font-size: 16px;
+  font-size: 1em;
   line-height: 1.5;
 }
 
@@ -222,7 +226,7 @@ header .div-header-center .button-contact-us:hover {
 }
 
 #services .services-icons .service-container h4 {
-  font-size: 16px;
+  font-size: 1em;
   padding-top: 20px;
   text-transform: uppercase;
   font-weight: 400;
@@ -258,7 +262,7 @@ header .div-header-center .button-contact-us:hover {
 
 #services .heading-description {
   color: #fff;
-  font-size: 30px;
+  font-size: 1.88em;
   text-align: center;
   padding-bottom: 40px;
   letter-spacing: 1px;
@@ -267,7 +271,7 @@ header .div-header-center .button-contact-us:hover {
 
 #services .service-description {
   color: #fff;
-  font-size: 16px;
+  font-size: 1em;
   text-align: center;
 }
 
@@ -305,7 +309,7 @@ header .div-header-center .button-contact-us:hover {
 #projects p {
   padding-left: 30px;
   line-height: 1.5;
-  font-size: 16px;
+  font-size: 1em;
 }
 
 #projects p a {
@@ -434,11 +438,11 @@ header .div-header-center .button-contact-us:hover {
 #careers .left-part-careers .codexio-email {
   color: #2E5CA9;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1em;
 }
 
 #careers .left-part-careers .codexio-dev-camp h2 {
-  font-size: 30px;
+  font-size: 1.88em;
   font-weight: 500;
   letter-spacing: 1px;
 }
@@ -452,7 +456,7 @@ header .div-header-center .button-contact-us:hover {
 
 #careers .left-part-careers .vacant-positions-container h2 {
   letter-spacing: 1px;
-  font-size: 30px;
+  font-size: 1.88em;
   font-weight: 500;
 }
 
@@ -480,7 +484,7 @@ header .div-header-center .button-contact-us:hover {
 
 #careers .right-part-careers h2 {
   letter-spacing: 1px;
-  font-size: 30px;
+  font-size: 1.88em;
   font-weight: 500;
   padding-left: 20px;
 }
@@ -618,7 +622,7 @@ header .div-header-center .button-contact-us:hover {
 .social-media p {
   padding-left: 10px;
   padding-top: 10px;
-  font-size: 16px;
+  font-size: 1em;
 }
 
 .social-media i {
