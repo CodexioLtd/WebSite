@@ -310,9 +310,13 @@
   #careers h3 {
     font-size: 2.7em;
   }
+  #careers .left-part-careers .vacant-positions-container h2 {
+    padding-left: 0;
+  }
   #careers .left-part-careers .text-dev-camp p {
     text-align: justify;
     font-size: 0.9em;
+    padding-bottom: 15px;
   }
   #careers .left-part-careers .text-vacant-positions {
     text-align: justify;
@@ -336,6 +340,9 @@
   }
   .right-part-contact-us div {
     margin: 0 auto;
+  }
+  #contact-us #wrapper-contact-us .left-part-contact-us form .form-joint-input input[type=text]:first-child {
+    margin-right: 2%;
   }
   #map {
     height: 80vh;
