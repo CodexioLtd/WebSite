@@ -347,5 +347,175 @@
   #map {
     height: 80vh;
   }
+  footer {
+    padding: 60px 0;
+  }
+  footer img {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+  header .header-nav-bar nav .header-logo-container {
+    width: 30%;
+  }
+  ul {
+    display: none;
+  }
+  header .header-nav-bar .fa-bars {
+    display: block;
+    cursor: pointer;
+  }
+  #info-codexio {
+    padding: 70px 0;
+  }
+  #info-codexio .codexio-title h3 {
+    font-size: 3em;
+    padding-bottom: 0;
+  }
+  #info-codexio .codexio-title h4 {
+    padding-bottom: 20px;
+    font-size: 1.5em;
+  }
+  .codexio-info-text img {
+    left: -150px;
+  }
+  .codexio-info-text p {
+    text-align: justify;
+  }
+  #services {
+    padding: 70px 0;
+    padding-bottom: 0;
+  }
+  #services h3 {
+    padding-bottom: 1%;
+  }
+  #services .services-info-text {
+    text-align: justify;
+  }
+  #services .services-icons {
+    padding-top: 5%;
+  }
+  #services .services-icons .service-container h4 {
+    text-transform: capitalize;
+    padding-top: 3%;
+  }
+  #services .services-description-background {
+    padding: 5%;
+    margin-top: 5%;
+  }
+  #services .heading-description {
+    padding-bottom: 3%;
+  }
+  .service-description-paragraph {
+    text-align: justify;
+  }
+  #projects {
+    padding: 70px 0;
+    padding-bottom: 0;
+  }
+  #projects .lock-trip-logo-container {
+    padding: 2%;
+  }
+  #projects p {
+    text-align: justify;
+  }
+  #clients {
+    padding: 70px 0;
+  }
+  #clients h3 {
+    padding-bottom: 2%;
+  }
+  #clients .clients-logos-container {
+    justify-content: space-around;
+  }
+  #clients .clients-logos-container .logo-container .img-holder {
+    width: 100%;
+  }
+  #careers {
+    padding: 70px 0;
+  }
+  #careers h3 {
+    padding-bottom: 2%;
+  }
+  #careers #careers-container {
+    flex-direction: column;
+  }
+  #careers .left-part-careers {
+    width: 100%;
+    text-align: justify;
+  }
+  #careers .left-part-careers .codexio-dev-camp h2 {
+    text-align: center;
+  }
+  #careers .left-part-careers .text-dev-camp p {
+    margin: auto;
+    padding: 2%;
+  }
+  #careers .left-part-careers .vacant-positions-container h2 {
+    text-align: center;
+  }
+  #careers .left-part-careers .vacant-positions-container p {
+    margin: auto;
+    padding: 2%;
+  }
+  #careers .right-part-careers {
+    width: 100%;
+    padding-top: 3%;
+  }
+  #careers .right-part-careers h2 {
+    text-align: center;
+  }
+  #careers .right-part-careers table {
+    margin: auto;
+  }
+  #contact-us {
+    padding: 70px 0;
+  }
+  #contact-us #wrapper-contact-us .left-part-contact-us form h3 {
+    padding-bottom: 2%;
+  }
+  #contact-us #wrapper-contact-us {
+    flex-direction: column;
+  }
+  #contact-us #wrapper-contact-us .left-part-contact-us {
+    width: 100%;
+  }
+  #contact-us #wrapper-contact-us .right-part-contact-us {
+    width: 100%;
+  }
+  #contact-us #wrapper-contact-us .left-part-contact-us form button {
+    font-size: 1.3em;
+    padding: 10px 40px;
+    margin: auto;
+    display: block;
+    margin-bottom: 5%;
+  }
+  .right-part-contact-us div {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .right-part-contact-us div img {
+    width: 70%;
+  }
+  .right-part-contact-us .social-media p {
+    margin: auto;
+    padding-left: 35%;
+  }
+  .right-part-contact-us .social-media a:last-child {
+    padding-right: 15%;
+  }
+  #map {
+    height: 80vh;
+  }
+  footer {
+    padding: 60px 0;
+  }
+  footer img {
+    width: 50%;
+  }
 }
 /*# sourceMappingURL=queries.css.map */
