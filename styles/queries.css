@@ -24,7 +24,7 @@
     font-size: 1.5em;
   }
   .codexio-info-text img {
-    left: -150px;
+    position: none;
   }
   .codexio-info-text p {
     text-align: justify;
@@ -337,8 +337,12 @@
   #contact-us {
     padding: 60px 0;
   }
-  .right-part-contact-us div {
+  #contact-us .right-part-contact-us div {
     padding-bottom: 1em;
+    margin: auto;
+  }
+  #contact-us .right-part-contact-us div p {
+    text-align: center;
   }
 }
 
