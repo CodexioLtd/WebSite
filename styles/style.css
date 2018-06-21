@@ -76,7 +76,7 @@ header .header-nav-bar nav li a {
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #fff;
-  font-size: 16px;
+  font-size: 1em;
 }
 
 header .header-nav-bar nav li a:hover {
@@ -351,7 +351,7 @@ header .div-header-center .button-contact-us:hover {
 }
 
 #projects #images-container #close-button {
-  font-size: 40px;
+  font-size: 3em;
   float: right;
   color: #ff5d67;
   position: relative;
@@ -451,7 +451,7 @@ header .div-header-center .button-contact-us:hover {
   padding-top: 18px;
   padding-bottom: 30px;
   width: 80%;
-  font-size: 18px;
+  font-size: 1.1em;
 }
 
 #careers .left-part-careers .vacant-positions-container h2 {
@@ -464,18 +464,18 @@ header .div-header-center .button-contact-us:hover {
   padding-top: 18px;
   padding-bottom: 30px;
   width: 80%;
-  font-size: 18px;
+  font-size: 1.1em;
 }
 
 #careers .left-part-careers ul {
-  padding-top: 15px;
+  padding-top: 3%;
 }
 
 #careers .left-part-careers ul li {
   text-transform: uppercase;
   list-style: none;
   padding: 3px 0;
-  font-size: 18px;
+  font-size: 1.1em;
 }
 
 #careers .right-part-careers {
@@ -486,7 +486,7 @@ header .div-header-center .button-contact-us:hover {
   letter-spacing: 1px;
   font-size: 1.88em;
   font-weight: 500;
-  padding-left: 20px;
+  padding-left: 2%;
 }
 
 #careers .right-part-careers table {
@@ -494,7 +494,7 @@ header .div-header-center .button-contact-us:hover {
 }
 
 #careers .right-part-careers table th {
-  font-size: 18px;
+  font-size: 1.1em;
   font-weight: 500;
   border-bottom: 2px solid #61c4be;
   padding: 20px 10px;
@@ -503,7 +503,7 @@ header .div-header-center .button-contact-us:hover {
 #careers .right-part-careers table td {
   border-bottom: 1px solid lightgray;
   padding: 20px 10px;
-  font-size: 18px;
+  font-size: 1.1em;
 }
 
 /* End of Careers */
@@ -603,31 +603,30 @@ header .div-header-center .button-contact-us:hover {
 /* End of Form */
 /* Right Part Codexio-logo with address */
 .right-part-contact-us {
+  text-align: right;
   width: 30%;
 }
 
 .right-part-contact-us div {
-  width: 70%;
+  width: 100%;
+  padding-bottom: 2em;
 }
 
 .right-part-contact-us div img {
-  width: 100%;
+  width: 70%;
+}
+
+.right-part-contact-us .right-text-container p {
+  padding-top: 0.5em;
 }
 
 /* Social-media */
 .social-media {
-  display: flex;
+  float: right;
 }
 
-.social-media p {
-  padding-left: 10px;
-  padding-top: 10px;
-  font-size: 1em;
-}
-
-.social-media i {
-  font-size: 40px;
-  padding-left: 10px;
+.social-media .fa {
+  font-size: 2.8em;
   color: #4267B2;
 }
 
@@ -635,13 +634,12 @@ header .div-header-center .button-contact-us:hover {
   opacity: 0.9;
 }
 
-.social-media .fa-linkedin-square {
-  color: #0077B5;
+.social-media .fa-facebook-square {
+  padding: 0 0.1em;
 }
 
-.right-text-container p {
-  padding-left: 10px;
-  padding-bottom: 5px;
+.social-media .fa-linkedin-square {
+  color: #0077B5;
 }
 
 /* End of contact us */
@@ -658,7 +656,7 @@ footer img {
 
 footer p {
   padding-top: 10px;
-  font-size: 14px;
+  font-size: 0.9em;
   color: #999E9A;
   font-weight: 600;
 }

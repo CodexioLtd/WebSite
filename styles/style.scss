@@ -102,7 +102,7 @@ header {
                     text-transform: uppercase;
                     letter-spacing: 1px;
                     color: #fff;
-                    font-size: 16px;
+                    font-size: $small;
                 }
                 a:hover {
                     color: $color;
@@ -327,7 +327,7 @@ header {
             height: 100%;
         }
         #close-button {
-            font-size: 40px;
+            font-size: 3em;
             float: right;
             color: #ff5d67;
             position: relative;
@@ -420,7 +420,7 @@ header {
                 padding-top: 18px;
                 padding-bottom: 30px;
                 width: 80%;
-                font-size: 18px;
+                font-size: 1.1em;
             }
         }
         .vacant-positions-container {
@@ -434,15 +434,15 @@ header {
             padding-top: 18px;
             padding-bottom: 30px;
             width: 80%;
-            font-size: 18px;
+            font-size: 1.1em;
         }
         ul {
-            padding-top: 15px;
+            padding-top: 3%;
             li {
                 text-transform: uppercase;
                 list-style: none;
                 padding: 3px 0;
-                font-size: 18px;
+                font-size: 1.1em;
             }
         }
     }
@@ -452,12 +452,12 @@ header {
             letter-spacing: 1px;
             font-size: $large;
             font-weight: 500;
-            padding-left: 20px;
+            padding-left: 2%;
         }
         table {
             text-align: center;
             th {
-                font-size: 18px;
+                font-size: 1.1em;
                 font-weight: 500;
                 border-bottom: 2px solid $color;
                 padding: 20px 10px;
@@ -465,7 +465,7 @@ header {
             td {
                 border-bottom: 1px solid lightgray;
                 padding: 20px 10px;
-                font-size: 18px;
+                font-size: 1.1em;
             }
         }
     }
@@ -559,40 +559,37 @@ header {
 /* Right Part Codexio-logo with address */
 
 .right-part-contact-us {
+    text-align: right;
     width: 30%;
     div {
-        width: 70%;
+        width: 100%;
+        padding-bottom: 2em;
         img {
-            width: 100%;
+            width: 70%;
         }
+    }
+    .right-text-container p {
+        padding-top: 0.5em;
     }
 }
 
 /* Social-media */
 
 .social-media {
-    display: flex;
-    p {
-        padding-left: 10px;
-        padding-top: 10px;
-        font-size: $small;
-    }
-    i {
-        font-size: 40px;
-        padding-left: 10px;
+    float: right;
+    .fa {
+        font-size: 2.8em;
         color: #4267B2;
     }
     i:hover {
         opacity: 0.9;
     }
+    .fa-facebook-square {
+        padding: 0 0.1em;
+    }
     .fa-linkedin-square {
         color: #0077B5;
     }
-}
-
-.right-text-container p {
-    padding-left: 10px;
-    padding-bottom: 5px;
 }
 
 /* End of contact us */
@@ -608,7 +605,7 @@ footer {
     }
     p {
         padding-top: 10px;
-        font-size: 14px;
+        font-size: 0.9em;
         color: #999E9A;
         font-weight: 600;
     }

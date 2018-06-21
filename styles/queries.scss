@@ -157,11 +157,7 @@
         width: 70%;
     }
     .right-part-contact-us .social-media p {
-        margin: auto;
-        padding-left: 35%;
-    }
-    .right-part-contact-us .social-media a:last-child {
-        padding-right: 15%;
+        padding-left: 9.6em;
     }
     #map {
         height: 80vh;
@@ -230,7 +226,7 @@
         margin-left: 2%;
     }
     .codexio-info-text img {
-        left: 100px;
+        left: 120px;
     }
     .codexio-info-text p {
         padding-top: 38%;
@@ -339,10 +335,13 @@
         text-align: center;
     }
     #careers .right-part-careers table {
-        font-size: 0.2em;
+        font-size: 1em;
     }
     #contact-us {
         padding: 60px 0;
+    }
+    .right-part-contact-us div {
+        padding-bottom: 1em;
     }
 }
 
@@ -465,11 +464,11 @@
         padding-top: 10%;
     }
     #careers .right-part-careers table th {
-        font-size: 4em;
+        font-size: 0.9em;
     }
     #careers .right-part-careers table td {
         padding: 10px 8px;
-        font-size: 4.4em;
+        font-size: 0.9em;
     }
     #careers .right-part-careers table tr td {
         padding: 2px 6px;
@@ -481,22 +480,17 @@
         font-size: 2.7em;
     }
     #contact-us #wrapper-contact-us .left-part-contact-us form button {
-        margin-bottom: 10%;
+        margin-bottom: 2em;
     }
     .right-part-contact-us div {
         margin: 0 auto;
+        padding-bottom: 1em;
     }
     .right-part-contact-us div img {
         width: 100%;
     }
     .right-part-contact-us .social-media p {
-        padding-left: 20%;
-    }
-    .right-part-contact-us .social-media a:last-child {
-        padding-right: 0;
-    }
-    .right-part-contact-us .social-media .fa-linkedin-square {
-        padding-left: 10%;
+        padding-left: 2.5em;
     }
     .right-part-contact-us .social-media .fa {
         font-size: 2.4em;
