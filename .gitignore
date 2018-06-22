@@ -6,3 +6,4 @@
 
 # Exclude build tools for SCSS preprocessor
 styles/**/*.css
+styles/**/*.css.map
