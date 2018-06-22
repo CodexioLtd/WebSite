@@ -170,14 +170,17 @@
         </p>
         <!-- Projects-images -->
         <div id="projects-container">
-          <img src="img/landing-page.png" alt="landing-page">
+            <div class="demo-image first" data-image="img/first-desktop.png"></div>
+            <div class="demo-image second" data-image="img/second-desktop.png"></div>
+            <div class="demo-image third" data-image="img/third-desktop.png"></div>
+          <!-- <img src="img/landing-page.png" alt="landing-page">
           <img src="img/search-results.png" alt="search-results">
-          <img src="img/search-results-map.png" alt="search-results-map">
+          <img src="img/search-results-map.png" alt="search-results-map"> -->
         </div>
-        <div id="images-container" style="display: none">
+        <!-- <div id="images-container" style="display: none">
           <img id="opened-image" />
           <i class="fa fa-times-circle-o" id="close-button" aria-hidden="true"></i>
-        </div>
+        </div> -->
       </div>
     </section>
     <!--End of Projects-->
@@ -378,7 +381,13 @@
     defer></script>
   <script src="event.js"></script>
   <script src="lib/js/noframework.waypoints.js"></script>
-
+  <script src="lib/js/intense.js"></script>
+  <script>
+    window.onload = function () {
+      var elements = document.querySelectorAll('.demo-image');
+      Intense(elements);
+    }
+  </script>
 
 </body>
 

@@ -58,14 +58,15 @@ html {
 }
 
 body {
+    width: 100%;
     font-family: 'Roboto', sans-serif;
     line-height: $line-height;
     font-size: $default-body-font;
 }
 
-img {
-    max-width: 100%;
-}
+// img {
+//     max-width: 100%;
+// }
 
 /* Header */
 
@@ -303,7 +304,34 @@ header {
     #projects-container {
         margin-top: 50px;
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
+        .first {
+          background: url('../img/first-desktop.png');
+        }
+        .second {
+          background: url('../img/second-desktop.png');
+        }
+        .third {
+          background: url('../img/third-desktop.png');
+        }
+        .demo-image {
+          // display: inline-block;
+          width: 28%;
+          /* height: 220px; */
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          padding-bottom: 15%;
+          border: 1px solid #ccc;
+          cursor: pointer;
+          margin-bottom: 30px;
+          opacity: 0.9;
+          transition: all $animation-time;
+        }
+        .demo-image:hover {
+          opacity: 1;
+          border: 1px solid #000;
+        }
         img {
             cursor: pointer;
             transition: transform .7s;
@@ -355,7 +383,7 @@ header {
     }
     .clients-logos-container {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         .logo-container {
             border: 1px solid lightgray;
             display: flex;
