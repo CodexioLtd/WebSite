@@ -1,513 +1,539 @@
 // Breakpoint 3 (iPad Air): 768px
 @media screen and (max-width: 768px) {
-    .container {
-        width: 90%;
+  .container {
+    width: 90%;
+  }
+  header .header-nav-bar nav .header-logo-container {
+    width: 30%;
+  } // ul {
+  //   display: none;
+  // }
+  #main-navigation {
+    display: none;
+  }
+  header .header-nav-bar nav #navigation {
+    display: block;
+    position: absolute;
+    transform: translate(0px, -1999px);
+    transition: all 0.5s;
+    z-index: 800;
+    background-color: #3F5D91; // opacity: 0.9;
+    width: 100%;
+    li {
+      display: block;
+      padding: 0.1em 0;
+      text-align: center;
+      border-bottom: 0.01px solid #fff;
+      border-top: 0.01px solid #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #fff;
+      font-size: $small;
     }
-    header .header-nav-bar nav .header-logo-container {
-        width: 30%;
-    }
-    ul {
-        display: none;
-    }
-    header .header-nav-bar .fa-bars {
-        display: block;
-        cursor: pointer;
-    }
-    #info-codexio {
-        padding: 70px 0;
-    }
-    #info-codexio .codexio-title h3 {
-        font-size: 3em;
-        padding-bottom: 0;
-    }
-    #info-codexio .codexio-title h4 {
-        padding-bottom: 20px;
-        font-size: 1.5em;
-    }
-    .codexio-info-text img {
-        position: none;
-    }
-    .codexio-info-text p {
-        text-align: justify;
-    }
-    #services {
-        padding: 70px 0;
-        padding-bottom: 0;
-    }
-    #services h3 {
-        padding-bottom: 1%;
-    }
-    #services .services-info-text {
-        text-align: justify;
-    }
-    #services .services-icons {
-        padding-top: 5%;
-    }
-    #services .services-icons .service-container h4 {
-        text-transform: capitalize;
-        padding-top: 3%;
-    }
-    #services .services-description-background {
-        padding: 5%;
-        margin-top: 5%;
-    }
-    #services .heading-description {
-        padding-bottom: 3%;
-    }
-    .service-description-paragraph {
-        text-align: justify;
-    }
-    #projects {
-        padding: 70px 0;
-        padding-bottom: 0;
-    }
-    #projects .lock-trip-logo-container {
-        padding: 2%;
-    }
-    #projects p {
-        text-align: justify;
-    }
-    #clients {
-        padding: 70px 0;
-    }
-    #clients h3 {
-        padding-bottom: 2%;
-    }
-    #clients .clients-logos-container {
-        justify-content: space-around
-    }
-    #clients .clients-logos-container .logo-container .img-holder {
-        width: 100%;
-    }
-    #careers {
-        padding: 70px 0;
-    }
-    #careers h3 {
-        padding-bottom: 2%;
-    }
-    #careers #careers-container {
-        flex-direction: column;
-    }
-    #careers .left-part-careers {
-        width: 100%;
-        text-align: justify;
-    }
-    #careers .left-part-careers .codexio-dev-camp h2 {
-        text-align: center;
-    }
-    #careers .left-part-careers .text-dev-camp p {
-        margin: auto;
-        padding: 2%;
-        width: 100%;
-    }
-    #careers .left-part-careers .vacant-positions-container h2 {
-        text-align: center;
-    }
-    #careers .left-part-careers .vacant-positions-container p {
-        margin: auto;
-        padding: 2%;
-        width: 100%;
-    }
-    #careers .right-part-careers {
-        width: 100%;
-        padding-top: 3%;
-    }
-    #careers .right-part-careers h2 {
-        text-align: center;
-    }
-    #careers .right-part-careers table {
-        margin: auto;
-    }
-    #contact-us {
-        padding: 70px 0;
-    }
-    #contact-us #wrapper-contact-us .left-part-contact-us form h3 {
-        padding-bottom: 2%;
-    }
-    #contact-us #wrapper-contact-us {
-        flex-direction: column;
-    }
-    #contact-us #wrapper-contact-us .left-part-contact-us {
-        width: 100%;
-    }
-    #contact-us #wrapper-contact-us .right-part-contact-us {
-        width: 100%;
-    }
-    #contact-us #wrapper-contact-us .left-part-contact-us form button {
-        font-size: 1.3em;
-        padding: 10px 40px;
-        margin: auto;
-        display: block;
-        margin-bottom: 3em;
-    }
-    .right-part-contact-us div {
-        margin: 0 auto;
-        text-align: center;
-    }
-    #contact-us #wrapper-contact-us .left-part-contact-us form .form-joint-input {
-        width: 100%;
-    }
-    #contact-us #wrapper-contact-us .left-part-contact-us form input[type=email] {
-        width: 100%;
-    }
-    #contact-us #wrapper-contact-us .left-part-contact-us form #message {
-        width: 100%;
-    }
-    .right-part-contact-us div img {
-        width: 70%;
-    }
-    .right-part-contact-us .social-media p {
-        padding-left: 9.6em;
-    }
-    #map {
-        height: 80vh;
-    }
-    footer {
-        padding: 60px 0;
-    }
-    footer img {
-        width: 50%;
-    }
+  }
+  header .header-nav-bar nav #navigation.active {
+    transform: translate(-50px, 115px);
+    transition: all 0.2s;
+  }
+  header .header-nav-bar .fa-bars {
+    display: block;
+    cursor: pointer;
+  }
+  #info-codexio {
+    padding: 70px 0;
+  }
+  #info-codexio .codexio-title h3 {
+    font-size: 3em;
+    padding-bottom: 0;
+  }
+  #info-codexio .codexio-title h4 {
+    padding-bottom: 20px;
+    font-size: 1.5em;
+  }
+  .codexio-info-text img {
+    position: none;
+  }
+  .codexio-info-text p {
+    text-align: justify;
+  }
+  #services {
+    padding: 70px 0;
+    padding-bottom: 0;
+  }
+  #services h3 {
+    padding-bottom: 1%;
+  }
+  #services .services-info-text {
+    text-align: justify;
+  }
+  #services .services-icons {
+    padding-top: 5%;
+  }
+  #services .services-icons .service-container h4 {
+    text-transform: capitalize;
+    padding-top: 3%;
+  }
+  #services .services-description-background {
+    padding: 5%;
+    margin-top: 5%;
+  }
+  #services .heading-description {
+    padding-bottom: 3%;
+  }
+  .service-description-paragraph {
+    text-align: justify;
+  }
+  #projects {
+    padding: 70px 0;
+    padding-bottom: 0;
+  }
+  #projects .lock-trip-logo-container {
+    padding: 2%;
+  }
+  #projects p {
+    text-align: justify;
+  }
+  #clients {
+    padding: 70px 0;
+  }
+  #clients h3 {
+    padding-bottom: 2%;
+  }
+  #clients .clients-logos-container {
+    justify-content: space-around
+  }
+  #clients .clients-logos-container .logo-container .img-holder {
+    width: 100%;
+  }
+  #careers {
+    padding: 70px 0;
+  }
+  #careers h3 {
+    padding-bottom: 2%;
+  }
+  #careers #careers-container {
+    flex-direction: column;
+  }
+  #careers .left-part-careers {
+    width: 100%;
+    text-align: justify;
+  }
+  #careers .left-part-careers .codexio-dev-camp h2 {
+    text-align: center;
+  }
+  #careers .left-part-careers .text-dev-camp p {
+    margin: auto;
+    padding: 2%;
+    width: 100%;
+  }
+  #careers .left-part-careers .vacant-positions-container h2 {
+    text-align: center;
+  }
+  #careers .left-part-careers .vacant-positions-container p {
+    margin: auto;
+    padding: 2%;
+    width: 100%;
+  }
+  #careers .right-part-careers {
+    width: 100%;
+    padding-top: 3%;
+  }
+  #careers .right-part-careers h2 {
+    text-align: center;
+  }
+  #careers .right-part-careers table {
+    margin: auto;
+  }
+  #contact-us {
+    padding: 70px 0;
+  }
+  #contact-us #wrapper-contact-us .left-part-contact-us form h3 {
+    padding-bottom: 2%;
+  }
+  #contact-us #wrapper-contact-us {
+    flex-direction: column;
+  }
+  #contact-us #wrapper-contact-us .left-part-contact-us {
+    width: 100%;
+  }
+  #contact-us #wrapper-contact-us .right-part-contact-us {
+    width: 100%;
+  }
+  #contact-us #wrapper-contact-us .left-part-contact-us form button {
+    font-size: 1.3em;
+    padding: 10px 40px;
+    margin: auto;
+    display: block;
+    margin-bottom: 3em;
+  }
+  .right-part-contact-us div {
+    margin: 0 auto;
+    text-align: center;
+  }
+  #contact-us #wrapper-contact-us .left-part-contact-us form .form-joint-input {
+    width: 100%;
+  }
+  #contact-us #wrapper-contact-us .left-part-contact-us form input[type=email] {
+    width: 100%;
+  }
+  #contact-us #wrapper-contact-us .left-part-contact-us form #message {
+    width: 100%;
+  }
+  .right-part-contact-us div img {
+    width: 70%;
+  }
+  .right-part-contact-us .social-media p {
+    padding-left: 9.6em;
+  }
+  #map {
+    height: 80vh;
+  }
+  footer {
+    padding: 60px 0;
+  }
+  footer img {
+    width: 50%;
+  }
 }
+
 //Breakpoint 2 (iPhone 6+): 414px
 @media screen and (max-width: 480px) {
-    .container {
-        width: 90%;
+  .container {
+    width: 90%;
+  }
+  header {
+    height: 100vh;
+  }
+  header .header-nav-bar nav .header-logo-container {
+    width: 40%;
+    padding-top: 10px;
+  } // ul {
+  //   display: none;
+  // }
+  header .header-nav-bar .fa-bars {
+    display: block;
+    cursor: pointer;
+  }
+  header .div-header-center h1 {
+    font-size: 4em;
+    font-weight: 400;
+  }
+  header .div-header-center h2 {
+    font-size: 1.2em;
+    padding-bottom: 20px;
+  }
+  header .div-header-center .button-hiring,
+  header .div-header-center .button-contact-us {
+    display: block;
+    font-size: 1em;
+    padding: 8px 0;
+    width: 40%;
+    margin: auto;
+    margin-top: 2%;
+  }
+  #info-codexio {
+    padding: 60px 0;
+  }
+  #info-codexio .codexio-title {
+    margin-left: 14%;
+    padding-bottom: 0;
+    line-height: 1.3;
+  }
+  #info-codexio .codexio-title h3 {
+    font-size: 3em;
+    padding: 0;
+  }
+  #info-codexio .codexio-title h4 {
+    font-size: 0.9em;
+  }
+  .codexio-info-text {
+    margin-left: 0.1em;
+  }
+  .codexio-info-text img {
+    left: 130px;
+  }
+  .codexio-info-text p {
+    padding-top: 8em;
+    width: 100%;
+    font-size: 1em;
+    line-height: 1.4;
+  }
+  #services {
+    padding: 60px 0;
+    padding-bottom: 0;
+  }
+  #services .services-icons {
+    flex-wrap: wrap;
+    .service-container {
+      width: 40%;
     }
-    header {
-        height: 100vh;
-    }
-    header .header-nav-bar nav .header-logo-container {
-        width: 40%;
-        padding-top: 10px;
-    }
-    ul {
-        display: none;
-    }
-    header .header-nav-bar .fa-bars {
-        display: block;
-        cursor: pointer;
-    }
-    header .div-header-center h1 {
-        font-size: 4em;
-        font-weight: 400;
-    }
-    header .div-header-center h2 {
-        font-size: 1.2em;
-        padding-bottom: 20px;
-    }
-    header .div-header-center .button-hiring,
-    header .div-header-center .button-contact-us {
-        display: block;
-        font-size: 1em;
-        padding: 8px 0;
-        width: 40%;
-        margin: auto;
-        margin-top: 2%;
-    }
-    #info-codexio {
-        padding: 60px 0;
-    }
-    #info-codexio .codexio-title {
-        margin-left: 14%;
-        padding-bottom: 0;
-        line-height: 1.3;
-    }
-    #info-codexio .codexio-title h3 {
-        font-size: 3em;
-        padding: 0;
-    }
-    #info-codexio .codexio-title h4 {
-        font-size: 0.9em;
-    }
-    .codexio-info-text {
-        margin-left: 0.1em;
-    }
-    .codexio-info-text img {
-        left: 130px;
-    }
-    .codexio-info-text p {
-        padding-top: 8em;
-        width: 100%;
-        font-size: 1em;
-        line-height: 1.4;
-    }
-    #services {
-        padding: 60px 0;
-        padding-bottom: 0;
-    }
-    #services .services-icons {
-        flex-wrap: wrap;
-        .service-container {
-            width: 40%;
-        }
-    }
-    #services h3 {
-        padding-bottom: 5%;
-    }
-    #services .services-info-text {
-        width: 100%;
-    }
-    #services .services-icons {
-        padding-top: 2%;
-    }
-    #services .services-icons .service-container h4 {
-        padding-top: 2%;
-        text-transform: capitalize;
-        font-size: 0.97em;
-    }
-    #services .services-description-background {
-        margin-top: 10%;
-        padding: 60px 0;
-    }
-    #services .services-icons .service-container img {
-        padding-top: 5%;
-    }
-    #services .heading-description {
-        padding-bottom: 5%;
-    }
-    #services .service-description-paragraph {
-        text-align: justify;
-    }
-    #projects {
-        padding: 60px 0;
-        padding-bottom: 0;
-    }
-    #projects .lock-trip-logo-container {
-        padding: 5%;
-    }
-    #projects .lock-trip-logo-container .lock-trip-logo {
-        width: 60%;
-    }
-    #projects #projects-container {
-        margin-top: 10%;
-        flex-direction: column;
-    }
-    #projects #projects-container img {
-        width: 100%;
-        margin-bottom: 5%;
-    }
-    #projects p {
-        font-size: 0.9em;
-        padding-left: 0;
-    }
-    #clients {
-        padding: 60px 0;
-    }
-    #clients h3 {
-        padding-bottom: 5%;
-    }
-    #clients .clients-logos-container {
-        flex-direction: column;
-    }
-    #clients .clients-logos-container .logo-container {
-        width: 100%;
-    }
-    #clients .clients-logos-container .logo-container {
-        margin-bottom: 3%;
-    }
-    #careers {
-        padding: 60px 0;
-    }
-    #careers h3 {
-        padding-bottom: 5%;
-    }
-    #careers #careers-container {
-        flex-direction: column;
-    }
-    #careers .left-part-careers {
-        width: 100%;
-        text-align: center;
-    }
-    #careers .left-part-careers .text-dev-camp p {
-        width: 100%;
-        font-size: 1em;
-    }
-    #careers .left-part-careers .text-vacant-positions {
-        width: 100%;
-        font-size: 1em;
-    }
-    #careers .right-part-careers {
-        width: 100%;
-        padding-top: 5%;
-        text-align: center;
-    }
-    #careers .right-part-careers table {
-        font-size: 1em;
-    }
-    #contact-us {
-        padding: 60px 0;
-    }
-    #contact-us .right-part-contact-us div {
-        padding-bottom: 1em;
-        margin: auto;
-    }
-    #contact-us .right-part-contact-us div p {
-        text-align: center;
-    }
+  }
+  #services h3 {
+    padding-bottom: 5%;
+  }
+  #services .services-info-text {
+    width: 100%;
+  }
+  #services .services-icons {
+    padding-top: 2%;
+  }
+  #services .services-icons .service-container h4 {
+    padding-top: 2%;
+    text-transform: capitalize;
+    font-size: 0.97em;
+  }
+  #services .services-description-background {
+    margin-top: 10%;
+    padding: 60px 0;
+  }
+  #services .services-icons .service-container img {
+    padding-top: 5%;
+  }
+  #services .heading-description {
+    padding-bottom: 5%;
+  }
+  #services .service-description-paragraph {
+    text-align: justify;
+  }
+  #projects {
+    padding: 60px 0;
+    padding-bottom: 0;
+  }
+  #projects .lock-trip-logo-container {
+    padding: 5%;
+  }
+  #projects .lock-trip-logo-container .lock-trip-logo {
+    width: 60%;
+  }
+  #projects #projects-container {
+    margin-top: 10%;
+    flex-direction: column;
+  }
+  #projects #projects-container img {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  #projects p {
+    font-size: 0.9em;
+    padding-left: 0;
+  }
+  #clients {
+    padding: 60px 0;
+  }
+  #clients h3 {
+    padding-bottom: 5%;
+  }
+  #clients .clients-logos-container {
+    flex-direction: column;
+  }
+  #clients .clients-logos-container .logo-container {
+    width: 100%;
+  }
+  #clients .clients-logos-container .logo-container {
+    margin-bottom: 3%;
+  }
+  #careers {
+    padding: 60px 0;
+  }
+  #careers h3 {
+    padding-bottom: 5%;
+  }
+  #careers #careers-container {
+    flex-direction: column;
+  }
+  #careers .left-part-careers {
+    width: 100%;
+    text-align: center;
+  }
+  #careers .left-part-careers .text-dev-camp p {
+    width: 100%;
+    font-size: 1em;
+  }
+  #careers .left-part-careers .text-vacant-positions {
+    width: 100%;
+    font-size: 1em;
+  }
+  #careers .right-part-careers {
+    width: 100%;
+    padding-top: 5%;
+    text-align: center;
+  }
+  #careers .right-part-careers table {
+    font-size: 1em;
+  }
+  #contact-us {
+    padding: 60px 0;
+  }
+  #contact-us .right-part-contact-us div {
+    padding-bottom: 1em;
+    margin: auto;
+  }
+  #contact-us .right-part-contact-us div p {
+    text-align: center;
+  }
 }
 
 //Breakpoint 1 (iPhone 5S): 320px
 @media screen and (max-width: 320px) {
-    .container {
-        width: 90%;
-    }
-    header {
-        height: 100vh;
-    }
-    header .div-header-center h1 {
-        font-size: 4em;
-        font-weight: 400;
-    }
-    header .header-nav-bar {
-        padding: 2%;
-    }
-    header .header-nav-bar nav .header-logo-container {
-        width: 60%;
-    }
-    header .div-header-center h2 {
-        font-size: 1em;
-    }
-    header .div-header-center .button-hiring,
-    header .div-header-center .button-contact-us {
-        padding: 6px 0;
-    }
-    #info-codexio {
-        padding: 40px 0;
-    }
-    #info-codexio .codexio-title {
-        margin-left: 9%;
-    }
-    #info-codexio .codexio-title h3 {
-        font-size: 2.5em;
-    }
-    #info-codexio .codexio-title h4 {
-        font-size: 0.8em;
-    }
-    .codexio-info-text img {
-        left: 65px;
-    }
-    .codexio-info-text p {
-        padding-top: 50%;
-        width: 100%;
-        font-size: 0.9em;
-        text-align: justify;
-        line-height: 1.5;
-    }
-    #services {
-        padding: 40px 0;
-        padding-bottom: 0;
-    }
-    #services h3 {
-        font-size: 2.7em;
-    }
-    #services .service-description {
-        font-size: 0.9em;
-    }
-    #services .service-description-paragraph {
-        text-align: justify;
-    }
-    #services .services-icons .service-container {
-        padding-top: 2%;
-    }
-    #services .services-info-text {
-        font-size: 0.9em;
-        width: 100%;
-        text-align: justify;
-    }
-    #services .heading-description {
-        font-size: 1.4em;
-    }
-    #projects {
-        padding: 40px 0;
-        padding-bottom: 0;
-    }
-    #projects h3 {
-        font-size: 2.8em;
-    }
-    #projects .lock-trip-logo-container .lock-trip-logo {
-        width: 50%;
-    }
-    #projects p {
-        font-size: 0.9em;
-        text-align: justify;
-    }
-    #projects #images-container #opened-image {
-        height: 20%;
-    }
-    #clients {
-        padding: 40px 0;
-    }
-    #clients h3 {
-        font-size: 2.7em;
-    }
-    #careers {
-        padding: 40px 0;
-    }
-    #careers h3 {
-        font-size: 2.7em;
-    }
-    #careers .left-part-careers .vacant-positions-container {
-        padding-top: 2%;
-    }
-    #careers .left-part-careers .vacant-positions-container h2 {
-        padding-left: 0;
-    }
-    #careers .left-part-careers .text-dev-camp p {
-        text-align: justify;
-        font-size: 0.9em;
-        padding-bottom: 15px;
-    }
-    #careers .left-part-careers .text-vacant-positions {
-        text-align: justify;
-        font-size: 0.9em;
-    }
-    #careers .right-part-careers {
-        padding-top: 10%;
-    }
-    #careers .right-part-careers table th {
-        font-size: 0.9em;
-    }
-    #careers .right-part-careers table td {
-        padding: 10px 8px;
-        font-size: 0.9em;
-    }
-    #careers .right-part-careers table tr td {
-        padding: 2px 6px;
-    }
-    #contact-us {
-        padding: 40px 0;
-    }
-    #contact-us #wrapper-contact-us .left-part-contact-us form h3 {
-        font-size: 2.7em;
-    }
-    #contact-us #wrapper-contact-us .left-part-contact-us form button {
-        margin-bottom: 2em;
-    }
-    .right-part-contact-us div {
-        margin: 0 auto;
-        padding-bottom: 1em;
-    }
-    .right-part-contact-us div img {
-        width: 100%;
-    }
-    .right-part-contact-us .social-media p {
-        padding-left: 2.5em;
-    }
-    .right-part-contact-us .social-media .fa {
-        font-size: 2.4em;
-    }
-    #contact-us #wrapper-contact-us .left-part-contact-us form .form-joint-input input[type=text]:first-child {
-        margin-right: 2%;
-    }
-    #map {
-        height: 80vh;
-    }
-    footer {
-        padding: 60px 0;
-    }
-    footer img {
-        width: 50%;
-    }
+  .container {
+    width: 90%;
+  }
+  header {
+    height: 100vh;
+  }
+  header .div-header-center h1 {
+    font-size: 4em;
+    font-weight: 400;
+  }
+  header .header-nav-bar {
+    padding: 2%;
+  }
+  header .header-nav-bar nav .header-logo-container {
+    width: 60%;
+  }
+  header .div-header-center h2 {
+    font-size: 1em;
+  }
+  header .div-header-center .button-hiring,
+  header .div-header-center .button-contact-us {
+    padding: 6px 0;
+  }
+  #info-codexio {
+    padding: 40px 0;
+  }
+  #info-codexio .codexio-title {
+    margin-left: 9%;
+  }
+  #info-codexio .codexio-title h3 {
+    font-size: 2.5em;
+  }
+  #info-codexio .codexio-title h4 {
+    font-size: 0.8em;
+  }
+  .codexio-info-text img {
+    left: 65px;
+  }
+  .codexio-info-text p {
+    padding-top: 50%;
+    width: 100%;
+    font-size: 0.9em;
+    text-align: justify;
+    line-height: 1.5;
+  }
+  #services {
+    padding: 40px 0;
+    padding-bottom: 0;
+  }
+  #services h3 {
+    font-size: 2.7em;
+  }
+  #services .service-description {
+    font-size: 0.9em;
+  }
+  #services .service-description-paragraph {
+    text-align: justify;
+  }
+  #services .services-icons .service-container {
+    padding-top: 2%;
+  }
+  #services .services-info-text {
+    font-size: 0.9em;
+    width: 100%;
+    text-align: justify;
+  }
+  #services .heading-description {
+    font-size: 1.4em;
+  }
+  #projects {
+    padding: 40px 0;
+    padding-bottom: 0;
+  }
+  #projects h3 {
+    font-size: 2.8em;
+  }
+  #projects .lock-trip-logo-container .lock-trip-logo {
+    width: 50%;
+  }
+  #projects p {
+    font-size: 0.9em;
+    text-align: justify;
+  }
+  #projects #images-container #opened-image {
+    height: 20%;
+  }
+  #clients {
+    padding: 40px 0;
+  }
+  #clients h3 {
+    font-size: 2.7em;
+  }
+  #careers {
+    padding: 40px 0;
+  }
+  #careers h3 {
+    font-size: 2.7em;
+  }
+  #careers .left-part-careers .vacant-positions-container {
+    padding-top: 2%;
+  }
+  #careers .left-part-careers .vacant-positions-container h2 {
+    padding-left: 0;
+  }
+  #careers .left-part-careers .text-dev-camp p {
+    text-align: justify;
+    font-size: 0.9em;
+    padding-bottom: 15px;
+  }
+  #careers .left-part-careers .text-vacant-positions {
+    text-align: justify;
+    font-size: 0.9em;
+  }
+  #careers .right-part-careers {
+    padding-top: 10%;
+  }
+  #careers .right-part-careers table th {
+    font-size: 0.9em;
+  }
+  #careers .right-part-careers table td {
+    padding: 10px 8px;
+    font-size: 0.9em;
+  }
+  #careers .right-part-careers table tr td {
+    padding: 2px 6px;
+  }
+  #contact-us {
+    padding: 40px 0;
+  }
+  #contact-us #wrapper-contact-us .left-part-contact-us form h3 {
+    font-size: 2.7em;
+  }
+  #contact-us #wrapper-contact-us .left-part-contact-us form button {
+    margin-bottom: 2em;
+  }
+  .right-part-contact-us div {
+    margin: 0 auto;
+    padding-bottom: 1em;
+  }
+  .right-part-contact-us div img {
+    width: 100%;
+  }
+  .right-part-contact-us .social-media p {
+    padding-left: 2.5em;
+  }
+  .right-part-contact-us .social-media .fa {
+    font-size: 2.4em;
+  }
+  #contact-us #wrapper-contact-us .left-part-contact-us form .form-joint-input input[type=text]:first-child {
+    margin-right: 2%;
+  }
+  #map {
+    height: 80vh;
+  }
+  footer {
+    padding: 60px 0;
+  }
+  footer img {
+    width: 50%;
+  }
 }
-

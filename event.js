@@ -96,7 +96,7 @@ $(document).ready(() => {
         $("#header").css("filter", "");
         $("#images-container").hide();
     });
-    // Form 
+    // Form
     $("#send-mail").click((e) => {
         e.preventDefault();
         let fullName = $("#first-name").val() + " " + $("#last-name").val();
@@ -154,3 +154,15 @@ $(document).ready(() => {
         startDates.first().parent().css("background", "#61c4be");
     }
 });
+
+document.getElementById('open-nav').addEventListener('click', function (param) {
+  var button = document.getElementById('open-nav');
+  var nav = document.getElementById('navigation')
+  if (nav.classList.contains('active')) {
+    nav.classList.remove('active');
+    // button.textContent = '-';
+  } else {
+    nav.classList.add('active');
+    // button.textContent = 'X';
+  }
+})
