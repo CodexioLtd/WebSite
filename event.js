@@ -161,10 +161,11 @@ document.getElementById('open-nav').addEventListener('click', function (param) {
   var nav = document.getElementById('navigation')
   if (nav.classList.contains('active')) {
     nav.classList.remove('active');
+    // headerNav.classList.remove('colored-background');
     // button.textContent = '-';
   } else {
     nav.classList.add('active');
-    headerNav.classList.add('colored-background');
+    // headerNav.classList.add('colored-background');
     // button.textContent = 'X';
   }
 })
