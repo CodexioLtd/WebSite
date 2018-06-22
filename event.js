@@ -153,6 +153,14 @@ $(document).ready(() => {
     if (none) {
         startDates.first().parent().css("background", "#61c4be");
     }
+
+    
+    const links = $('.nav-link');
+    for (let i = 0; i < links.length; i++) {
+      links[i].addEventListener('click', () => {
+        $('#navigation').removeClass('active');
+      })
+    }
 });
 
 document.getElementById('open-nav').addEventListener('click', function (param) {
