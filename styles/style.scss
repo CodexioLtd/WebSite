@@ -37,8 +37,11 @@ $color:#61c4be;
 @mixin infobox() {
   display: none;
   text-align: center;
-  font-size: 24px;
-  padding: 10px;
+  font-size: 1.2em;
+// color:#000;
+  font-weight: 500;
+  width: 80%;
+  padding: 10px 5px;
   border-radius: 10px;
 }
 
@@ -110,15 +113,11 @@ header {
         }
       }
     }
-    
   }
-
   #navigation {
-    transform: translate(0px, -1999px)
-    // width: 100%;
+    transform: translate(0px, -1999px) // width: 100%;
     // display: none;
   }
-
   .div-header-center {
     text-align: center;
     color: #fff;
@@ -538,8 +537,10 @@ header {
             margin-right: 1%;
           }
         }
-        .form-element {
+        div[class=form-element] {
           font-weight: 600;
+        }
+        .form-element {
           margin-bottom: 10px;
         }
         .form-label-required {
@@ -610,6 +611,9 @@ header {
 /* Social-media */
 
 .social-media {
+  a {
+    text-decoration: none;
+  }
   float: right;
   .fa {
     font-size: 2.8em;
@@ -699,7 +703,7 @@ footer {
 
 .msg-success {
   @include infobox;
-  background: #c8ffd1;
+  background: #dbf9e0;
 }
 
 .msg-error {
@@ -710,4 +714,10 @@ footer {
 .colored-background {
   background-color: #3F5D91;
   opacity: 0.99;
+}
+
+.toast-error {
+  // color: #000 !important;
+  background-color: #ffe1e4 !important;
+  opacity: 1 !important;
 }
