@@ -157,12 +157,14 @@ $(document).ready(() => {
 
 document.getElementById('open-nav').addEventListener('click', function (param) {
   var button = document.getElementById('open-nav');
+  var headerNav = document.getElementById('header-nav-bar');
   var nav = document.getElementById('navigation')
   if (nav.classList.contains('active')) {
     nav.classList.remove('active');
     // button.textContent = '-';
   } else {
     nav.classList.add('active');
+    headerNav.classList.add('colored-background');
     // button.textContent = 'X';
   }
 })

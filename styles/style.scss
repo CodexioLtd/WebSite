@@ -108,11 +108,12 @@ header {
           color: $color;
         }
       }
-      #navigation {
-        display: none;
-      }
+    }
+    #navigation {
+      display: none;
     }
   }
+
   .div-header-center {
     text-align: center;
     color: #fff;
@@ -177,11 +178,10 @@ header {
 
 .logo-with-text {
   display: flex;
-    img {
-      width: 11%;
-      height: 5%;
-    }
-
+  img {
+    width: 11%;
+    height: 5%;
+  }
   p {
     padding-left: 1em;
     font-size: $small;
@@ -466,7 +466,7 @@ header {
       font-size: 1.1em;
     }
     ul {
-      padding-top: 3%;
+      padding-top: 1em;
       li {
         text-transform: uppercase;
         list-style: none;
@@ -499,7 +499,6 @@ header {
     }
   }
 }
-
 
 /* End of Careers */
 
@@ -701,4 +700,9 @@ footer {
 .msg-error {
   @include infobox;
   background: #ffe1e4;
+}
+
+.colored-background {
+  background-color: #3F5D91;
+  opacity: 0.99;
 }
