@@ -110,11 +110,13 @@ header {
         }
       }
     }
-    #navigation {
-      transform: translate(0px, -1999px);
-      width: 100%;
-      // display: none;
-    }
+    
+  }
+
+  #navigation {
+    transform: translate(0px, -1999px)
+    // width: 100%;
+    // display: none;
   }
 
   .div-header-center {
