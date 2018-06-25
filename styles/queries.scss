@@ -3,6 +3,7 @@
     width: 90%;
   }
 }
+
 // Breakpoint 3 (iPad Air): 768px
 @media screen and (max-width: 768px) {
   .container {
@@ -20,13 +21,16 @@
     display: block;
     cursor: pointer;
   }
+  header .header-nav-bar nav div #nav-button {
+    display: block;
+    cursor: pointer;
+  }
   #navigation {
     position: fixed;
     transform: translate(0px, -1999px);
     transition: all 0.5s;
     width: 100%;
-    z-index: 800;
-    // background-color: #3F5D91;
+    z-index: 800; // background-color: #3F5D91;
     // opacity: 0.9;
     a {
       text-decoration: none;
@@ -44,8 +48,7 @@
   #navigation.active {
     transform: translate(0px, 0px);
     transition: all 0.2s;
-    background-color: #3F5D91;
-    // opacity: 0.9;
+    background-color: #3F5D91; // opacity: 0.9;
     padding: 100px 0 50px 0;
     height: 100vh;
   }
@@ -93,12 +96,44 @@
   #projects {
     padding: 70px 0;
     padding-bottom: 0;
-  }
-  #projects .lock-trip-logo-container {
-    padding: 2%;
-  }
-  #projects p {
-    text-align: justify;
+    #projects .lock-trip-logo-container {
+      padding: 2%;
+    }
+    #projects p {
+      text-align: justify;
+    }
+    #projects-container {
+      display: none;
+    }
+    #images-container {
+      display: flex;
+      justify-content: space-around;
+      .fourth {
+        background: url('../img/first-mobile.png');
+      }
+      .fifth {
+        background: url('../img/second-mobile.png');
+      }
+      .sixth {
+        background: url('../img/third-mobile.png');
+      }
+      .demo-image {
+        width: 30%;
+        height: 200px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border: 1px solid #ccc;
+        cursor: pointer;
+        margin-bottom: 30px;
+        opacity: 0.9;
+        transition: all 0.5s;
+      }
+      .demo-image:hover {
+        opacity: 1;
+        border: 1px solid #000;
+      }
+    }
   }
   #clients {
     padding: 70px 0;
@@ -293,28 +328,33 @@
   #projects {
     padding: 60px 0;
     padding-bottom: 0;
-  }
+
   #projects .lock-trip-logo-container {
     padding: 5%;
   }
   #projects .lock-trip-logo-container .lock-trip-logo {
     width: 60%;
   }
-  #projects #projects-container {
+  #images-container {
     margin-top: 10%;
     flex-direction: column;
-  }
-  #projects #projects-container img {
-    width: 100%;
-    margin-bottom: 5%;
-  }
-  #projects #projects-container .demo-image {
-    margin: auto;
-  }
+    .demo-image {
+      width: 100%;
+      margin: auto;
+      margin-bottom: 1em;
+    }
+  } // #projects #projects-container img {
+  //   width: 100%;
+  //   margin-bottom: 5%;
+  // }
+  // #projects #projects-container .demo-image {
+  //   margin: auto;
+  // }
   #projects p {
     font-size: 0.9em;
     padding-left: 0;
   }
+}
   #clients {
     padding: 60px 0;
   }
@@ -446,13 +486,12 @@
   #projects p {
     font-size: 0.9em;
     text-align: justify;
-  }
-  #projects #projects-container .demo-image {
-    margin: auto;
-  }
-  #projects #images-container #opened-image {
-    height: 20%;
-  }
+  } // #projects #projects-container .demo-image {
+  //   margin: auto;
+  // }
+  // #projects #images-container #opened-image {
+  //   height: 20%;
+  // }
   #clients {
     padding: 40px 0;
   }
