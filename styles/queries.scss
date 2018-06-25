@@ -102,38 +102,6 @@
     #projects p {
       text-align: justify;
     }
-    #projects-container {
-      display: none;
-    }
-    #images-container {
-      display: flex;
-      justify-content: space-around;
-      .fourth {
-        background: url('../img/first-mobile.png');
-      }
-      .fifth {
-        background: url('../img/second-mobile.png');
-      }
-      .sixth {
-        background: url('../img/third-mobile.png');
-      }
-      .demo-image {
-        width: 30%;
-        height: 200px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        border: 1px solid #ccc;
-        cursor: pointer;
-        margin-bottom: 30px;
-        opacity: 0.9;
-        transition: all 0.5s;
-      }
-      .demo-image:hover {
-        opacity: 1;
-        border: 1px solid #000;
-      }
-    }
   }
   #clients {
     padding: 70px 0;
@@ -328,21 +296,54 @@
   #projects {
     padding: 60px 0;
     padding-bottom: 0;
-
-  #projects .lock-trip-logo-container {
-    padding: 5%;
-  }
-  #projects .lock-trip-logo-container .lock-trip-logo {
-    width: 60%;
-  }
-  #images-container {
-    margin-top: 10%;
-    flex-direction: column;
-    .demo-image {
-      width: 100%;
-      margin: auto;
-      margin-bottom: 1em;
+    #projects .lock-trip-logo-container {
+      padding: 5%;
     }
+    #projects .lock-trip-logo-container .lock-trip-logo {
+      width: 60%;
+    }
+    #projects-container {
+      display: none;
+    }
+    #images-container {
+      display: flex;
+      flex-direction: column;
+      .fourth {
+        background: url('../img/first-mobile.png');
+      }
+      .fifth {
+        background: url('../img/second-mobile.png');
+      }
+      .sixth {
+        background: url('../img/third-mobile.png');
+      }
+      .demo-image {
+        width: 100%;
+        margin: auto;
+        background-size: cover;
+        border: 1px solid #ccc;
+        cursor: pointer;
+        padding-bottom: 80%;
+        margin-bottom: 3%;
+        opacity: 0.9;
+        transition: all 0.5s;
+      }
+      .demo-image:hover {
+        opacity: 1;
+        border: 1px solid #000;
+      }
+      #projects p {
+        font-size: 0.9em;
+        padding-left: 0;
+      }
+    } // #images-container {
+    //   margin-top: 10%;
+    //   flex-direction: column;
+    //   .demo-image {
+    //     width: 100%;
+    //     margin: auto;
+    //     margin-bottom: 1em;
+    //   }
   } // #projects #projects-container img {
   //   width: 100%;
   //   margin-bottom: 5%;
@@ -350,11 +351,6 @@
   // #projects #projects-container .demo-image {
   //   margin: auto;
   // }
-  #projects p {
-    font-size: 0.9em;
-    padding-left: 0;
-  }
-}
   #clients {
     padding: 60px 0;
   }
