@@ -40,3 +40,11 @@
   font-weight: 500;
   letter-spacing: 1px;
 }
+
+@mixin input() {
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 6px;
+  outline: none;
+  width: 80%;
+}
