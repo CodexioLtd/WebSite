@@ -196,4 +196,14 @@ document.getElementById('nav-button').addEventListener('click', function (param)
     // headerNav.classList.add('colored-background');
     // button.textContent = 'X';
   }
-})
+});
+let cfg = {
+  selector: '.item',
+  download: false,
+  zoom: false,
+  autoplayControls: false,
+  share: false,
+  thumbnail: false
+};
+$("#projects-container").lightGallery(cfg);
+$("#images-container").lightGallery(cfg);

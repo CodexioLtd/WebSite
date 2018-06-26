@@ -14,6 +14,7 @@
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
     crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" media="screen" href="styles/queries.css" />
+  <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.11/css/lightgallery.min.css" />
 </head>
 
 <body>
@@ -194,21 +195,25 @@
           hotels, homes and travelling tickets. Visit (and read more) on:
           <a href="https://locktrip.com/">https://locktrip.com/</a>
         </p>
+
         <!-- Projects images Desktop-->
         <div id="projects-container">
-          <div class="demo-image first" data-image="img/first-desktop.png"></div>
-          <div class="demo-image second" data-image="img/second-desktop.png"></div>
-          <div class="demo-image third" data-image="img/third-desktop.png"></div>
-
-          <!-- <img src="img/landing-page.png" alt="landing-page">
-          <img src="img/search-results.png" alt="search-results">
-          <img src="img/search-results-map.png" alt="search-results-map"> -->
+          <div class="item demo-image first" data-src="img/first-desktop.png">
+          </div>
+          <div class="item demo-image second" data-src="img/second-desktop.png">
+          </div>
+          <div class="item demo-image third" data-src="img/third-desktop.png">
+          </div>
         </div>
+
         <!-- Projects images Mobile-->
         <div id="images-container">
-          <div class="demo-image fourth" data-image="img/first-mobile.png"></div>
-          <div class="demo-image fifth" data-image="img/second-mobile.png"></div>
-          <div class="demo-image sixth" data-image="img/third-mobile.png"></div>
+          <div class="item demo-image fourth" data-src="img/first-mobile.png" >
+          </div>
+          <div class="item demo-image fifth"  data-src="img/second-mobile.png">
+          </div>
+          <div class="item demo-image sixth"  data-src="img/third-mobile.png" >
+          </div>
         </div>
       </div>
     </section>
@@ -406,17 +411,11 @@
 
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDS9q2bfOep2OlZCFWgW9KaCsIHopKo354&callback=initMap" async
     defer></script>
-  <script src="event.js"></script>
   <script src="lib/js/noframework.waypoints.js"></script>
-  <script src="lib/js/intense.js"></script>
-  <script>
-    window.onload = function () {
-      var elements = document.querySelectorAll('.demo-image');
-      Intense(elements);
-    }
-
-  </script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.11/js/lightgallery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.11/js/lightgallery-all.min.js"></script>
+  <script src="event.js"></script>
 </body>
 
 </html>
