@@ -1,16 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+@import './partials/variables';
+@import './partials/mixins';
+@import './partials/header';
 //font-size
-$default-body-font: 16px;
-$small: 1.0em;
-$large: 1.88em;
-$extralarge: 3em;
-// default padding = 100px
-$padding: 100px 0;
-// default line height
-$line-height: 1.5;
-// default transition time
-$animation-time: 0.5s;
+
 .container {
   width: 70%;
   max-width: 1200px;
@@ -18,32 +13,7 @@ $animation-time: 0.5s;
 }
 
 // color auqa
-$color:#61c4be;
 // default width for each sections
-@mixin button() {
-  text-decoration: none;
-  background: none;
-  color: #fff;
-  font-size: 1.3em;
-  font-weight: 300;
-  padding: 10px 30px;
-  border: 2px solid $color;
-  border-radius: 200px;
-  outline: none;
-  display: inline-block;
-  cursor: pointer;
-}
-
-@mixin infobox() {
-  display: none;
-  text-align: center;
-  font-size: 1.2em;
-  // color:#000;
-  font-weight: 500;
-  width: 80%;
-  padding: 10px 5px;
-  border-radius: 10px;
-}
 
 * {
   margin: 0;
@@ -72,97 +42,7 @@ body {
 // }
 /* Header */
 
-header {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url("../img/background-header.jpg") no-repeat;
-  background-size: cover;
-  height: 100vh;
-  .header-nav-bar {
-    z-index: 999;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 15px;
-    #nav-button {
-      color: #fff;
-      font-size: 1.8em;
-      display: none;
-    }
-    #close-nav {
-      display: none;
-      color: #fff;
-      font-size: 1.8em;
-    }
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      .header-logo-container {
-        width: 20%;
-        img {
-          width: 100%;
-        }
-      }
-      li {
-        display: inline-block;
-        padding-left: 10px;
-        a {
-          text-decoration: none;
-          text-transform: uppercase;
-          letter-spacing: 1px;
-          color: #fff;
-          font-size: $small;
-        }
-        a:hover {
-          color: $color;
-        }
-      }
-    }
-  }
-  #navigation {
-    transform: translate(0px, -1999px) // width: 100%;
-    // display: none;
-  }
-  .div-header-center {
-    text-align: center;
-    color: #fff;
-    position: relative;
-    top: 40%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    h1 {
-      font-size: 7em;
-      font-weight: 300;
-      letter-spacing: 8px;
-      margin: 0;
-    }
-    h2 {
-      font-weight: 300;
-      padding-bottom: 40px;
-      text-transform: uppercase;
-    }
-    .button-hiring {
-      @include button();
-      background: $color;
-      margin-right: 10px;
-    }
-    .button-contact-us {
-      @include button();
-      padding: 10px 40px;
-      background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
-    }
-    .button-hiring:hover {
-      background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
-      border: 2px solid $color;
-    }
-    .button-contact-us:hover {
-      background: $color;
-    }
-  }
-}
 
-/*  End of Header */
 
 /* Info Codexio */
 
