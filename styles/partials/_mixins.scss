@@ -1,0 +1,25 @@
+
+@mixin button() {
+  text-decoration: none;
+  background: none;
+  color: #fff;
+  font-size: 1.3em;
+  font-weight: 300;
+  padding: 10px 30px;
+  border: 2px solid $color;
+  border-radius: 200px;
+  outline: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+@mixin infobox() {
+  display: none;
+  text-align: center;
+  font-size: 1.2em;
+  // color:#000;
+  font-weight: 500;
+  width: 80%;
+  padding: 10px 5px;
+  border-radius: 10px;
+}
