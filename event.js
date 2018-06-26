@@ -82,28 +82,6 @@ $(document).ready(() => {
     $(e.currentTarget).find("#codexio-service-description").html(),
     e.currentTarget)
   );
-  // Projects images open
-//   $("#projects-container img").click(e => {
-//     let clickedImageUrl = $(e.target).attr("src");
-//     $("body").css("background", "grey");
-//     $("#header").css("filter", "contrast(30%)");
-//     $("#images-container").show();
-//     $("#opened-image").attr("src", clickedImageUrl);
-//   });
-
-//   $("#close-button").click(() => {
-//     $("body").css("background", "");
-//     $("#header").css("filter", "");
-//     $("#images-container").hide();
-//   });
-
-//   $(document).ready(function() {
-//      if($(window).width() > 515) {
-//          $("#img").attr("src", "large.png");
-//      } else {
-//          $("#img").attr("src", "small.png");
-//      }
-// });
   // Form
   $("#send-mail").click((e) => {
     e.preventDefault();
@@ -187,14 +165,10 @@ document.getElementById('nav-button').addEventListener('click', function (param)
     nav.classList.remove('active');
     button.classList.remove('fa-power-off');
     button.classList.add('fa-bars');
-    // headerNav.classList.remove('colored-background');
-    // button.textContent = '-';
   } else {
     nav.classList.add('active');
     button.classList.remove('fa-bars');
     button.classList.add('fa-power-off');
-    // headerNav.classList.add('colored-background');
-    // button.textContent = 'X';
   }
 });
 let cfg = {
@@ -205,5 +179,5 @@ let cfg = {
   share: false,
   thumbnail: false
 };
-$("#projects-container").lightGallery(cfg);
-$("#images-container").lightGallery(cfg);
+$("#desktop-images-container").lightGallery(cfg);
+$("#mobile-images-container").lightGallery(cfg);

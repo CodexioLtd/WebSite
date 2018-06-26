@@ -36,6 +36,9 @@
       z-index: 800;
       li {
         border-bottom: 1px solid white;
+        &:last-child {
+          border-bottom: none;
+        }
         a {
           text-decoration: none;
           padding: 1em 0;
@@ -47,9 +50,6 @@
           color: #fff;
           font-size: 1.1em;
         }
-      }
-      li:last-child {
-        border-bottom: none;
       }
     }
     #navigation.active {

@@ -1,19 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-
 @import './partials/variables';
 @import './partials/mixins';
-@import './partials/header';
-//font-size
-
+// default width for each sections
 .container {
   width: 70%;
   max-width: 1200px;
   margin: 0 auto;
 }
-
-// color auqa
-// default width for each sections
 
 * {
   margin: 0;
@@ -37,12 +31,103 @@ body {
   font-size: $default-body-font;
 }
 
-// img {
-//     max-width: 100%;
-// }
+img {
+  max-width: 100%;
+}
+
+a {
+  @include link();
+}
+
+li {
+  list-style: none;
+}
+
 /* Header */
 
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url("../img/background-header.jpg") no-repeat;
+  background-size: cover;
+  height: 100vh;
+  .header-nav-bar {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    #nav-button,
+    #close-nav {
+      color: #fff;
+      font-size: 1.8em;
+      display: none;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .header-logo-container {
+        width: 20%;
+        img {
+          width: 100%;
+        }
+      }
+      li {
+        display: inline-block;
+        padding-left: 10px;
+        a {
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          &:hover {
+            color: $color;
+          }
+        }
+      }
+    }
+  }
+  #navigation {
+    transform: translate(0px, -1999px)
+  }
+  .div-header-center {
+    text-align: center;
+    color: #fff;
+    position: relative;
+    top: 40%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    h1 {
+      font-size: 7em;
+      font-weight: 300;
+      letter-spacing: 8px;
+      margin: 0;
+    }
+    h2 {
+      font-weight: 300;
+      padding-bottom: 40px;
+      text-transform: uppercase;
+    }
+    .button-hiring {
+      @include button();
+      background: $color;
+      margin-right: 10px;
+      &:hover {
+        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+        border: 2px solid $color;
+      }
+    }
+    .button-contact-us {
+      @include button();
+      padding: 10px 40px;
+      background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+      &:hover {
+        background: $color;
+      }
+    }
+  }
+}
 
+/* End of Header */
 
 /* Info Codexio */
 
@@ -76,9 +161,9 @@ body {
     font-size: $small;
     line-height: 1.6;
     font-weight: 400;
-  }
-  p:last-child {
-    padding-top: 1em;
+    &:last-child {
+      padding-top: 0.2em;
+    }
   }
 }
 
@@ -91,10 +176,7 @@ body {
   padding: $padding;
   padding-bottom: 0;
   h3 {
-    text-align: center;
-    font-size: $extralarge;
-    font-weight: 300;
-    padding-bottom: 40px;
+    @include title();
   }
   .services-info-text {
     margin: auto;
@@ -122,9 +204,9 @@ body {
       text-align: center;
       margin: auto;
       opacity: 0.5;
-    }
-    .service-container img:hover {
-      opacity: 1;
+      &:hover {
+        opacity: 1;
+      }
     }
     #selected-service-icon {
       opacity: 1;
@@ -166,32 +248,29 @@ body {
   padding: $padding;
   padding-bottom: 0;
   h3 {
-    text-align: center;
-    font-size: $extralarge;
-    font-weight: 300;
+    @include title();
   }
   .lock-trip-logo-container {
     text-align: center;
     margin: auto;
     padding: 25px;
+    &:hover {
+      -webkit-filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.2));
+    }
     .lock-trip-logo {
       width: 15%;
     }
-  }
-  .lock-trip-logo-container:hover {
-    -webkit-filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.2));
   }
   p {
     padding-left: 30px;
     line-height: 1.5;
     font-size: $small;
     a {
-      text-decoration: none;
       visibility: visible;
       color: #2E5CA9;
     }
   }
-  #projects-container {
+  #desktop-images-container {
     margin-top: 50px;
     display: flex;
     justify-content: space-around;
@@ -205,57 +284,27 @@ body {
       background: url('../img/third-desktop.png');
     }
     .demo-image {
-      // display: inline-block;
       width: 28%;
-      /* height: 220px; */
       background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
       padding-bottom: 15%;
       border: 1px solid #ccc;
       cursor: pointer;
       margin-bottom: 30px;
       opacity: 0.9;
       transition: all $animation-time;
-    }
-    .demo-image:hover {
-      opacity: 1;
-      border: 1px solid #000;
-    }
-    img {
-      cursor: pointer;
-      transition: transform .7s;
-      width: 28%;
-      height: 150px;
-      margin: 0 auto;
-    }
-    img:hover {
-      opacity: 0.7;
-    }
-  }
-  #images-container {
-    display: none;
-    margin-top: 50px; // position: fixed;
-    // top: 15%;
-    // left: 10%;
-    // width: 80%;
-    // height: 80%;
-    // z-index: 1;
-    // #opened-image {
-    //   width: 95%;
-    //   height: 100%;
-    // }
-    // #close-button {
-    //   font-size: 3em;
-    //   float: right;
-    //   color: #ff5d67;
-    //   position: relative;
-    //   bottom: 30px;
-    //   opacity: 0.85;
-    // }
-    // #close-button:hover {
-    //   opacity: 1;
+      &:hover {
+        opacity: 1;
+        border: 1px solid #000;
+      }
+    } // img {
     //   cursor: pointer;
+    //   transition: transform .7s;
+    //   width: 28%;
+    //   height: 150px;
+    //   margin: 0 auto;
+    //   &:hover {
+    //     opacity: 0.7;
+    //   }
     // }
   }
 }
@@ -267,10 +316,7 @@ body {
 #clients {
   padding: $padding;
   h3 {
-    text-align: center;
-    font-size: $extralarge;
-    font-weight: lighter;
-    padding-bottom: 40px;
+    @include title();
   }
   .clients-logos-container {
     display: flex;
@@ -284,6 +330,10 @@ body {
       height: 150px;
       padding: 20px;
       transition: border $animation-time;
+      &:hover {
+        border: 1px solid black;
+        transition: border $animation-time;
+      }
       .img-holder {
         width: 60%;
       }
@@ -294,10 +344,6 @@ body {
     }
     .logo-container img {
       width: 100%;
-    }
-    .logo-container:hover {
-      border: 1px solid black;
-      transition: border $animation-time;
     }
   }
 }
@@ -311,10 +357,7 @@ body {
   background-size: cover;
   padding: $padding;
   h3 {
-    text-align: center;
-    font-size: $extralarge;
-    font-weight: lighter;
-    padding-bottom: 40px;
+    @include title();
   }
   #careers-container {
     display: flex;
@@ -329,9 +372,7 @@ body {
     }
     .codexio-dev-camp {
       h2 {
-        font-size: $large;
-        font-weight: 500;
-        letter-spacing: 1px;
+        @include heading();
       }
     }
     .text-dev-camp {
@@ -344,9 +385,7 @@ body {
     }
     .vacant-positions-container {
       h2 {
-        letter-spacing: 1px;
-        font-size: $large;
-        font-weight: 500;
+        @include heading();
       }
     }
     .text-vacant-positions {
@@ -368,9 +407,7 @@ body {
   .right-part-careers {
     width: 50%;
     h2 {
-      letter-spacing: 1px;
-      font-size: $large;
-      font-weight: 500;
+      @include heading();
       padding-left: 2%;
     }
     table {
@@ -404,9 +441,8 @@ body {
       /* Form */
       form {
         h3 {
-          padding-bottom: 50px;
-          font-size: $extralarge;
-          font-weight: lighter;
+          @include title();
+          text-align: left;
         }
         .form-joint-input {
           width: 80%;
@@ -459,16 +495,10 @@ body {
           border: 1px solid $color;
         }
         button {
-          font-weight: 300;
+          @include button ();
           margin-top: 20px;
           border: none;
           background: $color;
-          color: #fff;
-          padding: 10px 40px;
-          font-size: 1.3em;
-          cursor: pointer;
-          border-radius: 200px;
-          outline: none;
         }
       }
     }
@@ -497,16 +527,13 @@ body {
 /* Social-media */
 
 .social-media {
-  a {
-    text-decoration: none;
-  }
   float: right;
   .fa {
     font-size: 2.8em;
     color: #4267B2;
-  }
-  i:hover {
-    opacity: 0.9;
+    &:hover {
+      opacity: 0.9;
+    }
   }
   .fa-facebook-square {
     padding: 0 0.1em;
