@@ -4,63 +4,65 @@
   }
 }
 
-// Breakpoint 3 (iPad Air): 768px
+// Breakpoint 1 (iPad Air): 768px
 @media screen and (max-width: 768px) {
   .container {
+    text-align: justify;
     width: 90%;
   }
   header {
     height: 100vh;
-    .div-header-center{
+    .header-nav-bar nav .header-logo-container {
+      width: 30%;
+    }
+    #main-navigation {
+      display: none;
+    }
+    .header-nav-bar {
+      .fa-bars {
+        display: block;
+        cursor: pointer;
+      }
+      #nav-button {
+        display: block;
+        cursor: pointer;
+      }
+    }
+    #navigation {
+      position: fixed;
+      transform: translate(0px, -1999px);
+      transition: all 0.5s;
+      width: 100%;
+      z-index: 800;
+      li {
+        border-bottom: 1px solid white;
+        a {
+          text-decoration: none;
+          padding: 1em 0;
+          display: block;
+          text-align: center;
+          text-decoration: none;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          color: #fff;
+          font-size: 1.1em;
+        }
+      }
+      li:last-child {
+        border-bottom: none;
+      }
+    }
+    #navigation.active {
+      transform: translate(0px, 0px);
+      transition: all 0.2s;
+      background-color: #3F5D91;
+      padding: 100px 0 50px 0;
+      height: 100vh;
+    }
+    .div-header-center {
       top: 50%;
     }
-  }
-  header .header-nav-bar nav .header-logo-container {
-    width: 30%;
-  }
-  #main-navigation {
-    display: none;
-  }
-  header .header-nav-bar .fa-bars {
-    display: block;
-    cursor: pointer;
-  }
-  header .header-nav-bar nav div #nav-button {
-    display: block;
-    cursor: pointer;
-  }
-  #navigation {
-    position: fixed;
-    transform: translate(0px, -1999px);
-    transition: all 0.5s;
-    width: 100%;
-    z-index: 800;
-    li {
-      border-bottom: 1px solid white;
-    }
-    a {
-      text-decoration: none;
-      padding: 1em 0;
-      display: block;
-      text-align: center;
-      text-decoration: none;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      color: #fff;
-      font-size: 1.1em;
-    }
-    li:last-child {
-      border-bottom: none;
-    }
-  }
-  #navigation.active {
-    transform: translate(0px, 0px);
-    transition: all 0.2s;
-    background-color: #3F5D91; // opacity: 0.9;
-    padding: 100px 0 50px 0;
-    height: 100vh;
-  }
-   // Breakpoint 3 (iPad Air): 768px
+  } // Breakpoint 1 (iPad Air): 768px
   #info-codexio {
     padding: 70px 0;
     .logo-with-text {
@@ -70,46 +72,36 @@
       width: 30%;
       margin: auto;
     }
-    .logo-with-text p {
+    .codexio-info-text p {
+      padding-top: 1.2%;
       padding-left: 0;
     }
-    .codexio-info-text p {
-      text-align: justify;
-      padding-top: 1em;
-    }
-  } // Breakpoint 3 (iPad Air): 768px
+  } // Breakpoint 1 (iPad Air): 768px
   #services {
     padding: 70px 0;
     padding-bottom: 0;
-  }
-  #services h3 {
-    padding-bottom: 1%;
-  }
-  #services .services-info-text {
-    text-align: justify;
-  }
-  #services .services-icons {
-    padding-top: 5%;
-  }
-  #services .services-icons .service-container h4 {
-    text-transform: capitalize;
-    padding-top: 3%;
-  }
-  #services .services-description-background {
-    padding: 5%;
-    margin-top: 5%;
-  }
-  #services .heading-description {
-    padding-bottom: 3%;
-  }
-  .service-description-paragraph {
-    text-align: justify;
-  } // Breakpoint 3 (iPad Air): 768px
+    h3 {
+      padding-bottom: 1%;
+    }
+    .services-icons {
+      padding-top: 5%;
+    }
+    .services-icons .service-container h4 {
+      text-transform: capitalize;
+      padding-top: 3%;
+    }
+    .services-description-background {
+      padding: 5%;
+      margin-top: 5%;
+    }
+    .heading-description {
+      padding-bottom: 3%;
+    }
+  } // Breakpoint 1 (iPad Air): 768px
   #projects {
     padding: 70px 0;
     padding-bottom: 0;
     p {
-      text-align: justify;
       padding-left: 0;
     }
     .lock-trip-logo-container {
@@ -118,182 +110,185 @@
         width: 30%;
       }
     }
-  } // Breakpoint 3 (iPad Air): 768px
+  } // Breakpoint 1 (iPad Air): 768px
   #clients {
     padding: 70px 0;
-  }
-  #clients h3 {
-    padding-bottom: 2%;
-  }
-  #clients .clients-logos-container {
-    justify-content: space-around
-  }
-  #clients .clients-logos-container .logo-container .img-holder {
-    width: 100%;
-  } // Breakpoint 3 (iPad Air): 768px
+    h3 {
+      padding-bottom: 2%;
+    }
+    .clients-logos-container {
+      justify-content: space-around;
+    }
+    .clients-logos-container .logo-container .img-holder {
+      width: 100%;
+    }
+  } // Breakpoint 1 (iPad Air): 768px
   #careers {
     padding: 70px 0;
-  }
-  #careers h3 {
-    padding-bottom: 2%;
-  }
-  #careers #careers-container {
-    flex-direction: column;
-  }
-  #careers .left-part-careers {
-    width: 100%;
-    text-align: justify;
-  }
-  #careers .left-part-careers .codexio-dev-camp h2 {
-    text-align: center;
-  }
-  #careers .left-part-careers .text-dev-camp p {
-    margin: auto;
-    padding: 2%;
-    width: 100%;
-  }
-  #careers .left-part-careers .vacant-positions-container h2 {
-    text-align: center;
-  }
-  #careers .left-part-careers .vacant-positions-container p {
-    margin: auto;
-    padding: 2%;
-    width: 100%;
-  }
-  #careers .left-part-careers ul {
-    text-align: center;
-  }
-  #careers .right-part-careers {
-    width: 100%;
-    padding-top: 1.5em;
-  }
-  #careers .right-part-careers h2 {
-    text-align: center;
-  }
-  #careers .right-part-careers table {
-    margin: auto;
-  } // Breakpoint 3 (iPad Air): 768px
+    h3 {
+      padding-bottom: 2%;
+    }
+    #careers-container {
+      flex-direction: column;
+    }
+    .left-part-careers {
+      width: 100%;
+    }
+    .left-part-careers .codexio-dev-camp h2 {
+      text-align: center;
+    }
+    .left-part-careers .text-dev-camp p {
+      margin: auto;
+      padding: 2%;
+      width: 100%;
+    }
+    .left-part-careers .vacant-positions-container h2 {
+      text-align: center;
+    }
+    .left-part-careers .vacant-positions-container p {
+      margin: auto;
+      padding: 2%;
+      width: 100%;
+    }
+    .left-part-careers ul {
+      text-align: center;
+    }
+    .right-part-careers {
+      width: 100%;
+      padding-top: 1.5em;
+    }
+    .right-part-careers h2 {
+      text-align: center;
+    }
+    .right-part-careers table {
+      margin: auto;
+    }
+  } // Breakpoint 1 (iPad Air): 768px
   #contact-us {
     padding: 70px 0;
-  }
-  #contact-us #wrapper-contact-us .left-part-contact-us form h3 {
-    padding-bottom: 2%;
-  }
-  #contact-us #wrapper-contact-us {
-    flex-direction: column;
-  }
-  #contact-us #wrapper-contact-us .left-part-contact-us {
-    width: 100%;
-  }
-  #contact-us #wrapper-contact-us .right-part-contact-us {
-    width: 100%;
-  }
-  #contact-us #wrapper-contact-us .left-part-contact-us form button {
-    font-size: 1.3em;
-    padding: 10px 40px;
-    margin: auto;
-    display: block;
-    margin-bottom: 3em;
-  } // Breakpoint 3 (iPad Air): 768px
-  .right-part-contact-us div {
-    margin: 0 auto;
-    text-align: center;
-  }
-  #contact-us #wrapper-contact-us .left-part-contact-us form .form-joint-input {
-    width: 100%;
-  }
-  #contact-us #wrapper-contact-us .left-part-contact-us form input[type=email] {
-    width: 100%;
-  }
-  #contact-us #wrapper-contact-us .left-part-contact-us form #message {
-    width: 100%;
-  }
-  .right-part-contact-us div img {
-    width: 70%;
-  }
-  .right-part-contact-us .social-media p {
-    padding-left: 9.6em;
+    #wrapper-contact-us .left-part-contact-us form h3 {
+      padding-bottom: 2%;
+    }
+    #wrapper-contact-us {
+      flex-direction: column;
+    }
+    #wrapper-contact-us .left-part-contact-us {
+      width: 100%;
+    }
+    #wrapper-contact-us .right-part-contact-us {
+      width: 100%;
+    }
+    #wrapper-contact-us .left-part-contact-us form button {
+      font-size: 1.3em;
+      padding: 10px 40px;
+      margin: auto;
+      display: block;
+      margin-bottom: 3em;
+    } // Breakpoint 1 (iPad Air): 768px
+    .right-part-contact-us div {
+      margin: 0 auto;
+      text-align: center;
+    }
+    #wrapper-contact-us .left-part-contact-us form .form-joint-input {
+      width: 100%;
+    }
+    #wrapper-contact-us .left-part-contact-us form input[type=email] {
+      width: 100%;
+    }
+    #wrapper-contact-us .left-part-contact-us form #message {
+      width: 100%;
+    }
+    .right-part-contact-us div img {
+      width: 70%;
+    }
+    .right-part-contact-us .social-media p {
+      padding-left: 9.6em;
+    }
   }
   #map {
     height: 80vh;
   }
   footer {
     padding: 60px 0;
-  }
-  footer img {
-    width: 50%;
+    .container {
+      text-align: center;
+      img {
+        width: 50%;
+      }
+    }
   }
 }
 
 //Breakpoint 2 (iPhone 6+): 480px
 @media screen and (max-width: 480px) {
-  header .header-nav-bar nav .header-logo-container {
-    width: 40%;
-    padding-top: 2%;
-  }
-  header .div-header-center h1 {
-    font-size: 4em;
-    font-weight: 400;
-  }
-  header .div-header-center h2 {
-    font-size: 1.2em;
-    padding-bottom: 20px;
-  }
-  header .div-header-center .button-hiring,
-  header .div-header-center .button-contact-us {
-    display: block;
-    font-size: 1em;
-    padding: 8px 0;
-    width: 40%;
-    margin: auto;
-    margin-top: 2%;
-  }
-  #info-codexio {
-    padding: 60px 0;
-  }
-  #info-codexio .codexio-title {
-    line-height: 1.3;
-  }
-  #info-codexio .codexio-title h3 {
-    padding: 0;
-  }
-  #info-codexio .codexio-title h4 {
-    font-size: 0.9em;
+  header {
+    .header-nav-bar nav .header-logo-container {
+      width: 40%;
+      padding-top: 2%;
+    }
+    .div-header-center h1 {
+      font-size: 4em;
+      font-weight: 400;
+    }
+    .div-header-center h2 {
+      font-size: 1.2em;
+      padding-bottom: 20px;
+    }
+    .div-header-center .button-hiring,
+    .div-header-center .button-contact-us {
+      display: block;
+      font-size: 1em;
+      padding: 8px 0;
+      width: 40%;
+      margin: auto;
+      margin-top: 2%;
+    }
+    #info-codexio {
+      padding: 60px 0;
+    }
+    #info-codexio .codexio-title {
+      line-height: 1.3;
+    }
+    #info-codexio .codexio-title h3 {
+      padding: 0;
+    }
+    #info-codexio .codexio-title h4 {
+      font-size: 0.9em;
+    }
   } //Breakpoint 2 (iPhone 6+): 480px
   #services {
     padding: 60px 0;
     padding-bottom: 0;
-  }
-  #services .services-icons {
-    flex-wrap: wrap;
-    .service-container {
-      width: 40%;
+    .services-icons {
+      flex-wrap: wrap;
+      .service-container {
+        width: 40%;
+      }
     }
-  }
-  #services h3 {
-    padding-bottom: 5%;
-  }
-  #services .services-info-text {
-    width: 100%;
-  }
-  #services .services-icons {
-    padding-top: 2%;
-  }
-  #services .services-icons .service-container h4 {
-    padding-top: 2%;
-    font-size: 0.97em;
-  }
-  #services .services-description-background {
-    margin-top: 10%;
-    padding: 60px 0;
-  }
-  #services .services-icons .service-container img {
-    padding-top: 5%;
-  }
-  #services .heading-description {
-    padding-bottom: 5%;
-  }
-  //Breakpoint 2 (iPhone 6+): 480px
+    h3 {
+      padding-bottom: 5%;
+    }
+    .services-info-text {
+      width: 100%;
+    }
+    .services-icons {
+      padding-top: 2%;
+    }
+    .services-icons .service-container h4 {
+      padding-top: 2%;
+      font-size: 0.97em;
+    }
+    .services-description-background {
+      margin-top: 10%;
+      padding: 60px 0;
+    }
+    .services-icons .service-container img {
+      padding-top: 5%;
+    }
+    .heading-description {
+      padding-bottom: 5%;
+    }
+  } //Breakpoint 2 (iPhone 6+): 480px
   #projects {
     padding: 60px 0;
     padding-bottom: 0;
@@ -337,202 +332,200 @@
   } //Breakpoint 2 (iPhone 6+): 480px
   #clients {
     padding: 60px 0;
-  }
-  #clients h3 {
-    padding-bottom: 5%;
-  }
-  #clients .clients-logos-container {
-    flex-direction: column;
-  }
-  #clients .clients-logos-container .logo-container {
-    width: 100%;
-  }
-  #clients .clients-logos-container .logo-container {
-    margin-bottom: 3%;
+    h3 {
+      padding-bottom: 5%;
+    }
+    .clients-logos-container {
+      flex-direction: column;
+    }
+    .clients-logos-container .logo-container {
+      width: 100%;
+      margin-bottom: 3%;
+    }
   } //Breakpoint 2 (iPhone 6+): 480px
   #careers {
     padding: 60px 0;
-  }
-  #careers h3 {
-    padding-bottom: 5%;
-  }
-  #careers #careers-container {
-    flex-direction: column;
-  }
-  #careers .left-part-careers {
-    width: 100%;
-    text-align: center;
-  }
-  #careers .left-part-careers .text-dev-camp p {
-    width: 100%;
-    font-size: 1em;
-  }
-  #careers .left-part-careers .text-vacant-positions {
-    width: 100%;
-    font-size: 1em;
-  }
-  #careers .left-part-careers ul li {
-    font-size: 1em;
-  }
-  #careers .right-part-careers {
-    width: 100%;
-    padding-top: 5%;
-    text-align: center;
-  }
-  #careers .right-part-careers table {
-    font-size: 1em;
+    h3 {
+      padding-bottom: 5%;
+    }
+    #careers-container {
+      flex-direction: column;
+    }
+    .left-part-careers {
+      width: 100%;
+      text-align: center;
+    }
+    .left-part-careers .text-dev-camp p {
+      width: 100%;
+      font-size: 1em;
+    }
+    .left-part-careers .text-vacant-positions {
+      width: 100%;
+      font-size: 1em;
+    }
+    .left-part-careers ul li {
+      font-size: 1em;
+    }
+    .right-part-careers {
+      width: 100%;
+      padding-top: 5%;
+      text-align: center;
+    }
+    .right-part-careers table {
+      font-size: 1em;
+    }
   } //Breakpoint 2 (iPhone 6+): 480px
   #contact-us {
     padding: 60px 0;
-  }
-  #contact-us .right-part-contact-us div {
-    padding-bottom: 1em;
-    margin: auto;
-  }
-  #contact-us .right-part-contact-us div p {
-    text-align: center;
+    .right-part-contact-us div {
+      padding-bottom: 1em;
+      margin: auto;
+    }
+    .right-part-contact-us div p {
+      text-align: center;
+    }
   }
 }
 
-//Breakpoint 1 (iPhone 5S): 320px
+//Breakpoint 3 (iPhone 5S): 320px
 @media screen and (max-width: 320px) {
   header {
     height: 100vh;
-  }
-  .container {
-    text-align: justify;
-  }
-  header .div-header-center h1 {
-    font-size: 4em;
-    font-weight: 400;
-  }
-  header .header-nav-bar {
-    padding: 2%;
-  }
-  header .header-nav-bar nav .header-logo-container {
-    width: 60%;
-  }
-  header .div-header-center h2 {
-    font-size: 1em;
-  }
-  header .div-header-center .button-hiring,
-  header .div-header-center .button-contact-us {
-    padding: 6px 0;
-  }
-  #info-codexio {
-    padding: 40px 0;
-  }
-  #info-codexio .codexio-title h3 {
-    font-size: 2.7em;
-  }
-  #info-codexio .codexio-title h4 {
-    font-size: 0.8em;
-  }
-  .codexio-info-text p {
-    font-size: 0.9em;
-    line-height: 1.5;
-  }
-  .logo-with-text p {
-    padding-left: 0;
-  } //Breakpoint 1 (iPhone 5S): 320px
+    .container {
+      text-align: justify;
+    }
+    .div-header-center h1 {
+      font-size: 4em;
+      font-weight: 400;
+    }
+    .header-nav-bar {
+      padding: 2%;
+    }
+    .header-nav-bar nav .header-logo-container {
+      width: 60%;
+    }
+    .div-header-center h2 {
+      font-size: 1em;
+    }
+    .div-header-center .button-hiring,
+    .div-header-center .button-contact-us {
+      padding: 6px 0;
+    }
+    #info-codexio {
+      padding: 40px 0;
+    }
+    #info-codexio .codexio-title h3 {
+      font-size: 2.7em;
+    }
+    #info-codexio .codexio-title h4 {
+      font-size: 0.8em;
+    }
+    .codexio-info-text p {
+      font-size: 0.9em;
+      line-height: 1.5;
+    }
+    .logo-with-text p {
+      padding-left: 0;
+    }
+  } //Breakpoint 3 (iPhone 5S): 320px
   #services {
     padding: 40px 0;
     padding-bottom: 0;
-  }
-  #services h3 {
-    font-size: 2.7em;
-  }
-  #services .service-description {
-    font-size: 0.9em;
-  }
-  #services .services-icons .service-container {
-    padding-top: 1em;
-  }
-  #services .services-info-text {
-    font-size: 0.9em;
-    width: 100%;
-  }
-  #services .heading-description {
-    font-size: 1.4em;
-  } //Breakpoint 1 (iPhone 5S): 320px
+    h3 {
+      font-size: 2.7em;
+    }
+    .service-description {
+      font-size: 0.9em;
+    }
+    .services-icons .service-container {
+      padding-top: 1em;
+    }
+    .services-info-text {
+      font-size: 0.9em;
+      width: 100%;
+    }
+    .heading-description {
+      font-size: 1.4em;
+    }
+  } //Breakpoint 3 (iPhone 5S): 320px
   #projects {
     padding: 40px 0;
     padding-bottom: 0;
+    h3 {
+      font-size: 2.8em;
+    }
+    .lock-trip-logo-container .lock-trip-logo {
+      width: 50%;
+    }
     p {
       font-size: 0.9em;
     }
-  }
-  #projects h3 {
-    font-size: 2.8em;
-  }
-  #projects .lock-trip-logo-container .lock-trip-logo {
-    width: 50%;
-  } //Breakpoint 1 (iPhone 5S): 320px
+  } //Breakpoint 3 (iPhone 5S): 320px
   #clients {
     padding: 40px 0;
-  }
-  #clients h3 {
-    font-size: 2.7em;
+    h3 {
+      font-size: 2.7em;
+    }
   }
   #careers {
     padding: 40px 0;
-  }
-  #careers h3 {
-    font-size: 2.7em;
-  }
-  #careers .left-part-careers .vacant-positions-container {
-    padding-top: 2%;
-  }
-  #careers .left-part-careers .vacant-positions-container h2 {
-    padding-left: 0;
-  }
-  #careers .left-part-careers .text-dev-camp p {
-    font-size: 0.9em;
-    padding-bottom: 15px;
-  }
-  #careers .left-part-careers .text-vacant-positions {
-    font-size: 0.9em;
-  }
-  #careers .left-part-careers ul li {
-    font-size: 0.9em;
-  }
-  #careers .right-part-careers {
-    padding-top: 10%;
-  }
-  #careers .right-part-careers table th {
-    font-size: 0.9em;
-  }
-  #careers .right-part-careers table td {
-    padding: 10px 8px;
-    font-size: 0.9em;
-  }
-  #careers .right-part-careers table tr td {
-    padding: 2px 6px;
-  } //Breakpoint 1 (iPhone 5S): 320px
+    h3 {
+      font-size: 2.7em;
+    }
+    .left-part-careers .vacant-positions-container {
+      padding-top: 2%;
+    }
+    .left-part-careers .vacant-positions-container h2 {
+      padding-left: 0;
+    }
+    .left-part-careers .text-dev-camp p {
+      font-size: 0.9em;
+      padding-bottom: 15px;
+    }
+    .left-part-careers .text-vacant-positions {
+      font-size: 0.9em;
+    }
+    .left-part-careers ul li {
+      font-size: 0.9em;
+    }
+    .right-part-careers {
+      padding-top: 10%;
+    }
+    .right-part-careers table th {
+      font-size: 0.9em;
+    }
+    .right-part-careers table td {
+      padding: 10px 8px;
+      font-size: 0.9em;
+    }
+    .right-part-careers table tr td {
+      padding: 2px 6px;
+    }
+  } //Breakpoint 3 (iPhone 5S): 320px
   #contact-us {
     padding: 40px 0;
-  }
-  #contact-us #wrapper-contact-us .left-part-contact-us form h3 {
-    font-size: 2.7em;
-  }
-  #contact-us #wrapper-contact-us .left-part-contact-us form button {
-    margin-bottom: 2em;
-  }
-  .right-part-contact-us div {
-    margin: 0 auto;
-    padding-bottom: 1em;
-  }
-  .right-part-contact-us div img {
-    width: 100%;
-  }
-  .right-part-contact-us .social-media p {
-    padding-left: 2.5em;
-  }
-  .right-part-contact-us .social-media .fa {
-    font-size: 2.4em;
-  }
-  #contact-us #wrapper-contact-us .left-part-contact-us form .form-joint-input input[type=text]:first-child {
-    margin-right: 2%;
+    #wrapper-contact-us .left-part-contact-us form h3 {
+      font-size: 2.7em;
+    }
+    #wrapper-contact-us .left-part-contact-us form button {
+      margin-bottom: 2em;
+    }
+    .right-part-contact-us div {
+      margin: 0 auto;
+      padding-bottom: 1em;
+    }
+    .right-part-contact-us div img {
+      width: 100%;
+    }
+    .right-part-contact-us .social-media p {
+      padding-left: 2.5em;
+    }
+    .right-part-contact-us .social-media .fa {
+      font-size: 2.4em;
+    }
+    #contact-us #wrapper-contact-us .left-part-contact-us form .form-joint-input input[type=text]:first-child {
+      margin-right: 2%;
+    }
   }
   footer .container {
     text-align: center;

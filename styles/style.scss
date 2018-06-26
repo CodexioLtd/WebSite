@@ -16,6 +16,7 @@ $animation-time: 0.5s;
   max-width: 1200px;
   margin: 0 auto;
 }
+
 // color auqa
 $color:#61c4be;
 // default width for each sections
@@ -37,7 +38,7 @@ $color:#61c4be;
   display: none;
   text-align: center;
   font-size: 1.2em;
-// color:#000;
+  // color:#000;
   font-weight: 500;
   width: 80%;
   padding: 10px 5px;
@@ -88,7 +89,7 @@ header {
       display: none;
     }
     #close-nav {
-     display: none;
+      display: none;
       color: #fff;
       font-size: 1.8em;
     }
@@ -354,8 +355,7 @@ header {
   }
   #images-container {
     display: none;
-    margin-top: 50px;
-    // position: fixed;
+    margin-top: 50px; // position: fixed;
     // top: 15%;
     // left: 10%;
     // width: 80%;
