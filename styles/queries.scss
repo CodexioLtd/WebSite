@@ -394,33 +394,35 @@
     .container {
       text-align: justify;
     }
-    .div-header-center h1 {
-      font-size: 4em;
-      font-weight: 400;
-    }
-    .header-nav-bar {
-      padding: 2%;
-    }
     .header-nav-bar nav .header-logo-container {
       width: 60%;
     }
-    .div-header-center h2 {
-      font-size: 1em;
+    .header-nav-bar {
+      padding-top: 4%;
     }
-    .div-header-center .button-hiring,
-    .div-header-center .button-contact-us {
-      padding: 6px 0;
+    .div-header-center {
+      h2 {
+        font-size: 1em;
+      }
+      .button-hiring,
+      .button-contact-us {
+        padding: 6px 0;
+      }
     }
-    #info-codexio {
-      padding: 40px 0;
-    }
-    #info-codexio .codexio-title h3 {
-      font-size: 2.7em;
-    }
-    #info-codexio .codexio-title h4 {
-      font-size: 0.8em;
+  } //Breakpoint 3 (iPhone 5S): 320px
+  #info-codexio {
+    padding: 40px 0;
+    .codexio-title {
+      h3 {
+        font-size: 2.7em;
+      }
+      h4 {
+        font-size: 0.8em;
+        padding-bottom: 6%;
+      }
     }
     .codexio-info-text p {
+      padding-top: 6%;
       font-size: 0.9em;
       line-height: 1.5;
     }
@@ -472,8 +474,10 @@
     h3 {
       font-size: 2.7em;
     }
-    .left-part-careers .vacant-positions-container {
-      padding-top: 2%;
+    .left-part-careers  {
+      .vacant-positions-container {
+        padding-top: 2%;
+      }
     }
     .left-part-careers .vacant-positions-container h2 {
       padding-left: 0;
