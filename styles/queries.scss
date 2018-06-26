@@ -11,6 +11,9 @@
   }
   header {
     height: 100vh;
+    .div-header-center{
+      top: 50%;
+    }
   }
   header .header-nav-bar nav .header-logo-container {
     width: 30%;
@@ -57,9 +60,7 @@
     padding: 100px 0 50px 0;
     height: 100vh;
   }
-  header .div-header-center {
-    top: 50%;
-  } // Breakpoint 3 (iPad Air): 768px
+   // Breakpoint 3 (iPad Air): 768px
   #info-codexio {
     padding: 70px 0;
     .logo-with-text {
@@ -107,14 +108,15 @@
   #projects {
     padding: 70px 0;
     padding-bottom: 0;
+    p {
+      text-align: justify;
+      padding-left: 0;
+    }
     .lock-trip-logo-container {
       padding: 2%;
       .lock-trip-logo {
         width: 30%;
       }
-    }
-    #projects p {
-      text-align: justify;
     }
   } // Breakpoint 3 (iPad Air): 768px
   #clients {
@@ -279,7 +281,6 @@
   }
   #services .services-icons .service-container h4 {
     padding-top: 2%;
-    text-transform: capitalize;
     font-size: 0.97em;
   }
   #services .services-description-background {
@@ -292,9 +293,8 @@
   #services .heading-description {
     padding-bottom: 5%;
   }
-  #services .service-description-paragraph {
-    text-align: justify;
-  } //Breakpoint 2 (iPhone 6+): 480px
+  #services .service-description-paragraph {}
+  //Breakpoint 2 (iPhone 6+): 480px
   #projects {
     padding: 60px 0;
     padding-bottom: 0;
@@ -333,10 +333,6 @@
       .demo-image:hover {
         opacity: 1;
         border: 1px solid #000;
-      }
-      p {
-        font-size: 0.9em;
-        padding-left: 0;
       }
     }
   } //Breakpoint 2 (iPhone 6+): 480px
@@ -463,16 +459,15 @@
   #projects {
     padding: 40px 0;
     padding-bottom: 0;
+    p {
+      font-size: 0.9em;
+    }
   }
   #projects h3 {
     font-size: 2.8em;
   }
   #projects .lock-trip-logo-container .lock-trip-logo {
     width: 50%;
-  }
-  #projects p {
-    font-size: 0.9em;
-    padding-left: 0;
   } //Breakpoint 1 (iPhone 5S): 320px
   #clients {
     padding: 40px 0;
@@ -540,9 +535,7 @@
   #contact-us #wrapper-contact-us .left-part-contact-us form .form-joint-input input[type=text]:first-child {
     margin-right: 2%;
   }
-  footer {
-    margin: auto;
+  footer .container {
     text-align: center;
-
   }
 }
