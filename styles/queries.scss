@@ -1,3 +1,4 @@
+@import './partials/mixins';
 @media screen and (max-width: 1268px) {
   .container {
     width: 90%;
@@ -11,7 +12,6 @@
     width: 90%;
   }
   header {
-    // height: 100vh;
     .header-nav-bar nav .header-logo-container {
       width: 30%;
     }
@@ -35,7 +35,7 @@
       width: 100%;
       z-index: 800;
       li {
-        border-bottom: 1px solid white;
+        border-bottom: 1px solid $white;
         &:last-child {
           border-bottom: none;
         }
@@ -47,7 +47,7 @@
           text-decoration: none;
           text-transform: uppercase;
           letter-spacing: 2px;
-          color: #fff;
+          color: $white;
           font-size: 1.1em;
         }
       }
@@ -301,20 +301,20 @@
     #projects-container {
       display: none;
     }
-    #images-container {
+    #mobile-images-container {
       display: flex;
       flex-direction: column;
-      .fourth {
+      .demo-image:first-of-type{
         background: url('../img/first-mobile.png');
       }
-      .fifth {
+      .demo-image:nth-child(2) {
         background: url('../img/second-mobile.png');
       }
-      .sixth {
+      .demo-image:nth-child(3) {
         background: url('../img/third-mobile.png');
       }
       .demo-image {
-        width: 100%;
+        @include demo-image-style(100%);
         margin: auto;
         background-size: cover;
         border: 1px solid #ccc;
@@ -323,10 +323,10 @@
         margin-bottom: 3%;
         opacity: 0.9;
         transition: all 0.5s;
-      }
-      .demo-image:hover {
-        opacity: 1;
-        border: 1px solid #000;
+        &:hover {
+          opacity: 1;
+          border: 1px solid #000;
+        }
       }
     }
   } //Breakpoint 2 (iPhone 6+): 480px

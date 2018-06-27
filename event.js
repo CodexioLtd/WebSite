@@ -79,7 +79,7 @@ $(document).ready(() => {
   // Service - Description
   $(".service-container").hover(e => setServiceDescription(
     $(e.currentTarget).find("h4").text(),
-    $(e.currentTarget).find("#codexio-service-description").html(),
+    $(e.currentTarget).find(".codexio-service-description").html(),
     e.currentTarget)
   );
   // Form

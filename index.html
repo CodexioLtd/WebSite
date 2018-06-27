@@ -23,7 +23,7 @@
   <header id="header">
     <section class="header-nav-bar" id="header-nav-bar">
       <div class="container">
-        <nav class="flexbox">
+        <nav class="primary-nav-bar">
           <div class="header-logo-container">
             <a href="#header">
               <img src="img/logo-codexio-header.png" alt="logo-codexio">
@@ -35,22 +35,22 @@
           <i id="close-nav" class="fa fa-power-off"></i>
           <ul class="main-navigation" id="main-navigation">
             <li>
-              <a href="#info-codexio">about</a>
+              <a href="#info-codexio" class="link">about</a>
             </li>
             <li>
-              <a href="#services">services</a>
+              <a href="#services" class="link">services</a>
             </li>
             <li>
-              <a href="#projects">projects</a>
+              <a href="#projects" class="link">projects</a>
             </li>
             <li>
-              <a href="#clients">clients</a>
+              <a href="#clients" class="link">clients</a>
             </li>
             <li>
-              <a href="#careers">careers</a>
+              <a href="#careers" class="link">careers</a>
             </li>
             <li>
-              <a href="#contact-us">contact us</a>
+              <a href="#contact-us" class="link">contact us</a>
             </li>
           </ul>
 
@@ -58,6 +58,7 @@
 
       </div>
     </section>
+    <nav class="sticky-nav-bar">
     <ul class="navigation" id="navigation">
       <li>
         <a href="#info-codexio" class="nav-link">about</a>
@@ -78,6 +79,7 @@
         <a href="#contact-us" class="nav-link">contact us</a>
       </li>
     </ul>
+  </nav>
     <div class="div-header-center">
       <h1>Codexio</h1>
       <h2>Software Development</h2>
@@ -95,7 +97,7 @@
           <h3>Codexio Ltd.</h3>
           <h4>Web / Mobile / Blockchain / Consultancy</h4>
         </div>
-        <div class="logo-with-text flexbox">
+        <div class="info-logo-container">
           <!-- <div class="codexio-logo"> -->
           <img src="img/logo-codexio.png" alt="logo-codexio">
           <!-- </div> -->
@@ -118,9 +120,9 @@
           do believe that answers only come after questions and that there are no two equivalent challenges. So in the past
           years we have specialized in creating personal solutions for our customers in the following areas:
         </p>
-        <div class="services-icons flexbox">
+        <div class="services-icons">
           <div class="service-container">
-            <div id="codexio-service-description" style="display:none">
+            <div class="codexio-service-description" style="display:none">
               <p class="service-description-paragraph">Most of you might not remember, but software was once shipped physically by diskettes and discs and then installed
                 on the user's computer. Although there is a decent amount of software still installed on our computers, we
                 are used to making our day-to-day operations by using web applications.</p>
@@ -132,7 +134,7 @@
             <h4>Web Development</h4>
           </div>
           <div class="service-container">
-            <div id="codexio-service-description" style="display:none">
+            <div class="codexio-service-description" style="display:none">
               <p class="service-description-paragraph">What time is it? Correct. You've just looked at your phone to check it. Admit it, we are using our mobile phones
                 every day more than anything else. If something can run on your mobile phone, it will eventually run.</p>
               <p class="service-description-paragraph">Creating any service or informational application for mobile is our "Good morning!" phrase. That’s why it is
@@ -143,7 +145,7 @@
             <h4>Mobile Development</h4>
           </div>
           <div class="service-container">
-            <div id="codexio-service-description" style="display:none">
+            <div class="codexio-service-description" style="display:none">
               <p class="service-description-paragraph">Economic models nowadays have become way too complex. Middlemen are everywhere. Validation by authorities.
                 Trust. But the way we work removes the need for a middleman, leaving just the peer to peer communication.</p>
               <p class="service-description-paragraph">Creating decentralized applications, smart contracts or running a new blockchain network are just a few of
@@ -154,7 +156,7 @@
             <h4>Bloсkchain Development</h4>
           </div>
           <div class="service-container">
-            <div id="codexio-service-description" style="display:none">
+            <div class="codexio-service-description" style="display:none">
               <p class="service-description-paragraph">You are already working with an existing software development team? Are they hard to organize? Are they facing
                 showstoppers? Or their power is not enough for the project's needs?</p>
               <p class="service-description-paragraph">We are here to not only solve all of these problems, but also many others that may arise. We can plug into
@@ -194,26 +196,26 @@
         <p>Our main product is a blockchain-based platform which entirely changes the travelling industry. By removing the need
           for a middleman we are cutting the commission to zero, providing both transparency and the best prices for booking
           hotels, homes and travelling tickets. Visit (and read more) on:
-          <a href="https://locktrip.com/">https://locktrip.com/</a>
+          <a href="https://locktrip.com/" class="link">https://locktrip.com/</a>
         </p>
 
         <!-- Projects images Desktop-->
-        <div id="desktop-images-container" class="flexbox">
-          <div class="item demo-image first" data-src="img/first-desktop.png">
+        <div id="desktop-images-container">
+          <div class="item demo-image" data-src="img/first-desktop.png">
           </div>
-          <div class="item demo-image second" data-src="img/second-desktop.png">
+          <div class="item demo-image" data-src="img/second-desktop.png">
           </div>
-          <div class="item demo-image third" data-src="img/third-desktop.png">
+          <div class="item demo-image" data-src="img/third-desktop.png">
           </div>
         </div>
 
         <!-- Projects images Mobile-->
         <div id="mobile-images-container">
-          <div class="item demo-image fourth" data-src="img/first-mobile.png">
+          <div class="item demo-image" data-src="img/first-mobile.png">
           </div>
-          <div class="item demo-image fifth" data-src="img/second-mobile.png">
+          <div class="item demo-image" data-src="img/second-mobile.png">
           </div>
-          <div class="item demo-image sixth" data-src="img/third-mobile.png">
+          <div class="item demo-image" data-src="img/third-mobile.png">
           </div>
         </div>
       </div>
@@ -267,7 +269,7 @@
                 <p>Send your
                   <strong>cover letter</strong> or any questions regarding the dev camp to
                   <span>
-                    <a class="codexio-email" href="mailto:careers@codexio.bg">careers@codexio.bg</a>
+                    <a class="codexio-email link" href="mailto:careers@codexio.bg">careers@codexio.bg</a>
                   </span>
                 </p>
               </div>
@@ -276,7 +278,7 @@
               <h2>Vacant Positions</h2>
               <p class="text-vacant-positions">If you already feel like a master of one of the positions below, send your application to
                 <span>
-                  <a class="codexio-email" href="mailto:careers@codexio.bg">careers@codexio.bg</a>
+                  <a class="codexio-email link" href="mailto:careers@codexio.bg">careers@codexio.bg</a>
                 </span>
               </p>
               <ul>
@@ -385,10 +387,10 @@
               <p>Sofia, Bulgaria</p>
             </div>
             <div class="social-media">
-              <a href="https://www.facebook.com/CodexioLtd/">
+              <a href="https://www.facebook.com/CodexioLtd/" class="link">
                 <i class="fa fa-facebook-square" aria-hidden="true"></i>
               </a>
-              <a href="https://www.linkedin.com/company/codexio">
+              <a href="https://www.linkedin.com/company/codexio" class="link">
                 <i class="fa fa-linkedin-square" aria-hidden="true"></i>
               </a>
             </div>
