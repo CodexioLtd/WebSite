@@ -36,10 +36,10 @@ img {
 }
 
 .link {
-    text-decoration: none;
-    color: $white;
-    font-size: $small;
-  }
+  text-decoration: none;
+  color: $white;
+  font-size: $small;
+}
 
 /* Header */
 
@@ -74,7 +74,7 @@ header {
         padding-left: 1em;
         a {
           text-transform: uppercase;
-          letter-spacing: 1px;
+          letter-spacing: $let-space-sm;
           &:hover {
             color: $color;
           }
@@ -95,19 +95,19 @@ header {
     transform: translateY(-50%);
     h1 {
       font-size: 7em;
-      font-weight: 300;
-      letter-spacing: 8px;
+      font-weight: $weight-s;
+      letter-spacing: $let-space-extralar;
       margin: 0;
     }
     h2 {
-      font-weight: 300;
+      font-weight: $weight-s;
       padding-bottom: $padding-b-large;
       text-transform: uppercase;
     }
     .button-hiring {
       @include button();
       background: $color;
-      margin-right: 10px;
+      margin-right: $margin-r-xsmall;
       &:hover {
         background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
         border: 2px solid $color;
@@ -135,12 +135,12 @@ header {
     h3 {
       color: $blue;
       font-size: 3em;
-      font-weight: 400;
+      font-weight: $weight-m;
       padding-bottom: $padding-b-small;
     }
     h4 {
       font-size: $small;
-      font-weight: 400;
+      font-weight: $weight-m;
       color: #595a5a;
       padding-bottom: $padding-b-large;
     }
@@ -156,7 +156,7 @@ header {
   p {
     padding-left: $padding-l-large;
     font-size: $small;
-    font-weight: 400;
+    font-weight: $weight-m;
     &:last-child {
       padding-top: $padding-t-small;
     }
@@ -189,7 +189,7 @@ header {
       font-size: $small;
       padding-top: $padding-t-large;
       text-transform: uppercase;
-      font-weight: 400;
+      font-weight: $weight-m;
     }
     .service-container img {
       width: 100px;
@@ -209,7 +209,7 @@ header {
   .services-description-background {
     margin: auto;
     padding: $padding;
-    margin-top: 70px;
+    margin-top: $margin-t-large;
     background: url("../img/background-services.png") no-repeat;
     background-size: cover;
     background-position: center;
@@ -221,15 +221,15 @@ header {
     font-size: $large;
     text-align: center;
     padding-bottom: $padding-b-extralarge;
-    letter-spacing: 1px;
-    font-weight: 400;
+    letter-spacing: $let-space-sm;
+    font-weight: $weight-m;
   }
   .service-description {
     color: $white;
     font-size: $small;
     text-align: center;
     p:last-child {
-      margin-top: 1%;
+      margin-top: $margin-t-small;
     }
   }
 }
@@ -264,7 +264,7 @@ header {
   }
   #desktop-images-container {
     @include flexbox();
-    margin-top: 50px;
+    padding-top: $padding-t-large;
     .demo-image:first-of-type {
       @include demo-image-style('../img/first-desktop.png');
     }
@@ -332,8 +332,7 @@ header {
     width: 50%;
     .codexio-email {
       color: $blue;
-      font-weight: 500;
-      font-size: $small;
+      font-weight: $weight-l;
     }
     .codexio-dev-camp {
       h2 {
@@ -344,7 +343,6 @@ header {
       p {
         padding-top: $padding-t-small;
         width: 80%;
-        font-size: $small;
       }
     }
     .vacant-positions-container {
@@ -356,15 +354,13 @@ header {
     .text-vacant-positions {
       padding-top: $padding-t-small;
       width: 80%;
-      font-size: 1.1em;
     }
     ul {
       padding-top: $padding-t-large;
       li {
         text-transform: uppercase;
         list-style: none;
-        padding: 3px 0;
-        font-size: $small;
+        padding: 2px 0;
       }
     }
   }
@@ -377,14 +373,14 @@ header {
       text-align: center;
       th {
         font-size: $small;
-        font-weight: 500;
+        font-weight: $weight-l;
         border-bottom: 2px solid $color;
         padding: 20px 10px;
       }
       td {
         border-bottom: 1px solid lightgray;
         padding: 20px 10px;
-        font-size: 1em;
+        font-size: $small;
       }
     }
   }
@@ -413,14 +409,14 @@ header {
             @include input();
           }
           input[type=text]:first-child {
-            margin-right: 1%;
+            margin-right: $margin-r-small;
           }
         }
         div[class=form-element] {
-          font-weight: 500;
+          font-weight: $weight-l;
         }
         .form-element {
-          margin-bottom: 10px;
+          margin-bottom: $margin-b-small;
         }
         .form-label-required {
           color: $color;
@@ -432,7 +428,7 @@ header {
           @include input();
         }
         ::placeholder {
-          font-weight: lighter;
+          font-weight: $weight-s;
         }
         input[type=text]:focus,
         input[type=email]:focus,
@@ -441,7 +437,7 @@ header {
         }
         button {
           @include button ();
-          margin-top: 20px;
+          margin-top: $margin-t-small;
           border: 0;
           background: $color;
         }
@@ -457,14 +453,18 @@ header {
 .right-part-contact-us {
   text-align: right;
   width: 30%;
+  padding-bottom: $padding-b-extralarge;
   div {
     width: $max;
     img {
       width: 70%;
     }
   }
-  .right-text-container p {
-    padding-top: $padding-t-small;
+  .right-text-container {
+    padding-top: $padding-t-extralarge;
+    p {
+      padding-top: $padding-t-small;
+    }
   }
 }
 
@@ -472,6 +472,7 @@ header {
 
 .social-media {
   float: right;
+  padding-top: $padding-t-extralarge;
   .fa {
     font-size: $extralarge;
     color: #4267B2;
@@ -502,7 +503,7 @@ footer {
     padding-top: $padding-t-small;
     font-size: $small;
     color: #999E9A;
-    font-weight: 600;
+    font-weight: $weight-l;
   }
 }
 
@@ -515,11 +516,11 @@ footer {
 }
 
 #content {
-  padding: 60px 60px 20px 60px;
+  padding: 20px 40px;
   text-align: center;
-  font-size: 17px;
+  font-size: $large;
   height: 100px;
-  font-weight: 400;
+  font-weight: $weight-m;
 }
 
 /* Style for ScrollBar */

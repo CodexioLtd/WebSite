@@ -13,13 +13,14 @@
     width: 90%;
   }
   header {
-    .header-nav-bar nav .header-logo-container {
+    .header-nav-bar .primary-nav-bar .header-logo-container {
       width: 30%;
     }
     #main-navigation {
       display: none;
     }
     .header-nav-bar {
+      padding-top: $padding-t-large;
       .fa-bars {
         display: block;
         cursor: pointer;
@@ -32,7 +33,7 @@
     #navigation {
       position: fixed;
       transform: translate(0px, -1999px);
-      transition: all 0.5s;
+      transition: all $animation-time;
       width: $max;
       z-index: 800;
       li {
@@ -41,15 +42,11 @@
           border-bottom: none;
         }
         a {
-          text-decoration: none;
           padding: 1em 0;
           display: block;
           text-align: center;
-          text-decoration: none;
+          letter-spacing: $let-space-lar;
           text-transform: uppercase;
-          letter-spacing: 2px;
-          color: $white;
-          font-size: 1.1em;
         }
       }
     }
@@ -62,6 +59,9 @@
     }
     .div-header-center {
       top: 50%;
+      h2 {
+        padding-bottom: $padding-b-extralarge;
+      }
     }
   } // Breakpoint 1 (iPad Air): 768px
   #info-codexio {
@@ -93,7 +93,7 @@
     }
     .services-description-background {
       padding: 5%;
-      margin-top: 5%;
+      margin-top: $margin-t-extralarge;
     }
   } // Breakpoint 1 (iPad Air): 768px
   #projects {
@@ -129,38 +129,29 @@
     h3 {
       padding-bottom: $padding-b-extralarge;
     }
+    h2 {
+      text-align: center;
+    }
     #careers-container {
       @include flexbox($flex-direction: column);
     }
     .left-part-careers {
+      text-align: justify;
       width: $max;
     }
-    .left-part-careers .codexio-dev-camp h2 {
-      text-align: center;
-    }
-    .left-part-careers .text-dev-camp p {
-      margin: auto;
-      width: $max;
-    }
-    .left-part-careers .vacant-positions-container h2 {
-      text-align: center;
-    }
+    .left-part-careers .text-dev-camp p,
     .left-part-careers .vacant-positions-container p {
-      margin: auto;
       width: $max;
     }
     .left-part-careers ul {
       text-align: center;
     }
     .right-part-careers {
+      text-align: center;
       width: $max;
       padding-top: $padding-t-large;
     }
-    .right-part-careers h2 {
-      text-align: center;
-    }
     .right-part-careers table {
-      margin: auto;
       width: $max;
     }
   } // Breakpoint 1 (iPad Air): 768px
@@ -172,18 +163,17 @@
     #wrapper-contact-us {
       @include flexbox($flex-direction: column);
     }
-    #wrapper-contact-us .left-part-contact-us {
-      width: $max;
-    }
-    #wrapper-contact-us .right-part-contact-us {
+    #wrapper-contact-us .left-part-contact-us,
+    .right-part-contact-us {
       width: $max;
     }
     #wrapper-contact-us .left-part-contact-us form button {
-      font-size: 1.3em;
+      font-size: $small;
       padding: 10px 40px;
       margin: auto;
       display: block;
-      margin-bottom: 3em;
+      margin-top: $margin-t-large;
+      margin-bottom: $margin-b-large;
     } // Breakpoint 1 (iPad Air): 768px
     .right-part-contact-us div {
       margin: 0 auto;
@@ -195,7 +185,11 @@
       width: $max;
     }
     .right-part-contact-us div img {
-      width: 70%;
+      width: 60%;
+    }
+    .right-part-contact-us .right-text-container,
+    .social-media {
+      padding-top: 0;
     }
   }
   #map {
@@ -221,7 +215,7 @@
     }
     .div-header-center h1 {
       font-size: 4em;
-      font-weight: 400;
+      font-weight: $weight-m;
     }
     .div-header-center h2 {
       font-size: $small;
@@ -234,7 +228,7 @@
       padding: 8px 0;
       width: 40%;
       margin: auto;
-      margin-top: 2%;
+      margin-top: $margin-t-large;
     }
   }
   #info-codexio {
@@ -265,8 +259,11 @@
       padding-top: $padding-t-extralarge;
     }
     .services-description-background {
-      margin-top: 10%;
+      margin-top: $margin-t-extralarge;
       padding: 60px 0;
+    }
+    .service-description p {
+      text-align: justify;
     }
   } //Breakpoint 2 (iPhone 6+): 480px
   #projects {
@@ -283,7 +280,7 @@
     }
     #mobile-images-container {
       @include flexbox($flex-direction: column);
-      margin-top: 50px;
+      margin-top: $margin-t-extralarge;
       .demo-image:first-of-type {
         @include demo-image-style('../img/first-mobile.png', $width: $max);
       }
@@ -302,7 +299,7 @@
     }
     .clients-logos-container .logo-container {
       width: $max;
-      margin-bottom: 3%;
+      margin-bottom: $margin-b-large;
     }
   } //Breakpoint 2 (iPhone 6+): 480px
   #careers {
@@ -310,25 +307,22 @@
     #careers-container {
       @include flexbox($flex-direction: column);
     }
-    .left-part-careers {
-      width: $max;
+    h2 {
       text-align: center;
     }
-    .left-part-careers .text-dev-camp p {
+    .left-part-careers {
       width: $max;
-      font-size: $small;
+      text-align: justify;
     }
-    .left-part-careers .text-vacant-positions {
-      width: $max;
-      font-size: $small;
-    }
+    .left-part-careers .text-dev-camp p,
+    .left-part-careers .text-vacant-positions,
     .left-part-careers ul li {
+      width: $max;
       font-size: $small;
     }
     .right-part-careers {
       width: $max;
       padding-top: $padding-t-extralarge;
-      text-align: center;
     }
     .right-part-careers table {
       font-size: $small;
@@ -367,9 +361,6 @@
       font-size: $xsmall;
       line-height: $line-height;
     }
-    .logo-with-text p {
-      padding-left: 0;
-    }
   } //Breakpoint 3 (iPhone 5S): 320px
   #services {
     padding: 40px 0;
@@ -383,7 +374,7 @@
     }
     .heading-description {
       font-size: $small;
-      font-weight: 500;
+      font-weight: $weight-l;
       padding-bottom: $padding-b-extralarge;
     }
   } //Breakpoint 3 (iPhone 5S): 320px
@@ -423,17 +414,13 @@
       font-size: $xsmall;
       padding-bottom: $padding-b-large;
     }
-    .left-part-careers .text-vacant-positions {
-      font-size: $xsmall;
-    }
-    .left-part-careers ul li {
+    .left-part-careers .text-vacant-positions,
+    .left-part-careers ul li,
+    .right-part-careers table th {
       font-size: $xsmall;
     }
     .right-part-careers {
-      padding-top: 10%;
-    }
-    .right-part-careers table th {
-      font-size: $xsmall;
+      padding-top: $padding-t-large;
     }
     .right-part-careers table td {
       padding: 10px 8px;
@@ -445,21 +432,16 @@
   } //Breakpoint 3 (iPhone 5S): 320px
   #contact-us {
     padding: 40px 0;
-    #wrapper-contact-us .left-part-contact-us h3 {
+    #wrapper-contact-us .left-part-contact-us h3,
+    .right-part-contact-us .social-media .fa {
       font-size: $medium;
     }
     .right-part-contact-us div img {
       width: $max;
     }
-    .right-part-contact-us .social-media .fa {
-      font-size: $medium;
-    }
-    #contact-us #wrapper-contact-us .left-part-contact-us form .form-joint-input input[type=text]:first-child {
-      margin-right: 2%;
-    }
   }
   footer .container {
     text-align: center;
-    font-size: small;
+    font-size: $xsmall;
   }
 }
