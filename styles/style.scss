@@ -25,14 +25,14 @@ html {
 }
 
 body {
-  width: 100%;
+  width: $max;
   font-family: 'Roboto', sans-serif;
   line-height: $line-height;
   font-size: $default-body-font;
 }
 
 img {
-  max-width: 100%;
+  max-width: $max;
 }
 
 .link {
@@ -52,7 +52,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: $max;
     padding: 1%;
     #nav-button,
     #close-nav {
@@ -66,7 +66,7 @@ header {
       .header-logo-container {
         width: 20%;
         img {
-          width: 100%;
+          width: $max;
         }
       }
       li {
@@ -101,7 +101,7 @@ header {
     }
     h2 {
       font-weight: 300;
-      padding-bottom: $padding-bottom-large;
+      padding-bottom: $padding-b-large;
       text-transform: uppercase;
     }
     .button-hiring {
@@ -136,13 +136,13 @@ header {
       color: $blue;
       font-size: 3em;
       font-weight: 400;
-      padding-bottom: $padding-bottom-small;
+      padding-bottom: $padding-b-small;
     }
     h4 {
       font-size: $small;
       font-weight: 400;
       color: #595a5a;
-      padding-bottom: $padding-bottom-large;
+      padding-bottom: $padding-b-large;
     }
   }
 }
@@ -154,11 +154,11 @@ header {
     height: 5%;
   }
   p {
-    padding-left: $padding-left-large;
+    padding-left: $padding-l-large;
     font-size: $small;
     font-weight: 400;
     &:last-child {
-      padding-top: $padding-top-small;
+      padding-top: $padding-t-small;
     }
   }
 }
@@ -180,14 +180,14 @@ header {
   }
   .services-icons {
     @include flexbox();
-    padding-top: $padding-top-extralarge;
+    padding-top: $padding-t-extralarge;
     .service-container {
       text-align: center;
       cursor: pointer;
     }
     .service-container h4 {
       font-size: $small;
-      padding-top: $padding-top-large;
+      padding-top: $padding-t-large;
       text-transform: uppercase;
       font-weight: 400;
     }
@@ -220,7 +220,7 @@ header {
     color: $white;
     font-size: $large;
     text-align: center;
-    padding-bottom: $padding-bottom-extralarge;
+    padding-bottom: $padding-b-extralarge;
     letter-spacing: 1px;
     font-weight: 400;
   }
@@ -247,7 +247,7 @@ header {
   .lock-trip-logo-container {
     text-align: center;
     margin: auto;
-    padding: 25px;
+    padding-bottom: $padding-b-large;
     &:hover {
       -webkit-filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.2));
     }
@@ -303,13 +303,13 @@ header {
       .img-holder {
         width: 60%;
         img {
-          width: 100%;
+          width: $max;
           height: auto;
         }
       }
     }
     .logo-container img {
-      width: 100%;
+      width: $max;
     }
   }
 }
@@ -342,24 +342,24 @@ header {
     }
     .text-dev-camp {
       p {
-        padding-top: $padding-top-small;
+        padding-top: $padding-t-small;
         width: 80%;
         font-size: $small;
       }
     }
     .vacant-positions-container {
       h2 {
-        padding-top: $padding-top-large;
+        padding-top: $padding-t-large;
         @include heading();
       }
     }
     .text-vacant-positions {
-      padding-top: $padding-top-small;
+      padding-top: $padding-t-small;
       width: 80%;
       font-size: 1.1em;
     }
     ul {
-      padding-top: $padding-top-large;
+      padding-top: $padding-t-large;
       li {
         text-transform: uppercase;
         list-style: none;
@@ -458,13 +458,13 @@ header {
   text-align: right;
   width: 30%;
   div {
-    width: 100%;
+    width: $max;
     img {
       width: 70%;
     }
   }
   .right-text-container p {
-    padding-top: $padding-top-small;
+    padding-top: $padding-t-small;
   }
 }
 
@@ -480,7 +480,7 @@ header {
     }
   }
   .fa-facebook-square {
-    padding: 0 0.1em;
+    padding: $padding-b-large;
   }
   .fa-linkedin-square {
     color: #0077B5;
@@ -499,7 +499,7 @@ footer {
     width: 15%;
   }
   p {
-    padding-top: $padding-top-small;
+    padding-top: $padding-t-small;
     font-size: $small;
     color: #999E9A;
     font-weight: 600;

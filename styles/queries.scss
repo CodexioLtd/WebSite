@@ -33,7 +33,7 @@
       position: fixed;
       transform: translate(0px, -1999px);
       transition: all 0.5s;
-      width: 100%;
+      width: $max;
       z-index: 800;
       li {
         border-bottom: 1px solid $white;
@@ -74,7 +74,7 @@
       margin: auto;
     }
     .codexio-info-text p {
-      padding-top: 1.2%;
+      padding-top: $padding-t-small;
       padding-left: 0;
     }
   } // Breakpoint 1 (iPad Air): 768px
@@ -82,34 +82,31 @@
     padding: 70px 0;
     padding-bottom: 0;
     h3 {
-      padding-bottom: 1%;
+      padding-bottom: $padding-b-large;
     }
     .services-icons {
-      padding-top: 5%;
+      padding-top: $padding-t-extralarge;
     }
     .services-icons .service-container h4 {
       text-transform: capitalize;
-      padding-top: 3%;
+      padding-top: $padding-t-large;
     }
     .services-description-background {
       padding: 5%;
       margin-top: 5%;
-    }
-    .heading-description {
-      padding-bottom: 3%;
     }
   } // Breakpoint 1 (iPad Air): 768px
   #projects {
     padding: 70px 0;
     padding-bottom: 0;
     h3 {
-      padding-bottom: 3%;
+      padding-bottom: $padding-b-extralarge;
     }
     p {
       padding-left: 0;
     }
     .lock-trip-logo-container {
-      padding: 2%;
+      padding-bottom: $padding-b-large;
       .lock-trip-logo {
         width: 30%;
       }
@@ -118,69 +115,68 @@
   #clients {
     padding: 70px 0;
     h3 {
-      padding-bottom: 2%;
+      padding-bottom: $padding-b-extralarge;
     }
     .clients-logos-container {
       justify-content: space-around;
     }
     .clients-logos-container .logo-container .img-holder {
-      width: 100%;
+      width: $max;
     }
   } // Breakpoint 1 (iPad Air): 768px
   #careers {
     padding: 70px 0;
     h3 {
-      padding-bottom: 2%;
+      padding-bottom: $padding-b-extralarge;
     }
     #careers-container {
       @include flexbox($flex-direction: column);
     }
     .left-part-careers {
-      width: 100%;
+      width: $max;
     }
     .left-part-careers .codexio-dev-camp h2 {
       text-align: center;
     }
     .left-part-careers .text-dev-camp p {
       margin: auto;
-      padding: 2%;
-      width: 100%;
+      width: $max;
     }
     .left-part-careers .vacant-positions-container h2 {
       text-align: center;
     }
     .left-part-careers .vacant-positions-container p {
       margin: auto;
-      padding: 2%;
-      width: 100%;
+      width: $max;
     }
     .left-part-careers ul {
       text-align: center;
     }
     .right-part-careers {
-      width: 100%;
-      padding-top: 1.5em;
+      width: $max;
+      padding-top: $padding-t-large;
     }
     .right-part-careers h2 {
       text-align: center;
     }
     .right-part-careers table {
       margin: auto;
+      width: $max;
     }
   } // Breakpoint 1 (iPad Air): 768px
   #contact-us {
     padding: 70px 0;
     #wrapper-contact-us .left-part-contact-us form h3 {
-      padding-bottom: 2%;
+      padding-bottom: $padding-b-extralarge;
     }
     #wrapper-contact-us {
       @include flexbox($flex-direction: column);
     }
     #wrapper-contact-us .left-part-contact-us {
-      width: 100%;
+      width: $max;
     }
     #wrapper-contact-us .right-part-contact-us {
-      width: 100%;
+      width: $max;
     }
     #wrapper-contact-us .left-part-contact-us form button {
       font-size: 1.3em;
@@ -193,20 +189,13 @@
       margin: 0 auto;
       text-align: center;
     }
-    #wrapper-contact-us .left-part-contact-us form .form-joint-input {
-      width: 100%;
-    }
-    #wrapper-contact-us .left-part-contact-us form input[type=email] {
-      width: 100%;
-    }
+    #wrapper-contact-us .left-part-contact-us form .form-joint-input,
+    #wrapper-contact-us .left-part-contact-us form input[type=email],
     #wrapper-contact-us .left-part-contact-us form #message {
-      width: 100%;
+      width: $max;
     }
     .right-part-contact-us div img {
       width: 70%;
-    }
-    .right-part-contact-us .social-media p {
-      padding-left: 9.6em;
     }
   }
   #map {
@@ -228,20 +217,20 @@
   header {
     .header-nav-bar .primary-nav-bar .header-logo-container {
       width: 40%;
-      padding-top: 2%;
+      padding-top: $padding-t-extralarge;
     }
     .div-header-center h1 {
       font-size: 4em;
       font-weight: 400;
     }
     .div-header-center h2 {
-      font-size: 1.2em;
-      padding-bottom: 20px;
+      font-size: $small;
+      padding-bottom: $padding-b-large;
     }
     .div-header-center .button-hiring,
     .div-header-center .button-contact-us {
       display: block;
-      font-size: 1em;
+      font-size: $small;
       padding: 8px 0;
       width: 40%;
       margin: auto;
@@ -252,13 +241,13 @@
     padding: 60px 0;
   }
   #info-codexio .codexio-title {
-    line-height: 1.3;
+    line-height: $line-height;
   }
   #info-codexio .codexio-title h3 {
     padding: 0;
   }
   #info-codexio .codexio-title h4 {
-    font-size: 0.9em;
+    font-size: $xsmall;
   } //Breakpoint 2 (iPhone 6+): 480px
   #services {
     padding: 60px 0;
@@ -269,35 +258,22 @@
         width: 40%;
       }
     }
-    h3 {
-      padding-bottom: 5%;
-    }
     .services-info-text {
-      width: 100%;
+      width: $max;
     }
     .services-icons {
-      padding-top: 2%;
-    }
-    .services-icons .service-container h4 {
-      padding-top: 2%;
-      font-size: 0.97em;
+      padding-top: $padding-t-extralarge;
     }
     .services-description-background {
       margin-top: 10%;
       padding: 60px 0;
-    }
-    .services-icons .service-container img {
-      padding-top: 5%;
-    }
-    .heading-description {
-      padding-bottom: 5%;
     }
   } //Breakpoint 2 (iPhone 6+): 480px
   #projects {
     padding: 60px 0;
     padding-bottom: 0;
     .lock-trip-logo-container {
-      padding: 3%;
+      padding-bottom: $padding-b-large;
     }
     .lock-trip-logo-container .lock-trip-logo {
       width: 40%;
@@ -309,65 +285,59 @@
       @include flexbox($flex-direction: column);
       margin-top: 50px;
       .demo-image:first-of-type {
-        @include demo-image-style('../img/first-mobile.png', $width: 100%);
+        @include demo-image-style('../img/first-mobile.png', $width: $max);
       }
       .demo-image:nth-child(2) {
-        @include demo-image-style('../img/second-mobile.png', $width: 100%);
+        @include demo-image-style('../img/second-mobile.png', $width: $max);
       }
       .demo-image:nth-child(3) {
-        @include demo-image-style('../img/third-mobile.png', $width: 100%);
+        @include demo-image-style('../img/third-mobile.png', $width: $max);
       }
     }
   } //Breakpoint 2 (iPhone 6+): 480px
   #clients {
     padding: 60px 0;
-    h3 {
-      padding-bottom: 5%;
-    }
     .clients-logos-container {
       @include flexbox($flex-direction: column);
     }
     .clients-logos-container .logo-container {
-      width: 100%;
+      width: $max;
       margin-bottom: 3%;
     }
   } //Breakpoint 2 (iPhone 6+): 480px
   #careers {
     padding: 60px 0;
-    h3 {
-      padding-bottom: 5%;
-    }
     #careers-container {
       @include flexbox($flex-direction: column);
     }
     .left-part-careers {
-      width: 100%;
+      width: $max;
       text-align: center;
     }
     .left-part-careers .text-dev-camp p {
-      width: 100%;
-      font-size: 1em;
+      width: $max;
+      font-size: $small;
     }
     .left-part-careers .text-vacant-positions {
-      width: 100%;
-      font-size: 1em;
+      width: $max;
+      font-size: $small;
     }
     .left-part-careers ul li {
-      font-size: 1em;
+      font-size: $small;
     }
     .right-part-careers {
-      width: 100%;
-      padding-top: 5%;
+      width: $max;
+      padding-top: $padding-t-extralarge;
       text-align: center;
     }
     .right-part-careers table {
-      font-size: 1em;
+      font-size: $small;
     }
   } //Breakpoint 2 (iPhone 6+): 480px
   #contact-us {
     padding: 60px 0;
     .right-part-contact-us div {
-      padding-bottom: 1em;
+      padding-bottom: $padding-b-small;
       margin: auto;
     }
     .right-part-contact-us div p {
@@ -378,42 +348,24 @@
 
 //Breakpoint 3 (iPhone 5S): 320px
 @media screen and (max-width: 320px) {
-  header {
-    height: 100vh;
-    .container {
-      text-align: justify;
-    }
-    .header-nav-bar nav .header-logo-container {
-      width: 60%;
-    }
-    .header-nav-bar {
-      padding-top: 4%;
-    }
-    .div-header-center {
-      h2 {
-        font-size: 1em;
-      }
-      .button-hiring,
-      .button-contact-us {
-        padding: 6px 0;
-      }
-    }
+  header .header-nav-bar .primary-nav-bar .header-logo-container {
+    width: 60%;
   } //Breakpoint 3 (iPhone 5S): 320px
   #info-codexio {
     padding: 40px 0;
     .codexio-title {
       h3 {
-        font-size: 2.7em;
+        font-size: $medium;
       }
       h4 {
-        font-size: 0.8em;
-        padding-bottom: 6%;
+        font-size: $xsmall;
+        padding-bottom: $padding-b-extralarge;
       }
     }
     .codexio-info-text p {
-      padding-top: 6%;
-      font-size: 0.9em;
-      line-height: 1.5;
+      padding-top: $padding-t-large;
+      font-size: $xsmall;
+      line-height: $line-height;
     }
     .logo-with-text p {
       padding-left: 0;
@@ -422,74 +374,70 @@
   #services {
     padding: 40px 0;
     padding-bottom: 0;
-    h3 {
-      font-size: 2.7em;
-    }
-    .service-description {
-      font-size: 0.9em;
-    }
     .services-icons .service-container {
-      padding-top: 1em;
+      padding-top: $padding-t-large;
     }
     .services-info-text {
-      font-size: 0.9em;
-      width: 100%;
+      font-size: $xsmall;
+      width: $max;
     }
     .heading-description {
-      font-size: 1.4em;
+      font-size: $small;
+      font-weight: 500;
+      padding-bottom: $padding-b-extralarge;
     }
   } //Breakpoint 3 (iPhone 5S): 320px
   #projects {
     padding: 40px 0;
     padding-bottom: 0;
     h3 {
-      font-size: 2.8em;
+      font-size: $medium;
     }
     .lock-trip-logo-container .lock-trip-logo {
       width: 50%;
     }
     p {
-      font-size: 0.9em;
+      font-size: $xsmall;
     }
   } //Breakpoint 3 (iPhone 5S): 320px
   #clients {
     padding: 40px 0;
     h3 {
-      font-size: 2.7em;
+      font-size: $medium;
     }
   }
   #careers {
     padding: 40px 0;
     h3 {
-      font-size: 2.7em;
+      font-size: $medium;
     }
     .left-part-careers {
       .vacant-positions-container {
-        padding-top: 2%;
+        padding-top: $padding-t-small;
       }
     }
     .left-part-careers .vacant-positions-container h2 {
       padding-left: 0;
     }
     .left-part-careers .text-dev-camp p {
-      font-size: 0.9em;
-      padding-bottom: 15px;
+      font-size: $xsmall;
+      padding-bottom: $padding-b-large;
     }
     .left-part-careers .text-vacant-positions {
-      font-size: 0.9em;
+      font-size: $xsmall;
     }
     .left-part-careers ul li {
-      font-size: 0.9em;
+      font-size: $xsmall;
     }
     .right-part-careers {
       padding-top: 10%;
     }
     .right-part-careers table th {
-      font-size: 0.9em;
+      font-size: $xsmall;
     }
     .right-part-careers table td {
       padding: 10px 8px;
-      font-size: 0.9em;
+      font-size: $xsmall;
     }
     .right-part-careers table tr td {
       padding: 2px 6px;
@@ -497,24 +445,14 @@
   } //Breakpoint 3 (iPhone 5S): 320px
   #contact-us {
     padding: 40px 0;
-    #wrapper-contact-us .left-part-contact-us form h3 {
-      font-size: 2.7em;
-    }
-    #wrapper-contact-us .left-part-contact-us form button {
-      margin-bottom: 2em;
-    }
-    .right-part-contact-us div {
-      margin: 0 auto;
-      padding-bottom: 1em;
+    #wrapper-contact-us .left-part-contact-us h3 {
+      font-size: $medium;
     }
     .right-part-contact-us div img {
-      width: 100%;
-    }
-    .right-part-contact-us .social-media p {
-      padding-left: 2.5em;
+      width: $max;
     }
     .right-part-contact-us .social-media .fa {
-      font-size: 2.4em;
+      font-size: $medium;
     }
     #contact-us #wrapper-contact-us .left-part-contact-us form .form-joint-input input[type=text]:first-child {
       margin-right: 2%;
@@ -522,5 +460,6 @@
   }
   footer .container {
     text-align: center;
+    font-size: small;
   }
 }
