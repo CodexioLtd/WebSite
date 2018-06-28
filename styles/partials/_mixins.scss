@@ -32,8 +32,13 @@
   border: 1px solid #ccc;
   cursor: pointer;
   margin-bottom: 30px;
+  margin: auto;
   opacity: 0.9;
   transition: all $animation-time;
+  @media screen and (max-width: 480px) {
+    height: 150px;
+    margin-bottom: 3%;
+  }
   &:hover {
     opacity: 1;
     border: 1px solid #000;

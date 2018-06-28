@@ -1,16 +1,27 @@
-//font-size
+// font-size
 $default-body-font: 16px;
 $small: 1.0em;
 $large: 1.88em;
 $extralarge: 3em;
+$line-height: 1.5;
 // default padding = 100px
 $padding: 100px 0;
 // default line height
-$line-height: 1.5;
+// padding top
+$padding-top-extralarge:5%;
+$padding-top-large:3%;
+$padding-top-small:1%;
+// padding bottom
+$padding-bottom-extralarge:3%;
+$padding-bottom-large:2%;
+$padding-bottom-small:0.1%;
+// padding left
+ $padding-left-large:2%;
 // default transition time
 $animation-time: 0.5s;
 // color auqa
 $color:#61c4be;
 // color white
 $white: #fff;
+// color blue
 $blue:#2E5CA9;

@@ -1,4 +1,5 @@
 @import './partials/mixins';
+@import './partials/variables';
 @media screen and (max-width: 1268px) {
   .container {
     width: 90%;
@@ -65,10 +66,10 @@
   } // Breakpoint 1 (iPad Air): 768px
   #info-codexio {
     padding: 70px 0;
-    .logo-with-text {
-      flex-direction: column;
+    .info-logo-container {
+      @include flexbox($flex-direction: column);
     }
-    .logo-with-text img {
+    .info-logo-container img {
       width: 30%;
       margin: auto;
     }
@@ -101,6 +102,9 @@
   #projects {
     padding: 70px 0;
     padding-bottom: 0;
+    h3 {
+      padding-bottom: 3%;
+    }
     p {
       padding-left: 0;
     }
@@ -129,7 +133,7 @@
       padding-bottom: 2%;
     }
     #careers-container {
-      flex-direction: column;
+      @include flexbox($flex-direction: column);
     }
     .left-part-careers {
       width: 100%;
@@ -170,7 +174,7 @@
       padding-bottom: 2%;
     }
     #wrapper-contact-us {
-      flex-direction: column;
+      @include flexbox($flex-direction: column);
     }
     #wrapper-contact-us .left-part-contact-us {
       width: 100%;
@@ -222,7 +226,7 @@
 //Breakpoint 2 (iPhone 6+): 480px
 @media screen and (max-width: 480px) {
   header {
-    .header-nav-bar nav .header-logo-container {
+    .header-nav-bar .primary-nav-bar .header-logo-container {
       width: 40%;
       padding-top: 2%;
     }
@@ -243,18 +247,18 @@
       margin: auto;
       margin-top: 2%;
     }
-    #info-codexio {
-      padding: 60px 0;
-    }
-    #info-codexio .codexio-title {
-      line-height: 1.3;
-    }
-    #info-codexio .codexio-title h3 {
-      padding: 0;
-    }
-    #info-codexio .codexio-title h4 {
-      font-size: 0.9em;
-    }
+  }
+  #info-codexio {
+    padding: 60px 0;
+  }
+  #info-codexio .codexio-title {
+    line-height: 1.3;
+  }
+  #info-codexio .codexio-title h3 {
+    padding: 0;
+  }
+  #info-codexio .codexio-title h4 {
+    font-size: 0.9em;
   } //Breakpoint 2 (iPhone 6+): 480px
   #services {
     padding: 60px 0;
@@ -293,40 +297,25 @@
     padding: 60px 0;
     padding-bottom: 0;
     .lock-trip-logo-container {
-      padding: 5%;
+      padding: 3%;
     }
     .lock-trip-logo-container .lock-trip-logo {
       width: 40%;
     }
-    #projects-container {
+    #desktop-images-container {
       display: none;
     }
     #mobile-images-container {
-      display: flex;
-      flex-direction: column;
-      .demo-image:first-of-type{
-        background: url('../img/first-mobile.png');
+      @include flexbox($flex-direction: column);
+      margin-top: 50px;
+      .demo-image:first-of-type {
+        @include demo-image-style('../img/first-mobile.png', $width: 100%);
       }
       .demo-image:nth-child(2) {
-        background: url('../img/second-mobile.png');
+        @include demo-image-style('../img/second-mobile.png', $width: 100%);
       }
       .demo-image:nth-child(3) {
-        background: url('../img/third-mobile.png');
-      }
-      .demo-image {
-        @include demo-image-style(100%);
-        margin: auto;
-        background-size: cover;
-        border: 1px solid #ccc;
-        cursor: pointer;
-        padding-bottom: 80%;
-        margin-bottom: 3%;
-        opacity: 0.9;
-        transition: all 0.5s;
-        &:hover {
-          opacity: 1;
-          border: 1px solid #000;
-        }
+        @include demo-image-style('../img/third-mobile.png', $width: 100%);
       }
     }
   } //Breakpoint 2 (iPhone 6+): 480px
@@ -336,7 +325,7 @@
       padding-bottom: 5%;
     }
     .clients-logos-container {
-      flex-direction: column;
+      @include flexbox($flex-direction: column);
     }
     .clients-logos-container .logo-container {
       width: 100%;
@@ -349,7 +338,7 @@
       padding-bottom: 5%;
     }
     #careers-container {
-      flex-direction: column;
+      @include flexbox($flex-direction: column);
     }
     .left-part-careers {
       width: 100%;

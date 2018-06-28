@@ -172,7 +172,7 @@ document.getElementById('nav-button').addEventListener('click', function (param)
   }
 });
 let cfg = {
-  selector: '.item',
+  selector: '.demo-image',
   download: false,
   zoom: false,
   autoplayControls: false,
