@@ -155,7 +155,7 @@ img {
     height: 5%;
   }
   p {
-    padding-left: $padding-l-large;
+    padding-left: 2%;
     font-size: $small;
     font-weight: 400;
     &:last-child {
@@ -378,7 +378,7 @@ img {
       font-size: $small;
       font-weight: 500;
       border-bottom: 2px solid $color;
-      padding: 20px 10px;
+      padding: 20px 0;
     }
     td {
       border-bottom: 1px solid lightgray;
@@ -448,7 +448,7 @@ img {
 
 /* End of Form */
 
-/* Right Part Codexio-logo with address */
+/* Codexio Address */
 
 .right-part-contact-us {
   text-align: right;

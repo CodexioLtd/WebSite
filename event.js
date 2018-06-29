@@ -85,6 +85,8 @@ $(document).ready(() => {
   // Form
   $("#send-mail").click((e) => {
     e.preventDefault();
+
+    return;
     let fullName = $("#first-name").val() + " " + $("#last-name").val();
     let from = $("#from").val();
     if (from.indexOf('@') < 0 || from.indexOf('.') < 0) {
@@ -106,6 +108,10 @@ $(document).ready(() => {
           $(".msg-error").hide();
           $(".msg-success").show();
           $(".msg-success").text(resp.response);
+          $("#first-name").val('');
+          $("#last-name").val('');
+          $("#from").val('');
+          $("#message").val('');
           setTimeout(() => $(".msg-success").hide(), 5000);
         },
         "error": err => {

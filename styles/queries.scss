@@ -176,6 +176,9 @@
       margin: 0 auto;
       text-align: center;
     }
+    input[type=text] {
+      width: 50%;
+    }
     .form-joint-input,
     input[type=email],
     #message {
@@ -202,6 +205,10 @@
         width: 50%;
       }
     }
+  }
+  .msg-success,
+  .msg-error {
+    width: $max;
   }
 }
 
@@ -232,13 +239,7 @@
   }
   #info-codexio {
     padding: 60px 0;
-    #info-codexio .codexio-title {
-      line-height: $line-height;
-    }
-    #info-codexio .codexio-title h3 {
-      padding: 0;
-    }
-    #info-codexio .codexio-title h4 {
+    h4 {
       font-size: $xsmall;
     }
   } //Breakpoint 2 (iPhone 6+): 480px
@@ -248,7 +249,7 @@
     .services-icons {
       flex-wrap: wrap;
       .service-container {
-        width: 40%;
+        width: 50%;
       }
     }
     .services-info-text {
@@ -301,7 +302,7 @@
     }
     .logo-container {
       width: $max;
-      margin-bottom: 3%;
+      margin-bottom: 5%;
     }
   } //Breakpoint 2 (iPhone 6+): 480px
   #careers {
@@ -319,6 +320,11 @@
   } //Breakpoint 2 (iPhone 6+): 480px
   #contact-us {
     padding: 60px 0;
+  }
+  #content {
+    font-size: $small;
+    padding: 10px 10px;
+    height: 5vh;
   }
 }
 
@@ -347,7 +353,7 @@
   #services {
     padding: 40px 0;
     padding-bottom: 0;
-    .services-icons .service-container {
+    .service-container {
       padding-top: $padding-t-large;
     }
     .services-info-text {
@@ -383,40 +389,28 @@
     h3 {
       font-size: $medium;
     }
-    .left-part-careers {
-      .vacant-positions-container {
-        padding-top: $padding-t-small;
-      }
+    .vacant-positions-container {
+      padding-top: $padding-t-small;
     }
-    .left-part-careers .vacant-positions-container h2 {
-      padding-left: 0;
-    }
-    .left-part-careers .text-dev-camp p {
+    p {
       font-size: $xsmall;
       padding-bottom: $padding-b-large;
     }
-    .left-part-careers .text-vacant-positions,
-    .left-part-careers ul li,
-    .right-part-careers table th {
+    .text-vacant-positions,
+    li,
+    th {
       font-size: $xsmall;
     }
     .right-part-careers {
       padding-top: $padding-t-large;
     }
-    .right-part-careers table td {
+    table td {
       padding: 10px 8px;
       font-size: $xsmall;
-    }
-    .right-part-careers table tr td {
-      padding: 2px 6px;
     }
   } //Breakpoint 3 (iPhone 5S): 320px
   #contact-us {
     padding: 40px 0;
-    .left-part-contact-us h3,
-    .right-part-contact-us .social-media .fa {
-      font-size: $medium;
-    }
     .right-part-contact-us div img {
       width: $max;
     }
