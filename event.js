@@ -153,24 +153,34 @@ $(document).ready(() => {
   for (let i = 0; i < links.length; i++) {
     links[i].addEventListener('click', () => {
       $('#navigation').removeClass('active');
+      $('#close-button').removeClass('btn-active');
+      $('#open-button').addClass('btn-active');
     })
   }
 });
 
-document.getElementById('nav-button').addEventListener('click', function (param) {
-  var button = document.getElementById('nav-button');
-  var headerNav = document.getElementById('header-nav-bar');
-  var nav = document.getElementById('navigation')
-  if (nav.classList.contains('active')) {
-    nav.classList.remove('active');
-    button.classList.remove('fa-power-off');
-    button.classList.add('fa-bars');
-  } else {
-    nav.classList.add('active');
-    button.classList.remove('fa-bars');
-    button.classList.add('fa-power-off');
-  }
-});
+function addToggleButtonListener(id) {
+    document.getElementById(id).addEventListener('click', function (param) {
+    var navButton = document.getElementById('open-button');
+    var closeButton = document.getElementById('close-button');
+    var nav = document.getElementById('navigation')
+    if (nav.classList.contains('active')) {
+      nav.classList.remove('active');
+      closeButton.classList.remove('btn-active');
+      navButton.classList.add('btn-active');
+    } else {
+      nav.classList.add('active');
+      navButton.classList.remove('btn-active');
+      closeButton.classList.add('btn-active');
+    }
+  });
+}
+
+addToggleButtonListener('open-button');
+addToggleButtonListener('close-button');
+
+
+
 let cfg = {
   selector: '.demo-image',
   download: false,

@@ -12,6 +12,7 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 html {
@@ -43,7 +44,7 @@ img {
 
 /* Header */
 
-header {
+#header {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url("../img/background-header.jpg") no-repeat;
   background-size: cover;
   height: 100vh;
@@ -54,72 +55,72 @@ header {
     left: 0;
     width: $max;
     padding: 1%;
-    #nav-button,
-    #close-nav {
-      color: $white;
-      font-size: $large;
-      display: none;
+  }
+  .primary-nav-bar {
+    @include flexbox();
+    align-items: center;
+  }
+  .header-logo-container {
+    width: 20%;
+    img {
+      width: $max;
     }
-    .primary-nav-bar {
-      @include flexbox();
-      align-items: center;
-      .header-logo-container {
-        width: 20%;
-        img {
-          width: $max;
-        }
-      }
-      li {
-        display: inline-block;
-        padding-left: 1em;
-        a {
-          text-transform: uppercase;
-          letter-spacing: $let-space-sm;
-          &:hover {
-            color: $color;
-          }
-        }
+  }
+  .fa-bars,
+  .fa-power-off {
+    display: none;
+    color: $white;
+    font-size: $large;
+  }
+  li {
+    display: inline-block;
+    padding-left: 1em;
+    a {
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      &:hover {
+        color: $color;
       }
     }
   }
-  #navigation {
+  .navigation {
     transform: translate(0px, -1999px)
   }
   .div-header-center {
     text-align: center;
     color: $white;
     position: relative;
-    top: 40%;
+    top: 50%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    h1 {
-      font-size: 7em;
-      font-weight: $weight-s;
-      letter-spacing: $let-space-extralar;
-      margin: 0;
-    }
-    h2 {
-      font-weight: $weight-s;
-      padding-bottom: $padding-b-large;
-      text-transform: uppercase;
-    }
-    .button-hiring {
-      @include button();
-      background: $color;
-      margin-right: $margin-r-xsmall;
-      &:hover {
-        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
-        border: 2px solid $color;
-      }
-    }
-    .button-contact-us {
-      @include button();
-      padding: 10px 40px;
+  }
+  h1 {
+    font-size: 7em;
+    font-weight: 300;
+    letter-spacing: 8px;
+    margin: 0;
+  }
+  h2 {
+    font-weight: 300;
+    padding-bottom: $padding-b-large;
+    text-transform: uppercase;
+  }
+  .button-hiring {
+    @include button();
+    background: $color;
+    margin-right: 0.1%;
+    &:hover {
       background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
-      &:hover {
-        background: $color;
-      }
+      border: 2px solid $color;
+    }
+  }
+  .button-contact-us {
+    @include button();
+    padding: 10px 40px;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    &:hover {
+      background: $color;
     }
   }
 }
@@ -132,18 +133,18 @@ header {
   padding: $padding;
   .codexio-title {
     text-align: center;
-    h3 {
-      color: $blue;
-      font-size: 3em;
-      font-weight: $weight-m;
-      padding-bottom: $padding-b-small;
-    }
-    h4 {
-      font-size: $small;
-      font-weight: $weight-m;
-      color: #595a5a;
-      padding-bottom: $padding-b-large;
-    }
+  }
+  h3 {
+    color: $blue;
+    font-size: 3em;
+    font-weight: 400;
+    padding-bottom: $padding-b-small;
+  }
+  h4 {
+    font-size: $small;
+    font-weight: 400;
+    color: #595a5a;
+    padding-bottom: $padding-b-large;
   }
 }
 
@@ -156,7 +157,7 @@ header {
   p {
     padding-left: $padding-l-large;
     font-size: $small;
-    font-weight: $weight-m;
+    font-weight: 400;
     &:last-child {
       padding-top: $padding-t-small;
     }
@@ -181,35 +182,35 @@ header {
   .services-icons {
     @include flexbox();
     padding-top: $padding-t-extralarge;
-    .service-container {
-      text-align: center;
-      cursor: pointer;
-    }
-    .service-container h4 {
-      font-size: $small;
-      padding-top: $padding-t-large;
-      text-transform: uppercase;
-      font-weight: $weight-m;
-    }
-    .service-container img {
-      width: 100px;
-      height: auto;
-      border-radius: 50%;
-      text-align: center;
-      margin: auto;
-      opacity: 0.5;
-      &:hover {
-        opacity: 1;
-      }
-    }
-    #selected-service-icon {
+  }
+  .service-container {
+    text-align: center;
+    cursor: pointer;
+  }
+  h4 {
+    font-size: $small;
+    padding-top: $padding-t-large;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+  img {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    text-align: center;
+    margin: auto;
+    opacity: 0.5;
+    &:hover {
       opacity: 1;
     }
+  }
+  #selected-service-icon {
+    opacity: 1;
   }
   .services-description-background {
     margin: auto;
     padding: $padding;
-    margin-top: $margin-t-large;
+    margin-top: 2%;
     background: url("../img/background-services.png") no-repeat;
     background-size: cover;
     background-position: center;
@@ -221,15 +222,16 @@ header {
     font-size: $large;
     text-align: center;
     padding-bottom: $padding-b-extralarge;
-    letter-spacing: $let-space-sm;
-    font-weight: $weight-m;
+    letter-spacing: 1px;
+    font-weight: 400;
+    text-transform: capitalize;
   }
   .service-description {
     color: $white;
     font-size: $small;
     text-align: center;
     p:last-child {
-      margin-top: $margin-t-small;
+      margin-top: 1%;
     }
   }
 }
@@ -288,29 +290,29 @@ header {
   }
   .clients-logos-container {
     @include flexbox();
-    .logo-container {
-      border: 1px solid lightgray;
-      @include flexbox($justify-content: center);
-      align-items: center;
-      width: 25%;
-      height: 150px;
-      padding: 20px;
+  }
+  .logo-container {
+    border: 1px solid lightgray;
+    @include flexbox($justify-content: center);
+    align-items: center;
+    width: 25%;
+    height: 150px;
+    padding: 20px;
+    transition: border $animation-time;
+    &:hover {
+      border: 1px solid black;
       transition: border $animation-time;
-      &:hover {
-        border: 1px solid black;
-        transition: border $animation-time;
-      }
-      .img-holder {
-        width: 60%;
-        img {
-          width: $max;
-          height: auto;
-        }
-      }
     }
-    .logo-container img {
+  }
+  .img-holder {
+    width: 60%;
+    img {
       width: $max;
+      height: auto;
     }
+  }
+  .logo-container img {
+    width: $max;
   }
 }
 
@@ -330,58 +332,58 @@ header {
   }
   .left-part-careers {
     width: 50%;
-    .codexio-email {
-      color: $blue;
-      font-weight: $weight-l;
+  }
+  .codexio-email {
+    color: $blue;
+    font-weight: 500;
+  }
+  .codexio-dev-camp {
+    h2 {
+      @include heading();
     }
-    .codexio-dev-camp {
-      h2 {
-        @include heading();
-      }
-    }
-    .text-dev-camp {
-      p {
-        padding-top: $padding-t-small;
-        width: 80%;
-      }
-    }
-    .vacant-positions-container {
-      h2 {
-        padding-top: $padding-t-large;
-        @include heading();
-      }
-    }
-    .text-vacant-positions {
+  }
+  .text-dev-camp {
+    p {
       padding-top: $padding-t-small;
       width: 80%;
     }
-    ul {
+  }
+  .vacant-positions-container {
+    h2 {
       padding-top: $padding-t-large;
-      li {
-        text-transform: uppercase;
-        list-style: none;
-        padding: 2px 0;
-      }
+      @include heading();
+    }
+  }
+  .text-vacant-positions {
+    padding-top: $padding-t-small;
+    width: 80%;
+  }
+  ul {
+    padding-top: $padding-t-large;
+    li {
+      text-transform: uppercase;
+      list-style: none;
+      padding: 2px 0;
     }
   }
   .right-part-careers {
     width: 50%;
-    h2 {
-      @include heading();
+  }
+  h2 {
+    @include heading();
+  }
+  table {
+    text-align: center;
+    th {
+      font-size: $small;
+      font-weight: 500;
+      border-bottom: 2px solid $color;
+      padding: 20px 10px;
     }
-    table {
-      text-align: center;
-      th {
-        font-size: $small;
-        font-weight: $weight-l;
-        border-bottom: 2px solid $color;
-        padding: 20px 10px;
-      }
-      td {
-        border-bottom: 1px solid lightgray;
-        padding: 20px 10px;
-        font-size: $small;
-      }
+    td {
+      border-bottom: 1px solid lightgray;
+      padding: 20px 10px;
+      font-size: $small;
     }
   }
 }
@@ -394,55 +396,53 @@ header {
   padding: $padding;
   #wrapper-contact-us {
     @include flexbox();
-    .left-part-contact-us {
-      width: 60%;
-      /* Form */
-      form {
-        h3 {
-          @include title();
-          text-align: left;
-        }
-        .form-joint-input {
-          @include flexbox();
-          width: 80%;
-          input[type=text] {
-            @include input();
-          }
-          input[type=text]:first-child {
-            margin-right: $margin-r-small;
-          }
-        }
-        div[class=form-element] {
-          font-weight: $weight-l;
-        }
-        .form-element {
-          margin-bottom: $margin-b-small;
-        }
-        .form-label-required {
-          color: $color;
-        }
-        input[type=email] {
-          @include input();
-        }
-        #message {
-          @include input();
-        }
-        ::placeholder {
-          font-weight: $weight-s;
-        }
-        input[type=text]:focus,
-        input[type=email]:focus,
-        #message:focus {
-          border: 1px solid $color;
-        }
-        button {
-          @include button ();
-          margin-top: $margin-t-small;
-          border: 0;
-          background: $color;
-        }
-      }
-    }
+  }
+  .left-part-contact-us {
+    width: 60%;
+  }
+  /* Form */
+  h3 {
+    @include title();
+    text-align: left;
+  }
+  .form-joint-input {
+    @include flexbox();
+    width: 80%;
+  }
+  input[type=text] {
+    @include input();
+  }
+  input[type=text]:first-child {
+    margin-right: 1%;
+  }
+  div[class=form-element] {
+    font-weight: 500;
+  }
+  .form-element {
+    margin-bottom: 1%;
+  }
+  .form-label-required {
+    color: $color;
+  }
+  input[type=email] {
+    @include input();
+  }
+  #message {
+    @include input();
+  }
+  ::placeholder {
+    font-weight: 300;
+  }
+  input[type=text]:focus,
+  input[type=email]:focus,
+  #message:focus {
+    border: 1px solid $color;
+  }
+  button {
+    @include button ();
+    margin-top: 1%;
+    border: 0;
+    background: $color;
   }
 }
 
@@ -454,34 +454,37 @@ header {
   text-align: right;
   width: 30%;
   padding-bottom: $padding-b-extralarge;
-  div {
-    width: $max;
-    img {
-      width: 70%;
-    }
+}
+
+.logo-container-contact-us {
+  width: $max;
+  img {
+    width: 70%;
   }
-  .right-text-container {
-    padding-top: $padding-t-extralarge;
-    p {
-      padding-top: $padding-t-small;
-    }
+}
+
+.right-text-container {
+  padding-top: $padding-t-extralarge;
+  p {
+    padding-top: $padding-t-small;
   }
 }
 
 /* Social-media */
 
 .social-media {
+  width: 100%;
   float: right;
   padding-top: $padding-t-extralarge;
-  .fa {
+  .link .fa {
     font-size: $extralarge;
-    color: #4267B2;
     &:hover {
       opacity: 0.9;
     }
   }
   .fa-facebook-square {
-    padding: $padding-b-large;
+    color: #4267B2;
+    padding: $padding-b-small;
   }
   .fa-linkedin-square {
     color: #0077B5;
@@ -503,7 +506,7 @@ footer {
     padding-top: $padding-t-small;
     font-size: $small;
     color: #999E9A;
-    font-weight: $weight-l;
+    font-weight: 400;
   }
 }
 
@@ -520,7 +523,7 @@ footer {
   text-align: center;
   font-size: $large;
   height: 100px;
-  font-weight: $weight-m;
+  font-weight: 400;
 }
 
 /* Style for ScrollBar */
@@ -573,7 +576,6 @@ footer {
 //   background-color: #3F5D91;
 //   opacity: 0.99;
 // }
-
 // .toast-error {
 //   // color: #000 !important;
 //   background-color: #ffe1e4 !important;

@@ -21,7 +21,7 @@
 <body>
   <!-- Header -->
   <header id="header">
-    <section class="header-nav-bar" id="header-nav-bar">
+    <div class="header-nav-bar" id="header-nav-bar">
       <div class="container">
         <nav class="primary-nav-bar">
           <div class="header-logo-container">
@@ -29,10 +29,10 @@
               <img src="img/logo-codexio-header.png" alt="logo-codexio">
             </a>
           </div>
-          <div>
-            <i id="nav-button" class="fa fa-bars"></i>
+          <div class="icons-container">
+            <i id="open-button" class="fa fa-bars btn-active"></i>
+            <i id="close-button" class="fa fa-power-off"></i>
           </div>
-          <i id="close-nav" class="fa fa-power-off"></i>
           <ul class="main-navigation" id="main-navigation">
             <li>
               <a href="#info-codexio" class="link">about</a>
@@ -53,11 +53,10 @@
               <a href="#contact-us" class="link">contact us</a>
             </li>
           </ul>
-
         </nav>
-
       </div>
-    </section>
+    </div>
+    <div class="sticky-nav-bar-container">
     <nav class="sticky-nav-bar">
       <ul class="navigation" id="navigation">
         <li>
@@ -80,6 +79,7 @@
         </li>
       </ul>
     </nav>
+  </div>
     <div class="div-header-center">
       <h1>Codexio</h1>
       <h2>Software Development</h2>
@@ -377,7 +377,7 @@
             </form>
           </div>
           <div class="right-part-contact-us">
-            <div>
+            <div class="logo-container-contact-us">
               <img src="img/logo-codexio-form.png" alt="codexio-logo">
             </div>
             <div class="right-text-container">

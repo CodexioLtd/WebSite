@@ -12,56 +12,53 @@
     text-align: justify;
     width: 90%;
   }
-  header {
-    .header-nav-bar .primary-nav-bar .header-logo-container {
-      width: 30%;
-    }
-    #main-navigation {
-      display: none;
-    }
+  #header {
     .header-nav-bar {
       padding-top: $padding-t-large;
-      .fa-bars {
-        display: block;
-        cursor: pointer;
+    }
+    .header-logo-container {
+      width: 30%;
+    }
+    .main-navigation {
+      display: none;
+    }
+    .fa-bars,
+    .fa-power-off {
+      cursor: pointer;
+    }
+    .btn-active {
+      display: block;
+    }
+    li {
+      border-bottom: 1px solid $white;
+      display: block;
+      &:last-child {
+        border-bottom: none;
       }
-      #nav-button {
+      a {
+        padding: 1em 0;
         display: block;
-        cursor: pointer;
+        text-align: center;
+        letter-spacing: 2px;
+        text-transform: uppercase;
       }
     }
-    #navigation {
+    .navigation {
       position: fixed;
       transform: translate(0px, -1999px);
       transition: all $animation-time;
       width: $max;
       z-index: 800;
-      li {
-        border-bottom: 1px solid $white;
-        &:last-child {
-          border-bottom: none;
-        }
-        a {
-          padding: 1em 0;
-          display: block;
-          text-align: center;
-          letter-spacing: $let-space-lar;
-          text-transform: uppercase;
-        }
-      }
     }
-    #navigation.active {
+    .navigation.active {
       transform: translate(0px, 0px);
       transition: all 0.2s;
       background-color: #3F5D91;
       padding: 100px 0 50px 0;
       height: 100vh;
     }
-    .div-header-center {
-      top: 50%;
-      h2 {
-        padding-bottom: $padding-b-extralarge;
-      }
+    h2 {
+      padding-bottom: $padding-b-extralarge;
     }
   } // Breakpoint 1 (iPad Air): 768px
   #info-codexio {
@@ -87,13 +84,13 @@
     .services-icons {
       padding-top: $padding-t-extralarge;
     }
-    .services-icons .service-container h4 {
+    h4 {
       text-transform: capitalize;
       padding-top: $padding-t-large;
     }
     .services-description-background {
       padding: 5%;
-      margin-top: $margin-t-extralarge;
+      margin-top: 5%;
     }
   } // Breakpoint 1 (iPad Air): 768px
   #projects {
@@ -108,7 +105,7 @@
     .lock-trip-logo-container {
       padding-bottom: $padding-b-large;
       .lock-trip-logo {
-        width: 30%;
+        width: 20%;
       }
     }
   } // Breakpoint 1 (iPad Air): 768px
@@ -120,7 +117,7 @@
     .clients-logos-container {
       justify-content: space-around;
     }
-    .clients-logos-container .logo-container .img-holder {
+    .img-holder {
       width: $max;
     }
   } // Breakpoint 1 (iPad Air): 768px
@@ -139,11 +136,11 @@
       text-align: justify;
       width: $max;
     }
-    .left-part-careers .text-dev-camp p,
-    .left-part-careers .vacant-positions-container p {
+    .text-dev-camp p,
+    .vacant-positions-container p {
       width: $max;
     }
-    .left-part-careers ul {
+    ul {
       text-align: center;
     }
     .right-part-careers {
@@ -151,45 +148,47 @@
       width: $max;
       padding-top: $padding-t-large;
     }
-    .right-part-careers table {
+    table {
       width: $max;
     }
   } // Breakpoint 1 (iPad Air): 768px
   #contact-us {
     padding: 70px 0;
-    #wrapper-contact-us .left-part-contact-us form h3 {
+    h3 {
       padding-bottom: $padding-b-extralarge;
     }
     #wrapper-contact-us {
       @include flexbox($flex-direction: column);
     }
-    #wrapper-contact-us .left-part-contact-us,
+    .left-part-contact-us,
     .right-part-contact-us {
       width: $max;
     }
-    #wrapper-contact-us .left-part-contact-us form button {
+    button {
       font-size: $small;
       padding: 10px 40px;
       margin: auto;
       display: block;
-      margin-top: $margin-t-large;
-      margin-bottom: $margin-b-large;
+      margin-top: 2%;
+      margin-bottom: 3%;
     } // Breakpoint 1 (iPad Air): 768px
-    .right-part-contact-us div {
+    .logo-container-contact-us {
       margin: 0 auto;
       text-align: center;
     }
-    #wrapper-contact-us .left-part-contact-us form .form-joint-input,
-    #wrapper-contact-us .left-part-contact-us form input[type=email],
-    #wrapper-contact-us .left-part-contact-us form #message {
+    .form-joint-input,
+    input[type=email],
+    #message {
       width: $max;
     }
-    .right-part-contact-us div img {
-      width: 60%;
+    img {
+      width: 50%;
     }
-    .right-part-contact-us .right-text-container,
+    .right-text-container,
     .social-media {
       padding-top: 0;
+      text-align: center;
+      margin: auto;
     }
   }
   #map {
@@ -208,40 +207,40 @@
 
 //Breakpoint 2 (iPhone 6+): 480px
 @media screen and (max-width: 480px) {
-  header {
-    .header-nav-bar .primary-nav-bar .header-logo-container {
+  #header {
+    .header-logo-container {
       width: 40%;
       padding-top: $padding-t-extralarge;
     }
-    .div-header-center h1 {
+    h1 {
       font-size: 4em;
-      font-weight: $weight-m;
+      font-weight: 400;
     }
-    .div-header-center h2 {
+    h2 {
       font-size: $small;
       padding-bottom: $padding-b-large;
     }
-    .div-header-center .button-hiring,
-    .div-header-center .button-contact-us {
+    .button-hiring,
+    .button-contact-us {
       display: block;
       font-size: $small;
       padding: 8px 0;
       width: 40%;
       margin: auto;
-      margin-top: $margin-t-large;
+      margin-top: 2%;
     }
   }
   #info-codexio {
     padding: 60px 0;
-  }
-  #info-codexio .codexio-title {
-    line-height: $line-height;
-  }
-  #info-codexio .codexio-title h3 {
-    padding: 0;
-  }
-  #info-codexio .codexio-title h4 {
-    font-size: $xsmall;
+    #info-codexio .codexio-title {
+      line-height: $line-height;
+    }
+    #info-codexio .codexio-title h3 {
+      padding: 0;
+    }
+    #info-codexio .codexio-title h4 {
+      font-size: $xsmall;
+    }
   } //Breakpoint 2 (iPhone 6+): 480px
   #services {
     padding: 60px 0;
@@ -258,8 +257,11 @@
     .services-icons {
       padding-top: $padding-t-extralarge;
     }
+    .service-img-icon {
+      padding-top: $padding-t-large;
+    }
     .services-description-background {
-      margin-top: $margin-t-extralarge;
+      margin-top: 5%;
       padding: 60px 0;
     }
     .service-description p {
@@ -271,16 +273,16 @@
     padding-bottom: 0;
     .lock-trip-logo-container {
       padding-bottom: $padding-b-large;
-    }
-    .lock-trip-logo-container .lock-trip-logo {
-      width: 40%;
+      .lock-trip-logo {
+        width: 30%;
+      }
     }
     #desktop-images-container {
       display: none;
     }
     #mobile-images-container {
       @include flexbox($flex-direction: column);
-      margin-top: $margin-t-extralarge;
+      margin-top: 5%;
       .demo-image:first-of-type {
         @include demo-image-style('../img/first-mobile.png', $width: $max);
       }
@@ -297,9 +299,9 @@
     .clients-logos-container {
       @include flexbox($flex-direction: column);
     }
-    .clients-logos-container .logo-container {
+   .logo-container {
       width: $max;
-      margin-bottom: $margin-b-large;
+      margin-bottom: 3%;
     }
   } //Breakpoint 2 (iPhone 6+): 480px
   #careers {
@@ -314,54 +316,32 @@
       width: $max;
       text-align: justify;
     }
-    .left-part-careers .text-dev-camp p,
-    .left-part-careers .text-vacant-positions,
-    .left-part-careers ul li {
-      width: $max;
-      font-size: $small;
-    }
-    .right-part-careers {
-      width: $max;
-      padding-top: $padding-t-extralarge;
-    }
-    .right-part-careers table {
-      font-size: $small;
-    }
   } //Breakpoint 2 (iPhone 6+): 480px
   #contact-us {
     padding: 60px 0;
-    .right-part-contact-us div {
-      padding-bottom: $padding-b-small;
-      margin: auto;
-    }
-    .right-part-contact-us div p {
-      text-align: center;
-    }
-  }
 }
-
 //Breakpoint 3 (iPhone 5S): 320px
 @media screen and (max-width: 320px) {
-  header .header-nav-bar .primary-nav-bar .header-logo-container {
-    width: 60%;
-  } //Breakpoint 3 (iPhone 5S): 320px
+  #header {
+    .header-logo-container {
+      width: 60%;
+    }
+  }
   #info-codexio {
     padding: 40px 0;
-    .codexio-title {
-      h3 {
-        font-size: $medium;
-      }
-      h4 {
-        font-size: $xsmall;
-        padding-bottom: $padding-b-extralarge;
-      }
+    h3 {
+      font-size: $medium;
+    }
+    h4 {
+      font-size: $xsmall;
+      padding-bottom: $padding-b-extralarge;
     }
     .codexio-info-text p {
       padding-top: $padding-t-large;
       font-size: $xsmall;
       line-height: $line-height;
-    }
-  } //Breakpoint 3 (iPhone 5S): 320px
+    } //Breakpoint 3 (iPhone 5S): 320px
+  }
   #services {
     padding: 40px 0;
     padding-bottom: 0;
@@ -373,8 +353,7 @@
       width: $max;
     }
     .heading-description {
-      font-size: $small;
-      font-weight: $weight-l;
+      font-size: $large;
       padding-bottom: $padding-b-extralarge;
     }
   } //Breakpoint 3 (iPhone 5S): 320px
@@ -384,7 +363,7 @@
     h3 {
       font-size: $medium;
     }
-    .lock-trip-logo-container .lock-trip-logo {
+    .lock-trip-logo {
       width: 50%;
     }
     p {
