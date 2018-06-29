@@ -299,7 +299,7 @@
     .clients-logos-container {
       @include flexbox($flex-direction: column);
     }
-   .logo-container {
+    .logo-container {
       width: $max;
       margin-bottom: 3%;
     }
@@ -319,7 +319,9 @@
   } //Breakpoint 2 (iPhone 6+): 480px
   #contact-us {
     padding: 60px 0;
+  }
 }
+
 //Breakpoint 3 (iPhone 5S): 320px
 @media screen and (max-width: 320px) {
   #header {
@@ -411,7 +413,7 @@
   } //Breakpoint 3 (iPhone 5S): 320px
   #contact-us {
     padding: 40px 0;
-    #wrapper-contact-us .left-part-contact-us h3,
+    .left-part-contact-us h3,
     .right-part-contact-us .social-media .fa {
       font-size: $medium;
     }
