@@ -79,7 +79,7 @@ img {
       text-transform: uppercase;
       letter-spacing: 1px;
       &:hover {
-        color: $color;
+        color: $button-border-color;
       }
     }
   }
@@ -103,16 +103,16 @@ img {
   }
   h2 {
     font-weight: 300;
-    padding-bottom: $padding-b-large;
+    padding-bottom: $padding-bottom-space-small;
     text-transform: uppercase;
   }
   .button-hiring {
     @include button();
-    background: $color;
+    background: $button-border-color;
     margin-right: 0.1%;
     &:hover {
       background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
-      border: 2px solid $color;
+      border: 2px solid $button-border-color;
     }
   }
   .button-contact-us {
@@ -120,7 +120,7 @@ img {
     padding: 10px 40px;
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
     &:hover {
-      background: $color;
+      background: $button-border-color;
     }
   }
 }
@@ -130,21 +130,21 @@ img {
 /* Info Codexio */
 
 #info-codexio {
-  padding: $padding;
+  padding: $default-section-padding;
   .codexio-title {
     text-align: center;
   }
   h3 {
-    color: $blue;
+    color: $main-txt-color;
     font-size: 3em;
     font-weight: 400;
-    padding-bottom: $padding-b-small;
+    padding-bottom: 0.1%;
   }
   h4 {
     font-size: $small;
     font-weight: 400;
     color: #595a5a;
-    padding-bottom: $padding-b-large;
+    padding-bottom: $padding-bottom-space-small;
   }
 }
 
@@ -159,7 +159,7 @@ img {
     font-size: $small;
     font-weight: 400;
     &:last-child {
-      padding-top: $padding-t-small;
+      padding-top: $padding-top-space-small;
     }
   }
 }
@@ -170,7 +170,7 @@ img {
 
 #services {
   background: #f2f2f3;
-  padding: $padding;
+  padding: $default-section-padding;
   padding-bottom: 0;
   h3 {
     @include title();
@@ -181,7 +181,7 @@ img {
   }
   .services-icons {
     @include flexbox();
-    padding-top: $padding-t-extralarge;
+    padding-top: 5%;
   }
   .service-container {
     text-align: center;
@@ -189,7 +189,7 @@ img {
   }
   h4 {
     font-size: $small;
-    padding-top: $padding-t-large;
+    padding-top: $padding-top-space-large;
     text-transform: uppercase;
     font-weight: 400;
   }
@@ -209,7 +209,7 @@ img {
   }
   .services-description-background {
     margin: auto;
-    padding: $padding;
+    padding: $default-section-padding;
     margin-top: 2%;
     background: url("../img/background-services.png") no-repeat;
     background-size: cover;
@@ -221,7 +221,7 @@ img {
     color: $white;
     font-size: $large;
     text-align: center;
-    padding-bottom: $padding-b-extralarge;
+    padding-bottom: $padding-bottom-space-large;
     letter-spacing: 1px;
     font-weight: 400;
     text-transform: capitalize;
@@ -241,7 +241,7 @@ img {
 /* Projects */
 
 #projects {
-  padding: $padding;
+  padding: $default-section-padding;
   padding-bottom: 0;
   h3 {
     @include title();
@@ -249,7 +249,7 @@ img {
   .lock-trip-logo-container {
     text-align: center;
     margin: auto;
-    padding-bottom: $padding-b-large;
+    padding-bottom: $padding-bottom-space-small;
     &:hover {
       -webkit-filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.2));
     }
@@ -261,12 +261,12 @@ img {
     font-size: $small;
     a {
       visibility: visible;
-      color: $blue;
+      color: $main-txt-color;
     }
   }
   #desktop-images-container {
     @include flexbox();
-    padding-top: $padding-t-large;
+    padding-top: $padding-top-space-large;
     .demo-image:first-of-type {
       @include demo-image-style('../img/first-desktop.png');
     }
@@ -284,7 +284,7 @@ img {
 /* Clients */
 
 #clients {
-  padding: $padding;
+  padding: $default-section-padding;
   h3 {
     @include title();
   }
@@ -323,7 +323,7 @@ img {
 #careers {
   background: url("../img/background-careers.jpg") no-repeat;
   background-size: cover;
-  padding: $padding;
+  padding: $default-section-padding;
   h3 {
     @include title();
   }
@@ -334,7 +334,7 @@ img {
     width: 50%;
   }
   .codexio-email {
-    color: $blue;
+    color: $main-txt-color;
     font-weight: 500;
   }
   .codexio-dev-camp {
@@ -344,22 +344,22 @@ img {
   }
   .text-dev-camp {
     p {
-      padding-top: $padding-t-small;
+      padding-top: $padding-top-space-small;
       width: 80%;
     }
   }
   .vacant-positions-container {
     h2 {
-      padding-top: $padding-t-large;
+      padding-top: $padding-top-space-large;
       @include heading();
     }
   }
   .text-vacant-positions {
-    padding-top: $padding-t-small;
+    padding-top: $padding-top-space-small;
     width: 80%;
   }
   ul {
-    padding-top: $padding-t-large;
+    padding-top: $padding-top-space-large;
     li {
       text-transform: uppercase;
       list-style: none;
@@ -377,7 +377,7 @@ img {
     th {
       font-size: $small;
       font-weight: 500;
-      border-bottom: 2px solid $color;
+      border-bottom: 2px solid $button-border-color;
       padding: 20px 0;
     }
     td {
@@ -393,7 +393,7 @@ img {
 /* Contact us */
 
 #contact-us {
-  padding: $padding;
+  padding: $default-section-padding;
   #wrapper-contact-us {
     @include flexbox();
   }
@@ -422,7 +422,7 @@ img {
     margin-bottom: 1%;
   }
   .form-label-required {
-    color: $color;
+    color: $button-border-color;
   }
   input[type=email] {
     @include input();
@@ -436,13 +436,13 @@ img {
   input[type=text]:focus,
   input[type=email]:focus,
   #message:focus {
-    border: 1px solid $color;
+    border: 1px solid $button-border-color;
   }
   button {
     @include button ();
     margin-top: 1%;
     border: 0;
-    background: $color;
+    background: $button-border-color;
   }
 }
 
@@ -453,7 +453,7 @@ img {
 .right-part-contact-us {
   text-align: right;
   width: 30%;
-  padding-bottom: $padding-b-extralarge;
+  padding-bottom: $padding-bottom-space-large;
 }
 
 .logo-container-contact-us {
@@ -464,9 +464,9 @@ img {
 }
 
 .right-text-container {
-  padding-top: $padding-t-extralarge;
+  padding-top: 5%;
   p {
-    padding-top: $padding-t-small;
+    padding-top: $padding-top-space-small;
   }
 }
 
@@ -475,7 +475,7 @@ img {
 .social-media {
   width: 100%;
   float: right;
-  padding-top: $padding-t-extralarge;
+  padding-top: 5%;
   .link .fa {
     font-size: $extralarge;
     &:hover {
@@ -484,7 +484,7 @@ img {
   }
   .fa-facebook-square {
     color: #4267B2;
-    padding: $padding-b-small;
+    padding: 0.1%;
   }
   .fa-linkedin-square {
     color: #0077B5;
@@ -497,13 +497,13 @@ img {
 
 footer {
   text-align: center;
-  padding: $padding;
+  padding: $default-section-padding;
   background-color: #29394B;
   img {
     width: 15%;
   }
   p {
-    padding-top: $padding-t-small;
+    padding-top: $padding-top-space-small;
     font-size: $small;
     color: #999E9A;
     font-weight: 400;

@@ -14,7 +14,7 @@
   }
   #header {
     .header-nav-bar {
-      padding-top: $padding-t-large;
+      padding-top: $padding-top-space-large;
     }
     .header-logo-container {
       width: 30%;
@@ -58,7 +58,7 @@
       height: 100vh;
     }
     h2 {
-      padding-bottom: $padding-b-extralarge;
+      padding-bottom: $padding-bottom-space-large;
     }
   } // Breakpoint 1 (iPad Air): 768px
   #info-codexio {
@@ -71,7 +71,7 @@
       margin: auto;
     }
     .codexio-info-text p {
-      padding-top: $padding-t-small;
+      padding-top: $padding-top-space-small;
       padding-left: 0;
     }
   } // Breakpoint 1 (iPad Air): 768px
@@ -79,14 +79,14 @@
     padding: 70px 0;
     padding-bottom: 0;
     h3 {
-      padding-bottom: $padding-b-large;
+      padding-bottom: $padding-bottom-space-small;
     }
     .services-icons {
-      padding-top: $padding-t-extralarge;
+      padding-top: 5%;
     }
     h4 {
       text-transform: capitalize;
-      padding-top: $padding-t-large;
+      padding-top: $padding-top-space-large;
     }
     .services-description-background {
       padding: 5%;
@@ -97,13 +97,13 @@
     padding: 70px 0;
     padding-bottom: 0;
     h3 {
-      padding-bottom: $padding-b-extralarge;
+      padding-bottom: $padding-bottom-space-large;
     }
     p {
       padding-left: 0;
     }
     .lock-trip-logo-container {
-      padding-bottom: $padding-b-large;
+      padding-bottom: $padding-bottom-space-small;
       .lock-trip-logo {
         width: 20%;
       }
@@ -112,7 +112,7 @@
   #clients {
     padding: 70px 0;
     h3 {
-      padding-bottom: $padding-b-extralarge;
+      padding-bottom: $padding-bottom-space-large;
     }
     .clients-logos-container {
       justify-content: space-around;
@@ -124,7 +124,7 @@
   #careers {
     padding: 70px 0;
     h3 {
-      padding-bottom: $padding-b-extralarge;
+      padding-bottom: $padding-bottom-space-large;
     }
     h2 {
       text-align: center;
@@ -146,7 +146,7 @@
     .right-part-careers {
       text-align: center;
       width: $max;
-      padding-top: $padding-t-large;
+      padding-top: $padding-top-space-large;
     }
     table {
       width: $max;
@@ -155,7 +155,7 @@
   #contact-us {
     padding: 70px 0;
     h3 {
-      padding-bottom: $padding-b-extralarge;
+      padding-bottom: $padding-bottom-space-large;
     }
     #wrapper-contact-us {
       @include flexbox($flex-direction: column);
@@ -217,7 +217,7 @@
   #header {
     .header-logo-container {
       width: 40%;
-      padding-top: $padding-t-extralarge;
+      padding-top: 5%;
     }
     h1 {
       font-size: 4em;
@@ -225,7 +225,7 @@
     }
     h2 {
       font-size: $small;
-      padding-bottom: $padding-b-large;
+      padding-bottom: $padding-bottom-space-small;
     }
     .button-hiring,
     .button-contact-us {
@@ -256,10 +256,10 @@
       width: $max;
     }
     .services-icons {
-      padding-top: $padding-t-extralarge;
+      padding-top: 5%;
     }
     .service-img-icon {
-      padding-top: $padding-t-large;
+      padding-top: $padding-top-space-large;
     }
     .services-description-background {
       margin-top: 5%;
@@ -273,7 +273,7 @@
     padding: 60px 0;
     padding-bottom: 0;
     .lock-trip-logo-container {
-      padding-bottom: $padding-b-large;
+      padding-bottom: $padding-bottom-space-small;
       .lock-trip-logo {
         width: 30%;
       }
@@ -342,10 +342,10 @@
     }
     h4 {
       font-size: $xsmall;
-      padding-bottom: $padding-b-extralarge;
+      padding-bottom: $padding-bottom-space-large;
     }
     .codexio-info-text p {
-      padding-top: $padding-t-large;
+      padding-top: $padding-top-space-large;
       font-size: $xsmall;
       line-height: $line-height;
     } //Breakpoint 3 (iPhone 5S): 320px
@@ -354,7 +354,7 @@
     padding: 40px 0;
     padding-bottom: 0;
     .service-container {
-      padding-top: $padding-t-large;
+      padding-top: $padding-top-space-large;
     }
     .services-info-text {
       font-size: $xsmall;
@@ -362,7 +362,7 @@
     }
     .heading-description {
       font-size: $large;
-      padding-bottom: $padding-b-extralarge;
+      padding-bottom: $padding-bottom-space-large;
     }
   } //Breakpoint 3 (iPhone 5S): 320px
   #projects {
@@ -390,11 +390,11 @@
       font-size: $medium;
     }
     .vacant-positions-container {
-      padding-top: $padding-t-small;
+      padding-top: $padding-top-space-small;
     }
     p {
       font-size: $xsmall;
-      padding-bottom: $padding-b-large;
+      padding-bottom: $padding-bottom-space-small;
     }
     .text-vacant-positions,
     li,
@@ -402,7 +402,7 @@
       font-size: $xsmall;
     }
     .right-part-careers {
-      padding-top: $padding-t-large;
+      padding-top: $padding-top-space-large;
     }
     table td {
       padding: 10px 8px;
