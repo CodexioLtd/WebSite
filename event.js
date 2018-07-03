@@ -85,8 +85,6 @@ $(document).ready(() => {
   // Form
   $("#send-mail").click((e) => {
     e.preventDefault();
-
-    return;
     let fullName = $("#first-name").val() + " " + $("#last-name").val();
     let from = $("#from").val();
     if (from.indexOf('@') < 0 || from.indexOf('.') < 0) {

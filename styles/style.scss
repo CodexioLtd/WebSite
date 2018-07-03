@@ -187,6 +187,9 @@ img {
     text-align: center;
     cursor: pointer;
   }
+  .codexio-service-description {
+    display: none;
+  }
   h4 {
     font-size: $small;
     padding-top: $padding-top-space-large;
@@ -327,7 +330,7 @@ img {
   h3 {
     @include title();
   }
-  #careers-container {
+  .careers-container {
     @include flexbox();
   }
   .left-part-careers {
@@ -394,7 +397,7 @@ img {
 
 #contact-us {
   padding: $default-section-padding;
-  #wrapper-contact-us {
+  .wrapper-contact-us {
     @include flexbox();
   }
   .left-part-contact-us {
@@ -571,13 +574,3 @@ footer {
   @include infobox;
   background: #ffe1e4;
 }
-
-// .colored-background {
-//   background-color: #3F5D91;
-//   opacity: 0.99;
-// }
-// .toast-error {
-//   // color: #000 !important;
-//   background-color: #ffe1e4 !important;
-//   opacity: 1 !important;
-// }

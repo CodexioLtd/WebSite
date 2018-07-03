@@ -129,7 +129,7 @@
     h2 {
       text-align: center;
     }
-    #careers-container {
+    .careers-container {
       @include flexbox($flex-direction: column);
     }
     .left-part-careers {
@@ -157,7 +157,7 @@
     h3 {
       padding-bottom: $padding-bottom-space-large;
     }
-    #wrapper-contact-us {
+    .wrapper-contact-us {
       @include flexbox($flex-direction: column);
     }
     .left-part-contact-us,
@@ -307,7 +307,7 @@
   } //Breakpoint 2 (iPhone 6+): 480px
   #careers {
     padding: 60px 0;
-    #careers-container {
+    .careers-container {
       @include flexbox($flex-direction: column);
     }
     h2 {
@@ -323,8 +323,8 @@
   }
   #content {
     font-size: $small;
-    padding: 10px 10px;
-    height: 5vh;
+    padding: 30px 30px 50px 30px;
+    height: 8vh;
   }
 }
 
