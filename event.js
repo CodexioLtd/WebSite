@@ -77,11 +77,13 @@ $(document).ready(() => {
     offset: -1
   });
   // Service - Description
-  $(".service-container").hover(e => setServiceDescription(
-    $(e.currentTarget).find("h4").text(),
-    $(e.currentTarget).find(".codexio-service-description").html(),
-    e.currentTarget)
-  );
+  // $(".service-container").hover(e => setServiceDescription(
+  //   $(e.currentTarget).find("h4").text(),
+  //   $(e.currentTarget).find(".codexio-service-description").html(),
+  //   e.currentTarget)
+  // );
+
+
   // Form
   $("#send-mail").click((e) => {
     e.preventDefault();
@@ -195,3 +197,19 @@ let cfg = {
 };
 $("#desktop-images-container").lightGallery(cfg);
 $("#mobile-images-container").lightGallery(cfg);
+
+
+//LockTripGallery
+// $(document).ready(function() {
+
+//   $('.demo-image:first-of-type').hover(
+
+//     $('.demo-image:first-of-type')).css("bottom","0.1%");
+//   });
+//   $(document).ready(function() {
+
+//     $('.demo-image:first-of-type').hover(
+//       $('.demo-image:first-of-type')).css("bottom","0");
+
+// });
+
